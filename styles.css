@@ -312,8 +312,7 @@ body {
   transform: translateY(-1px);
 }
 
-.submit-btn::before {
-  content: "⬆";
+.submit-btn i {
   font-size: 0.8rem;
 }
 
