@@ -85,9 +85,16 @@ body {
 }
 
 .arrow {
-  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s;
   color: #666;
+  font-size: 0.9rem;
+}
+
+.arrow i {
+  font-size: 0.9rem;
 }
 
 .sidebar-item.expandable.expanded .arrow {
