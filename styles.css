@@ -507,6 +507,11 @@ body {
 
   .logo {
     font-size: 0.95rem;
+    flex-shrink: 0;
+  }
+
+  .logo img {
+    max-height: 35px;
   }
 
   .nav-container {
