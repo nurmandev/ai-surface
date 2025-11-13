@@ -312,12 +312,16 @@ body {
   transform: translateY(-1px);
 }
 
-.submit-btn i {
-  font-size: 0.9rem;
-  line-height: 1;
+.submit-icon {
   display: inline-flex;
   align-items: center;
-  color: inherit;
+  justify-content: center;
+}
+
+.submit-icon i {
+  font-size: 0.85rem;
+  color: #000;
+  line-height: 1;
 }
 
 .mobile-menu-btn {
