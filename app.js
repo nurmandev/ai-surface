@@ -81,7 +81,13 @@ document.addEventListener("click", (e) => {
       if (navLinks) navLinks.classList.remove("active");
       if (navRight) navRight.classList.remove("active");
       if (sidebar) sidebar.classList.remove("active");
-      if (mobileMenuBtn) mobileMenuBtn.textContent = "☰";
+      if (mobileMenuBtn) {
+        const mobileMenuIcon = mobileMenuBtn.querySelector(".mobile-menu-icon");
+        if (mobileMenuIcon) {
+          mobileMenuIcon.classList.remove("fa-times");
+          mobileMenuIcon.classList.add("fa-bars");
+        }
+      }
     }
   }
 });
