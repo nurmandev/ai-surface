@@ -25,10 +25,15 @@ if (mobileMenuBtn) {
     sidebar.classList.toggle("active");
 
     // Change icon
-    if (navLinks.classList.contains("active")) {
-      mobileMenuBtn.textContent = "✕";
-    } else {
-      mobileMenuBtn.textContent = "☰";
+    const mobileMenuIcon = mobileMenuBtn.querySelector(".mobile-menu-icon");
+    if (mobileMenuIcon) {
+      if (navLinks.classList.contains("active")) {
+        mobileMenuIcon.classList.remove("fa-bars");
+        mobileMenuIcon.classList.add("fa-times");
+      } else {
+        mobileMenuIcon.classList.remove("fa-times");
+        mobileMenuIcon.classList.add("fa-bars");
+      }
     }
   });
 }
