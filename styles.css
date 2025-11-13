@@ -315,9 +315,18 @@ body {
   background: none;
   border: none;
   color: #fff;
-  font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu-icon {
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 /* Tablet Styles */
