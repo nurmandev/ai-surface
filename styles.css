@@ -376,11 +376,17 @@ body {
 
   .nav-container {
     height: 65px;
+    flex-wrap: nowrap;
+  }
+
+  .logo img {
+    max-height: 40px;
   }
 
   .mobile-menu-btn {
     display: block;
     z-index: 1001;
+    flex-shrink: 0;
   }
 
   .sidebar-toggle-btn {
