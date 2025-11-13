@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The AI Surface</title>
     <link rel="stylesheet" href="./styles.css" />
+    <!-- Font Awesome Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usKNU85p+6xN9hVRSk+2nxH+yHMN5q6n688F/+Z8DQbx4fQHIUc2a9VyBLMeww==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script defer src="./app.js"></script>
   </head>
   <body>
@@ -27,25 +34,20 @@
 
         <div class="nav-right" id="navRight">
           <div class="search-container">
-            <svg
-              class="search-icon"
-              fill="none"
-              stroke="#666"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              ></path>
-            </svg>
+            <i class="fas fa-search search-icon"></i>
             <input type="text" class="search-input" placeholder="Search" />
           </div>
-          <button class="submit-btn">Submit a Tool</button>
+          <button class="submit-btn">
+            <span class="submit-icon">
+              <i class="fas fa-arrow-up"></i>
+            </span>
+            <span>Submit a Tool</span>
+          </button>
         </div>
 
-        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars mobile-menu-icon"></i>
+        </button>
       </div>
     </nav>
 
@@ -53,17 +55,25 @@
       <aside class="sidebar" id="sidebar">
         <nav class="sidebar-nav">
           <a href="#" class="sidebar-item active">
-            <span class="sidebar-icon">🌐</span>
+            <span class="sidebar-icon">
+              <i class="fas fa-globe"></i>
+            </span>
             <span class="sidebar-text">Explore</span>
           </a>
           <a href="#" class="sidebar-item">
-            <span class="sidebar-icon">📄</span>
+            <span class="sidebar-icon">
+              <i class="uil uil-document-alt"></i>
+            </span>
             <span class="sidebar-text">Articles</span>
           </a>
           <a href="#" class="sidebar-item expandable" id="promptsToggle">
-            <span class="sidebar-icon">💡</span>
+            <span class="sidebar-icon">
+              <ion-icon name="bulb"></ion-icon>
+            </span>
             <span class="sidebar-text">AI Prompts</span>
-            <span class="arrow">▼</span>
+            <span class="arrow">
+              <i class="fas fa-chevron-down"></i>
+            </span>
           </a>
           <div class="sidebar-submenu" id="promptsSubmenu">
             <a href="#" class="sidebar-subitem">Chatgpt</a>
@@ -73,9 +83,13 @@
             <a href="#" class="sidebar-subitem">Designing Prompts</a>
           </div>
           <a href="#" class="sidebar-item expandable" id="jobsToggle">
-            <span class="sidebar-icon">💼</span>
+            <span class="sidebar-icon">
+              <i class="fas fa-briefcase"></i>
+            </span>
             <span class="sidebar-text">AI Jobs</span>
-            <span class="arrow">▼</span>
+            <span class="arrow">
+              <i class="fas fa-chevron-down"></i>
+            </span>
           </a>
           <div class="sidebar-submenu" id="jobsSubmenu">
             <a href="#" class="sidebar-subitem">Machine Learning</a>

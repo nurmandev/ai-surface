@@ -10,57 +10,84 @@ const jobsToggle = document.getElementById("jobsToggle");
 const jobsSubmenu = document.getElementById("jobsSubmenu");
 
 // Sidebar toggle for desktop
-sidebarToggleBtn.addEventListener("click", () => {
-  sidebar.classList.toggle("closed");
-  mainContent.classList.toggle("expanded");
-});
+if (sidebarToggleBtn) {
+  sidebarToggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("closed");
+    mainContent.classList.toggle("expanded");
+  });
+}
 
 // Mobile menu toggle
-mobileMenuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  navRight.classList.toggle("active");
-  sidebar.classList.toggle("active");
+if (mobileMenuBtn) {
+  mobileMenuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    navRight.classList.toggle("active");
+    sidebar.classList.toggle("active");
 
-  // Change icon
-  if (navLinks.classList.contains("active")) {
-    mobileMenuBtn.textContent = "✕";
-  } else {
-    mobileMenuBtn.textContent = "☰";
-  }
-});
+    // Change icon
+    const mobileMenuIcon = mobileMenuBtn.querySelector(".mobile-menu-icon");
+    if (mobileMenuIcon) {
+      if (navLinks.classList.contains("active")) {
+        mobileMenuIcon.classList.remove("fa-bars");
+        mobileMenuIcon.classList.add("fa-times");
+      } else {
+        mobileMenuIcon.classList.remove("fa-times");
+        mobileMenuIcon.classList.add("fa-bars");
+      }
+    }
+  });
+}
 
 // Close menu when clicking on a link
-const navItems = navLinks.querySelectorAll("a");
-navItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-    navRight.classList.remove("active");
-    sidebar.classList.remove("active");
-    mobileMenuBtn.textContent = "☰";
+if (navLinks) {
+  const navItems = navLinks.querySelectorAll("a");
+  navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      navRight.classList.remove("active");
+      sidebar.classList.remove("active");
+      if (mobileMenuBtn) {
+        const mobileMenuIcon = mobileMenuBtn.querySelector(".mobile-menu-icon");
+        if (mobileMenuIcon) {
+          mobileMenuIcon.classList.remove("fa-times");
+          mobileMenuIcon.classList.add("fa-bars");
+        }
+      }
+    });
   });
-});
+}
 
 // Sidebar expandable items
-promptsToggle.addEventListener("click", (e) => {
-  e.preventDefault();
-  promptsToggle.classList.toggle("expanded");
-  promptsSubmenu.classList.toggle("open");
-});
+if (promptsToggle) {
+  promptsToggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    promptsToggle.classList.toggle("expanded");
+    promptsSubmenu.classList.toggle("open");
+  });
+}
 
-jobsToggle.addEventListener("click", (e) => {
-  e.preventDefault();
-  jobsToggle.classList.toggle("expanded");
-  jobsSubmenu.classList.toggle("open");
-});
+if (jobsToggle) {
+  jobsToggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    jobsToggle.classList.toggle("expanded");
+    jobsSubmenu.classList.toggle("open");
+  });
+}
 
 // Close mobile menu when clicking outside
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".navbar") && !e.target.closest(".sidebar")) {
     if (window.innerWidth <= 768) {
-      navLinks.classList.remove("active");
-      navRight.classList.remove("active");
-      sidebar.classList.remove("active");
-      mobileMenuBtn.textContent = "☰";
+      if (navLinks) navLinks.classList.remove("active");
+      if (navRight) navRight.classList.remove("active");
+      if (sidebar) sidebar.classList.remove("active");
+      if (mobileMenuBtn) {
+        const mobileMenuIcon = mobileMenuBtn.querySelector(".mobile-menu-icon");
+        if (mobileMenuIcon) {
+          mobileMenuIcon.classList.remove("fa-times");
+          mobileMenuIcon.classList.add("fa-bars");
+        }
+      }
     }
   }
 });
