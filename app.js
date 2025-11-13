@@ -47,7 +47,11 @@ if (navLinks) {
       navRight.classList.remove("active");
       sidebar.classList.remove("active");
       if (mobileMenuBtn) {
-        mobileMenuBtn.textContent = "☰";
+        const mobileMenuIcon = mobileMenuBtn.querySelector(".mobile-menu-icon");
+        if (mobileMenuIcon) {
+          mobileMenuIcon.classList.remove("fa-times");
+          mobileMenuIcon.classList.add("fa-bars");
+        }
       }
     });
   });
