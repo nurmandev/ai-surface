@@ -563,6 +563,10 @@ body {
     letter-spacing: -0.3px;
   }
 
+  .logo img {
+    max-height: 30px;
+  }
+
   .nav-container {
     height: 55px;
   }
