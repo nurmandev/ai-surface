@@ -296,12 +296,37 @@ body {
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
+  .navbar {
+    padding: 0 1.5rem;
+  }
+
+  .nav-container {
+    height: 65px;
+  }
+
+  .logo {
+    flex-shrink: 0;
+  }
+
+  .logo img {
+    max-height: 45px;
+  }
+
   .nav-links {
     gap: 1.5rem;
   }
 
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
   .search-input {
-    width: 180px;
+    width: 200px;
+  }
+
+  .submit-btn {
+    padding: 0.6rem 1.3rem;
+    font-size: 0.9rem;
   }
 
   .sidebar-toggle-btn {
