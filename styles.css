@@ -337,19 +337,27 @@ body {
 /* Small Tablet */
 @media (max-width: 900px) {
   .navbar {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .nav-container {
+    height: 60px;
+  }
+
+  .logo img {
+    max-height: 40px;
   }
 
   .nav-links {
-    gap: 1.2rem;
+    gap: 1rem;
   }
 
   .nav-links a {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .search-input {
-    width: 160px;
+    width: 180px;
     font-size: 0.85rem;
     padding: 0.5rem 0.8rem 0.5rem 2.2rem;
   }
