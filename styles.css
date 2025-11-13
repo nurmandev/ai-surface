@@ -292,7 +292,7 @@ body {
 }
 
 .submit-btn {
-  background: #fff;
+  background: lab(100% 0.01 -0.01);
   color: #000;
   border: none;
   border-radius: 25px;
@@ -313,6 +313,7 @@ body {
 }
 
 .submit-icon {
+    color: #000;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -320,7 +321,7 @@ body {
 
 .submit-icon i {
   font-size: 0.85rem;
-  color: #000;
+  color: #000 ;
   line-height: 1;
 }
 
