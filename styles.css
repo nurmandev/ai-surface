@@ -174,6 +174,16 @@ body {
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
 }
 
 .nav-links {
