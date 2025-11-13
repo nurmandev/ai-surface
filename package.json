@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build needed'"
+  }
+}
