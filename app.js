@@ -28,6 +28,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Sidebar section collapse/expand
+  const sidebarSectionTitles = document.querySelectorAll('.sidebar-section-title');
+
+  sidebarSectionTitles.forEach(title => {
+    title.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      const sectionLinks = this.nextElementSibling;
+
+      this.setAttribute('aria-expanded', !isExpanded);
+      sectionLinks.classList.toggle('collapsed');
+    });
+  });
+
   const newsPrev = document.querySelector('.news-prev');
   const newsNext = document.querySelector('.news-next');
   const newsContent = document.querySelector('.news-content p');
