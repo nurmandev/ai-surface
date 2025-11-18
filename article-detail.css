@@ -961,14 +961,61 @@ body {
   }
 
   .article-detail {
-    padding: 1rem 0.75rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .article-nav {
+    margin-bottom: 1rem;
+  }
+
+  .nav-prev,
+  .nav-next {
+    padding: 0.3rem;
+    min-width: 36px;
+    min-height: 36px;
+  }
+
+  .nav-prev svg,
+  .nav-next svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .article-header {
+    margin-bottom: 1.25rem;
+    padding: 0;
+  }
+
+  .article-date {
+    font-size: 9px;
+    margin-bottom: 0.75rem;
   }
 
   .article-title {
     font-size: 16px;
+    margin-bottom: 0.65rem;
+  }
+
+  .article-subtitle {
+    font-size: 11px;
+    margin-bottom: 1rem;
+  }
+
+  .author-avatar {
+    width: 22px;
+    height: 22px;
+  }
+
+  .author-name {
+    font-size: 12px;
+  }
+
+  .article-featured-image {
+    margin-bottom: 1.25rem;
   }
 
   .section-heading {
-    font-size: 18px;
+    font-size: 16px;
+    margin: 1.25rem 0 0.75rem 0;
   }
 }
