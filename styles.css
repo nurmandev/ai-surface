@@ -1198,18 +1198,48 @@ body {
     padding: 0 1rem;
   }
   
-  .newsletter-footer-title {
-    font-size: 28px;
+  .newsletter-footer {
+    padding: 2rem 1rem;
   }
-  
+
+  .newsletter-footer-content {
+    padding-left: 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .newsletter-footer-title {
+    font-size: 24px;
+  }
+
+  .newsletter-footer-description {
+    font-size: 16px;
+  }
+
+  .newsletter-footer-form {
+    flex-direction: column;
+  }
+
+  .newsletter-footer-input {
+    max-width: 100%;
+  }
+
   .newsletter-footer-right {
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .footer-links {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .footer-brand-name {
+    font-size: 28px;
+  }
+
+  .footer-bottom {
+    padding-left: 1rem;
   }
 }
 
