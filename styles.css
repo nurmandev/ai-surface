@@ -946,10 +946,14 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+
   .vertical-divider {
     display: none;
   }
-  
+
   .main-wrapper {
     padding-left: 2rem;
   }
