@@ -1046,6 +1046,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .logo img {
+    height: 48px;
+  }
+
   .sidebar {
     display: none;
   }
