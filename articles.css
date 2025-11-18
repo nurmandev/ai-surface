@@ -239,6 +239,8 @@ body {
   font-weight: 400;
   color: #fff;
   border-bottom: 1px solid rgba(201, 201, 201, 0.15);
+  text-decoration: none;
+  appearance: none;
 }
 
 .sidebar-item:hover {
