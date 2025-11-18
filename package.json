@@ -4,9 +4,10 @@
   "description": "The AI Surface - AI tools and resources platform",
   "main": "index.html",
   "scripts": {
-    "dev": "serve",
-    "serve": "serve"
+    "dev": "serve .",
+    "serve": "serve ."
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
 }
