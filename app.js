@@ -158,10 +158,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const navLinks = document.querySelectorAll('.nav-links a');
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-      e.preventDefault();
       navLinks.forEach(l => l.classList.remove('active'));
       this.classList.add('active');
     });
+
+    // Set active based on current page
+    if (window.location.pathname.includes('articles.html') && link.href.includes('articles.html')) {
+      link.classList.add('active');
+    } else if (!window.location.pathname.includes('articles.html') && link.href.includes('index.html')) {
+      link.classList.add('active');
+    }
   });
   
   const searchInput = document.querySelector('.search-input');
