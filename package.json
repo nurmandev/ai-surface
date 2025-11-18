@@ -1,0 +1,12 @@
+{
+  "name": "ai-surface",
+  "version": "1.0.0",
+  "description": "The AI Surface - AI tools and resources platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve",
+    "serve": "serve"
+  },
+  "author": "",
+  "license": "ISC"
+}
