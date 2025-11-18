@@ -590,12 +590,33 @@ body {
     padding: 2rem 1.5rem;
   }
 
+  .article-nav {
+    margin-bottom: 2rem;
+  }
+
+  .nav-prev svg,
+  .nav-next svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .article-header {
+    margin-bottom: 2.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .article-date {
+    margin-bottom: 1.25rem;
+  }
+
   .article-title {
-    font-size: 24px;
+    font-size: 26px;
+    margin-bottom: 1.25rem;
   }
 
   .article-subtitle {
-    font-size: 14px;
+    font-size: 15px;
+    margin-bottom: 1.75rem;
   }
 
   .article-body {
@@ -604,6 +625,10 @@ body {
 
   .section-heading {
     font-size: 32px;
+  }
+
+  .article-featured-image {
+    margin-bottom: 2.5rem;
   }
 }
 
