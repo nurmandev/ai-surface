@@ -1437,9 +1437,15 @@ body {
   }
 }
 
+@media (max-width: 640px) {
+  .logo img {
+    height: 30px;
+  }
+}
+
 @media (max-width: 480px) {
   .logo img {
-    height: 28px;
+    height: 26px;
   }
 
   .nav-links a {
