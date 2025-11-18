@@ -21,9 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
     sidebarLinks.forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
-        hamburgerMenu.classList.remove('active');
-        sidebar.classList.remove('mobile-open');
-        sidebarOverlay.classList.remove('active');
+        // Only close sidebar when clicking actual navigation links, not section titles
+        if (!this.closest('.sidebar-section-title')) {
+          hamburgerMenu.classList.remove('active');
+          sidebar.classList.remove('mobile-open');
+          sidebarOverlay.classList.remove('active');
+        }
       });
     });
   }
