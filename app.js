@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu toggle
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const sidebar = document.getElementById('sidebar');
+  const sidebarOverlay = document.getElementById('sidebarOverlay');
+  const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+  if (hamburgerMenu && sidebar && sidebarOverlay) {
+    hamburgerMenu.addEventListener('click', function() {
+      hamburgerMenu.classList.toggle('active');
+      sidebar.classList.toggle('mobile-open');
+      sidebarOverlay.classList.toggle('active');
+    });
+
+    sidebarOverlay.addEventListener('click', function() {
+      hamburgerMenu.classList.remove('active');
+      sidebar.classList.remove('mobile-open');
+      sidebarOverlay.classList.remove('active');
+    });
+
+    sidebarLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        hamburgerMenu.classList.remove('active');
+        sidebar.classList.remove('mobile-open');
+        sidebarOverlay.classList.remove('active');
+      });
+    });
+  }
+
   const newsPrev = document.querySelector('.news-prev');
   const newsNext = document.querySelector('.news-next');
   const newsContent = document.querySelector('.news-content p');
