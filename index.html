@@ -3,113 +3,528 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The AI Surface</title>
+    <title>The AI Surface - All the AI Resources in one place</title>
     <link rel="stylesheet" href="./styles.css" />
-
-    <!-- ✅ Unicons CDN -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600;800&family=Roboto:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <script defer src="./app.js"></script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-container">
-        <div style="display: flex; align-items: center">
-          <a href="#" class="logo">
-            <img src="./logo.png" alt="Logo" />
-          </a>
+    <div class="top-bar">
+      <div class="social-links">
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5839 8.81404C17.5839 3.94872 13.6451 6.10352e-05 8.79195 6.10352e-05C3.93879 6.10352e-05 0 3.94872 0 8.81404C0 13.08 3.02443 16.632 7.03356 17.4517V11.4582H5.27517V8.81404H7.03356V6.61055C7.03356 4.90945 8.41389 3.52565 10.1107 3.52565H12.3087V6.16985H10.5503C10.0668 6.16985 9.67114 6.56648 9.67114 7.05125V8.81404H12.3087V11.4582H9.67114V17.584C14.1111 17.1433 17.5839 13.3885 17.5839 8.81404Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.62 0H12.38C15.62 0 18 2.38 18 5.62V12.38C18 15.62 15.62 18 12.38 18H5.62C2.38 18 0 15.62 0 12.38V5.62C0 2.38 2.38 0 5.62 0ZM12.38 16.2C14.63 16.2 16.2 14.63 16.2 12.38V5.62C16.2 3.37 14.63 1.8 12.38 1.8H5.62C3.37 1.8 1.8 3.37 1.8 5.62V12.38C1.8 14.63 3.37 16.2 5.62 16.2H12.38ZM4.5 9C4.5 6.52 6.52 4.5 9 4.5C11.48 4.5 13.5 6.52 13.5 9C13.5 11.48 11.48 13.5 9 13.5C6.52 13.5 4.5 11.48 4.5 9ZM6.3 9C6.3 10.49 7.51 11.7 9 11.7C10.49 11.7 11.7 10.49 11.7 9C11.7 7.51 10.49 6.3 9 6.3C7.51 6.3 6.3 7.51 6.3 9ZM13.5 3.6C13.5 3.27 13.77 3 14.1 3C14.43 3 14.7 3.27 14.7 3.6C14.7 3.93 14.43 4.2 14.1 4.2C13.77 4.2 13.5 3.93 13.5 3.6Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.45 5.32C17.26 4.62 16.71 4.07 16.01 3.88C14.73 3.5 9 3.5 9 3.5C9 3.5 3.27 3.5 1.99 3.88C1.29 4.07 0.74 4.62 0.55 5.32C0.17 6.6 0.17 9.28 0.17 9.28C0.17 9.28 0.17 11.96 0.55 13.24C0.74 13.94 1.29 14.49 1.99 14.68C3.27 15.06 9 15.06 9 15.06C9 15.06 14.73 15.06 16.01 14.68C16.71 14.49 17.26 13.94 17.45 13.24C17.83 11.96 17.83 9.28 17.83 9.28C17.83 9.28 17.83 6.6 17.45 5.32ZM7.2 11.68V6.88L11.88 9.28L7.2 11.68Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Twitter/X">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.85 0.82H16.55L10.66 7.57L17.59 16.76H12.16L7.91 11.19L3.05 16.76H0.35L6.65 9.54L0 0.83H5.57L9.41 5.92L13.85 0.82ZM12.9 15.14H14.39L4.75 2.36H3.15L12.9 15.14Z" fill="white"/>
+          </svg>
+        </a>
+      </div>
+      <div class="top-date">Wednesday, November 12, 2025</div>
+    </div>
+
+    <div class="breaking-news">
+      <div class="breaking-label">
+        <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.25 11.6667C4.49083 11.6667 4.69285 11.5867 4.85605 11.4267C5.01925 11.2667 5.10057 11.0689 5.1 10.8333C5.09943 10.5978 5.01783 10.4 4.8552 10.24C4.69257 10.08 4.49083 10 4.25 10C4.00917 10 3.80743 10.08 3.6448 10.24C3.48217 10.4 3.40057 10.5978 3.4 10.8333C3.39943 11.0689 3.48103 11.2669 3.6448 11.4275C3.80857 11.5881 4.0103 11.6678 4.25 11.6667ZM3.4 8.33333H5.1V3.33333H3.4V8.33333ZM7.65 11.6667H13.6V10H7.65V11.6667ZM7.65 8.33333H13.6V6.66667H7.65V8.33333ZM7.65 5H13.6V3.33333H7.65V5ZM1.7 15C1.2325 15 0.832433 14.8369 0.4998 14.5108C0.167167 14.1847 0.000566667 13.7922 0 13.3333V1.66667C0 1.20833 0.1666 0.816111 0.4998 0.49C0.833 0.163889 1.23307 0.000555555 1.7 0H15.3C15.7675 0 16.1678 0.163333 16.501 0.49C16.8342 0.816667 17.0006 1.20889 17 1.66667V13.3333C17 13.7917 16.8337 14.1842 16.501 14.5108C16.1684 14.8375 15.7681 15.0006 15.3 15H1.7Z" fill="white"/>
+        </svg>
+        BREAKING NEWS
+      </div>
+      <div class="news-content">
+        <p>Mobile Data, Not Internet Service Providers, To Be Blocked In Bali During Nyepi March 19, 2018</p>
+      </div>
+      <div class="news-nav">
+        <button class="news-prev" aria-label="Previous news">
+          <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.65584 14.6698C8.87621 14.4584 9 14.1716 9 13.8725C9 13.5735 8.87621 13.2867 8.65584 13.0753L2.83731 7.49319L8.65584 1.91111C8.86996 1.69843 8.98844 1.41357 8.98576 1.11789C8.98308 0.822216 8.85946 0.539376 8.64152 0.330293C8.42358 0.12121 8.12876 0.00261297 7.82056 4.36405e-05C7.51236 -0.00252569 7.21543 0.111139 6.99374 0.316558L0.344158 6.69591C0.123793 6.90739 -7.46373e-07 7.19417 -7.20232e-07 7.49319C-6.9409e-07 7.79222 0.123794 8.079 0.344158 8.29047L6.99374 14.6698C7.21417 14.8812 7.5131 15 7.82479 15C8.13648 15 8.43541 14.8812 8.65584 14.6698Z" fill="#4C4C4C"/>
+          </svg>
+        </button>
+        <button class="news-next" aria-label="Next news">
+          <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.344159 0.330173C0.123794 0.541647 0 0.828428 0 1.12745C0 1.42648 0.123794 1.71326 0.344159 1.92473L6.16269 7.50681L0.344159 13.0889C0.130039 13.3016 0.0115592 13.5864 0.0142373 13.8821C0.0169155 14.1778 0.140538 14.4606 0.358478 14.6697C0.576418 14.8788 0.871238 14.9974 1.17944 15C1.48764 15.0025 1.78457 14.8889 2.00626 14.6834L8.65584 8.30409C8.87621 8.09261 9 7.80583 9 7.50681C9 7.20778 8.87621 6.921 8.65584 6.70953L2.00626 0.330173C1.78583 0.118763 1.4869 0 1.17521 0C0.863519 0 0.564591 0.118763 0.344159 0.330173Z" fill="white"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+      <nav class="sidebar-nav">
+        <div class="sidebar-section">
+          <button class="sidebar-section-title" aria-expanded="true">
+            <span>Navigation</span>
+            <svg class="sidebar-toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+            </svg>
+          </button>
+          <ul class="sidebar-section-links">
+            <li><a href="index.html" class="sidebar-link">Explore</a></li>
+            <li><a href="index.html" class="sidebar-link">AI Tools</a></li>
+            <li><a href="index.html" class="sidebar-link">AI Prompts</a></li>
+            <li><a href="index.html" class="sidebar-link">AI Jobs</a></li>
+            <li><a href="articles.html" class="sidebar-link">Articles</a></li>
+          </ul>
         </div>
 
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#" class="active">Explore</a></li>
-          <li><a href="#">AI Tools</a></li>
-          <li><a href="#">AI Prompts</a></li>
-          <li><a href="#">AI Jobs</a></li>
-          <li><a href="#">Articles</a></li>
+        <div class="sidebar-section">
+          <button class="sidebar-section-title" aria-expanded="true">
+            <span>Categories</span>
+            <svg class="sidebar-toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+            </svg>
+          </button>
+          <ul class="sidebar-section-links">
+            <li><a href="index.html" class="sidebar-link">AI Prompts</a></li>
+            <li><a href="index.html" class="sidebar-link">AI Jobs</a></li>
+            <li><a href="articles.html" class="sidebar-link">AI News</a></li>
+            <li><a href="#" class="sidebar-link">Submit</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <button class="sidebar-section-title" aria-expanded="true">
+            <span>Legal</span>
+            <svg class="sidebar-toggle-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+            </svg>
+          </button>
+          <ul class="sidebar-section-links">
+            <li><a href="#" class="sidebar-link">Contact Us</a></li>
+            <li><a href="#" class="sidebar-link">Terms & Conditions</a></li>
+            <li><a href="#" class="sidebar-link">Disclaimer</a></li>
+            <li><a href="#" class="sidebar-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="https://api.builder.io/api/v1/image/assets/TEMP/5625c1f9e340703f26010a681f5e12b6014b6a44?width=814" alt="The AI Surface" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Explore</a></li>
+          <li><a href="index.html">AI Tools</a></li>
+          <li><a href="index.html">AI Prompts</a></li>
+          <li><a href="index.html">AI Jobs</a></li>
+          <li><a href="articles.html">Articles</a></li>
         </ul>
 
-        <div class="nav-right" id="navRight">
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div class="nav-right">
           <div class="search-container">
-            <i class="uil uil-search search-icon"></i>
+            <svg class="search-icon" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.3408 16L9.51867 10.4C9.0566 10.7556 8.52521 11.037 7.92452 11.2444C7.32383 11.4519 6.68463 11.5556 6.00693 11.5556C4.32807 11.5556 2.90735 10.9961 1.74478 9.87733C0.58221 8.75852 0.000616584 7.392 4.88964e-07 5.77778C-0.000615606 4.16356 0.580978 2.79704 1.74478 1.67822C2.90858 0.559407 4.3293 0 6.00693 0C7.68455 0 9.10557 0.559407 10.27 1.67822C11.4344 2.79704 12.0157 4.16356 12.0139 5.77778C12.0139 6.42963 11.906 7.04444 11.6904 7.62222C11.4748 8.2 11.1821 8.71111 10.8125 9.15556L16.6346 14.7556L15.3408 16ZM6.00693 9.77778C7.1621 9.77778 8.14416 9.38904 8.95309 8.61156C9.76202 7.83407 10.1662 6.88948 10.1656 5.77778C10.165 4.66607 9.76079 3.72178 8.95309 2.94489C8.14539 2.168 7.16334 1.77896 6.00693 1.77778C4.85052 1.77659 3.86877 2.16563 3.06168 2.94489C2.2546 3.72415 1.85013 4.66844 1.84829 5.77778C1.84644 6.88711 2.2509 7.8317 3.06168 8.61156C3.87246 9.39141 4.85421 9.78015 6.00693 9.77778Z" fill="#6D6D6D"/>
+            </svg>
             <input type="text" class="search-input" placeholder="Search" />
           </div>
           <button class="submit-btn">
-            <span class="submit-icon">
-              <i class="uil uil-arrow-up"></i>
-            </span>
+            <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 15H12V13.2353H0V15ZM0 6.17647H3.42857V11.4706H8.57143V6.17647H12L6 0L0 6.17647Z" fill="black"/>
+            </svg>
             <span>Submit a Tool</span>
           </button>
         </div>
-
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
-          <i class="uil uil-bars mobile-menu-icon"></i>
-        </button>
       </div>
     </nav>
 
-    <div class="layout-container">
-      <aside class="sidebar" id="sidebar">
-        <nav class="sidebar-nav">
-          <a href="#" class="sidebar-item active">
-            <span class="sidebar-icon">
-              <i class="uil uil-globe"></i>
-            </span>
-            <span class="sidebar-text">Explore</span>
-          </a>
+    <div class="vertical-divider"></div>
 
-          <a href="#" class="sidebar-item">
-            <span class="sidebar-icon">
-              <i class="uil uil-document-alt"></i>
-            </span>
-            <span class="sidebar-text">Articles</span>
-          </a>
-
-          <a href="#" class="sidebar-item expandable" id="promptsToggle">
-            <span class="sidebar-icon">
-              <i class="uil uil-lightbulb-alt"></i>
-            </span>
-            <span class="sidebar-text">AI Prompts</span>
-            <span class="arrow">
-              <i class="uil uil-angle-down"></i>
-            </span>
-          </a>
-
-          <div class="sidebar-submenu" id="promptsSubmenu">
-            <a href="#" class="sidebar-subitem">ChatGPT</a>
-            <a href="#" class="sidebar-subitem">Midjourney</a>
-            <a href="#" class="sidebar-subitem">Stable Diffusion</a>
-            <a href="#" class="sidebar-subitem">Writing Prompts</a>
-            <a href="#" class="sidebar-subitem">Designing Prompts</a>
+    <main class="main-wrapper">
+      <section class="hero-section">
+        <div class="hero-gradient"></div>
+        <img class="hero-bg" src="https://api.builder.io/api/v1/image/assets/TEMP/4f92c32a94e86e3c9af075883f3a7081d99d0094?width=3144" alt="" />
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-light">All the </span><span class="title-white">AI</span><span class="title-light"> Resources</span>
+          </h1>
+          <h2 class="hero-subtitle">in one place.</h2>
+          <p class="hero-description">News, Prompts, Jobs & Tools. Everything AI, delivered weekly.</p>
+          <div class="newsletter-form">
+            <div class="email-input-wrapper">
+              <input type="email" placeholder="Enter Mail" class="email-input" />
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
           </div>
-
-          <a href="#" class="sidebar-item expandable" id="jobsToggle">
-            <span class="sidebar-icon">
-              <i class="uil uil-briefcase-alt"></i>
-            </span>
-            <span class="sidebar-text">AI Jobs</span>
-            <span class="arrow">
-              <i class="uil uil-angle-down"></i>
-            </span>
-          </a>
-
-          <div class="sidebar-submenu" id="jobsSubmenu">
-            <a href="#" class="sidebar-subitem">Machine Learning</a>
-            <a href="#" class="sidebar-subitem">Data Science</a>
-            <a href="#" class="sidebar-subitem">AI Engineering</a>
-            <a href="#" class="sidebar-subitem">Prompt Engineering</a>
-          </div>
-        </nav>
-      </aside>
-
-      <main class="main-content">
-        <div class="content-placeholder">
-          <h1>Main Content Area</h1>
-          <p>Hero section goes here...</p>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section class="section-wrapper featured-section">
+        <div class="section-header">
+          <h2 class="section-title">Featured Tools</h2>
+        </div>
+        <div class="featured-grid">
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/b63700faec842a750963c2706df30abf2b15eb99?width=728" alt="ScribHow" class="tool-image" />
+            <span class="tool-badge">Free</span>
+            <div class="tool-info">
+              <span class="tool-category">
+                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.07812 1.2H7.92188C8.03359 1.2 8.125 1.29 8.125 1.4V2.4H4.875V1.4C4.875 1.29 4.96641 1.2 5.07812 1.2ZM3.65625 1.4V12H9.34375V1.4C9.34375 0.6275 8.70645 0 7.92188 0H5.07812C4.29355 0 3.65625 0.6275 3.65625 1.4ZM10.5625 2.4V12H11.375C12.2713 12 13 11.2825 13 10.4V4C13 3.1175 12.2713 2.4 11.375 2.4H10.5625ZM2.4375 12V2.4H1.625C0.728711 2.4 0 3.1175 0 4V10.4C0 11.2825 0.728711 12 1.625 12H2.4375Z" fill="#B9B9B9"/>
+                </svg>
+                Website Builder
+              </span>
+              <h3 class="tool-name">ScribHow</h3>
+              <a href="#" class="tool-link">
+                Open
+                <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.8377 4.03556C18.033 3.8403 18.033 3.52372 17.8377 3.32845L14.6557 0.146473C14.4605 -0.0487892 14.1439 -0.0487892 13.9486 0.146473C13.7534 0.341735 13.7534 0.658318 13.9486 0.85358L16.7771 3.68201L13.9486 6.51043C13.7534 6.7057 13.7534 7.02228 13.9486 7.21754C14.1439 7.4128 14.4605 7.4128 14.6557 7.21754L17.8377 4.03556ZM0 3.68201V4.18201H17.4842V3.68201V3.18201H0V3.68201Z" fill="black"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/b32b0c08d99b9a7e1930487da379f924b3de854e?width=728" alt="ProofHub" class="tool-image" />
+            <span class="tool-badge">Free</span>
+            <div class="tool-info">
+              <span class="tool-category">
+                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.07812 1.2H7.92188C8.03359 1.2 8.125 1.29 8.125 1.4V2.4H4.875V1.4C4.875 1.29 4.96641 1.2 5.07812 1.2ZM3.65625 1.4V12H9.34375V1.4C9.34375 0.6275 8.70645 0 7.92188 0H5.07812C4.29355 0 3.65625 0.6275 3.65625 1.4ZM10.5625 2.4V12H11.375C12.2713 12 13 11.2825 13 10.4V4C13 3.1175 12.2713 2.4 11.375 2.4H10.5625ZM2.4375 12V2.4H1.625C0.728711 2.4 0 3.1175 0 4V10.4C0 11.2825 0.728711 12 1.625 12H2.4375Z" fill="#B9B9B9"/>
+                </svg>
+                Website Builder
+              </span>
+              <h3 class="tool-name">ProofHub</h3>
+              <a href="#" class="tool-link">
+                Open
+                <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.8377 4.03556C18.033 3.8403 18.033 3.52372 17.8377 3.32845L14.6557 0.146473C14.4605 -0.0487892 14.1439 -0.0487892 13.9486 0.146473C13.7534 0.341735 13.7534 0.658318 13.9486 0.85358L16.7771 3.68201L13.9486 6.51043C13.7534 6.7057 13.7534 7.02228 13.9486 7.21754C14.1439 7.4128 14.4605 7.4128 14.6557 7.21754L17.8377 4.03556ZM0 3.68201V4.18201H17.4842V3.68201V3.18201H0V3.68201Z" fill="black"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/6ec0c60f99c6143e7bef768540b68f0264651798?width=728" alt="Blaze" class="tool-image" />
+            <span class="tool-badge">Paid</span>
+            <div class="tool-info">
+              <span class="tool-category">
+                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.07812 1.2H7.92188C8.03359 1.2 8.125 1.29 8.125 1.4V2.4H4.875V1.4C4.875 1.29 4.96641 1.2 5.07812 1.2ZM3.65625 1.4V12H9.34375V1.4C9.34375 0.6275 8.70645 0 7.92188 0H5.07812C4.29355 0 3.65625 0.6275 3.65625 1.4ZM10.5625 2.4V12H11.375C12.2713 12 13 11.2825 13 10.4V4C13 3.1175 12.2713 2.4 11.375 2.4H10.5625ZM2.4375 12V2.4H1.625C0.728711 2.4 0 3.1175 0 4V10.4C0 11.2825 0.728711 12 1.625 12H2.4375Z" fill="#B9B9B9"/>
+                </svg>
+                Website Builder
+              </span>
+              <h3 class="tool-name">Blaze</h3>
+              <a href="#" class="tool-link">
+                Open
+                <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.8377 4.03544C18.033 3.84018 18.033 3.52359 17.8377 3.32833L14.6557 0.146351C14.4605 -0.0489113 14.1439 -0.0489113 13.9486 0.146351C13.7534 0.341613 13.7534 0.658195 13.9486 0.853458L16.7771 3.68188L13.9486 6.51031C13.7534 6.70557 13.7534 7.02216 13.9486 7.21742C14.1439 7.41268 14.4605 7.41268 14.6557 7.21742L17.8377 4.03544ZM0 3.68188V4.18188H17.4842V3.68188V3.18188H0V3.68188Z" fill="black"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-wrapper newest-section">
+        <div class="section-header">
+          <h2 class="section-title">Newest Additions</h2>
+          <svg class="arrow-icon" width="24" height="8" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.3536 4.03544C23.5488 3.84018 23.5488 3.52359 23.3536 3.32833L20.1716 0.146351C19.9763 -0.0489113 19.6597 -0.0489113 19.4645 0.146351C19.2692 0.341613 19.2692 0.658195 19.4645 0.853458L22.2929 3.68188L19.4645 6.51031C19.2692 6.70557 19.2692 7.02216 19.4645 7.21742C19.6597 7.41268 19.9763 7.41268 20.1716 7.21742L23.3536 4.03544ZM0 3.68188V4.18188H23V3.68188V3.18188H0V3.68188Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="newest-grid">
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/8da0adbec606770eed35c7cef5d904e435b95bb0?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/eb293e86b38251f1ab1e3888545724cfe8f2b9bb?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/9528fc605d18bb5ca4fc54b16ad6dc2c7a970866?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/1641594c10235f3ed2f68eeb76a213ef11ed1c3f?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/b0d8ef2b046b14f02e94087d801a3fe1e88abf66?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/8cb6ce71d7ece0f47e025c9328c8a630c4436b41?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/67f19b875cd4929879d96253ad6d6e641329308c?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/eafa5e32a89e3cb32eb2d41d9c02b9b0bf4265b4?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/daf97265c675cfac5ef945b1b34b319ab8ec9d9a?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+          <div class="tool-card featured-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/f5cad805d4afcce06a62217dcaead385023788a0?width=146" alt="Shadcraft" class="tool-image" />
+            <div class="tool-info">
+              <h3 class="tool-name">Shadcraft</h3>
+              <p class="tool-category">Figma UIKit</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-wrapper news-section">
+        <div class="news-grid">
+          <article class="news-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/e3f2a9fe5372c9035964de8b957440d4bcfa8b8d?width=730" alt="Midjourney V6" class="news-image" />
+            <div class="news-card-content">
+              <span class="news-badge">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.79999 11.2H5.19997V12H2.79999V11.2ZM2.39999 10H5.59997V10.8H2.39999V10ZM6.83546 1.16726C6.08371 0.414511 5.07672 1.13361e-05 3.99998 1.13361e-05C3.47435 -0.00124152 2.95364 0.101366 2.46778 0.301941C1.98191 0.502516 1.54046 0.797106 1.16878 1.16879C0.7971 1.54047 0.502513 1.98193 0.301939 2.46779C0.101366 2.95366 -0.00124152 3.47437 1.13361e-05 4.00001C1.13361e-05 5.16551 0.446758 6.25576 1.225 6.99101L1.334 7.09325C1.78425 7.51425 2.39999 8.091 2.39999 8.6V9.6H3.59998V6.32776L2.49299 5.70001L2.94999 5.04301L3.99998 5.60001L5.03222 5.04026L5.50972 5.68226L4.39998 6.33226V9.6H5.59997V8.6C5.59997 8.103 6.20896 7.52675 6.65371 7.10575L6.77646 6.98925C7.57695 6.22501 7.99995 5.19026 7.99995 4.00001C8.0026 3.47432 7.90105 2.95332 7.70118 2.4671C7.5013 1.98089 7.20706 1.5391 6.83546 1.16726Z" fill="#B9B9B9"/>
+                </svg>
+                AI News
+              </span>
+              <h3 class="news-title">Midjourney V6: The Ultimate Guide</h3>
+              <p class="news-description">OpenAI announces revolutionary capabilities in GPT-5, featuring enhanced reasoning, multimodal understanding, and unprecedented performance across all benchmarks.</p>
+              <a href="#" class="news-link">
+                Read
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/e3f2a9fe5372c9035964de8b957440d4bcfa8b8d?width=730" alt="Midjourney V6" class="news-image" />
+            <div class="news-card-content">
+              <span class="news-badge">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.79999 11.2H5.19997V12H2.79999V11.2ZM2.39999 10H5.59997V10.8H2.39999V10ZM6.83546 1.16726C6.08371 0.414511 5.07672 1.13361e-05 3.99998 1.13361e-05C3.47435 -0.00124152 2.95364 0.101366 2.46778 0.301941C1.98191 0.502516 1.54046 0.797106 1.16878 1.16879C0.7971 1.54047 0.502513 1.98193 0.301939 2.46779C0.101366 2.95366 -0.00124152 3.47437 1.13361e-05 4.00001C1.13361e-05 5.16551 0.446758 6.25576 1.225 6.99101L1.334 7.09325C1.78425 7.51425 2.39999 8.091 2.39999 8.6V9.6H3.59998V6.32776L2.49299 5.70001L2.94999 5.04301L3.99998 5.60001L5.03222 5.04026L5.50972 5.68226L4.39998 6.33226V9.6H5.59997V8.6C5.59997 8.103 6.20896 7.52675 6.65371 7.10575L6.77646 6.98925C7.57695 6.22501 7.99995 5.19026 7.99995 4.00001C8.0026 3.47432 7.90105 2.95332 7.70118 2.4671C7.5013 1.98089 7.20706 1.5391 6.83546 1.16726Z" fill="#B9B9B9"/>
+                </svg>
+                AI News
+              </span>
+              <h3 class="news-title">Midjourney V6: The Ultimate Guide</h3>
+              <p class="news-description">OpenAI announces revolutionary capabilities in GPT-5, featuring enhanced reasoning, multimodal understanding, and unprecedented performance across all benchmarks.</p>
+              <a href="#" class="news-link">
+                Read
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/e3f2a9fe5372c9035964de8b957440d4bcfa8b8d?width=730" alt="Midjourney V6" class="news-image" />
+            <div class="news-card-content">
+              <span class="news-badge">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.79999 11.2H5.19997V12H2.79999V11.2ZM2.39999 10H5.59997V10.8H2.39999V10ZM6.83546 1.16726C6.08371 0.414511 5.07672 1.13361e-05 3.99998 1.13361e-05C3.47435 -0.00124152 2.95364 0.101366 2.46778 0.301941C1.98191 0.502516 1.54046 0.797106 1.16878 1.16879C0.7971 1.54047 0.502513 1.98193 0.301939 2.46779C0.101366 2.95366 -0.00124152 3.47437 1.13361e-05 4.00001C1.13361e-05 5.16551 0.446758 6.25576 1.225 6.99101L1.334 7.09325C1.78425 7.51425 2.39999 8.091 2.39999 8.6V9.6H3.59998V6.32776L2.49299 5.70001L2.94999 5.04301L3.99998 5.60001L5.03222 5.04026L5.50972 5.68226L4.39998 6.33226V9.6H5.59997V8.6C5.59997 8.103 6.20896 7.52675 6.65371 7.10575L6.77646 6.98925C7.57695 6.22501 7.99995 5.19026 7.99995 4.00001C8.0026 3.47432 7.90105 2.95332 7.70118 2.4671C7.5013 1.98089 7.20706 1.5391 6.83546 1.16726Z" fill="#B9B9B9"/>
+                </svg>
+                AI News
+              </span>
+              <h3 class="news-title">Midjourney V6: The Ultimate Guide</h3>
+              <p class="news-description">OpenAI announces revolutionary capabilities in GPT-5, featuring enhanced reasoning, multimodal understanding, and unprecedented performance across all benchmarks.</p>
+              <a href="#" class="news-link">
+                Read
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/e3f2a9fe5372c9035964de8b957440d4bcfa8b8d?width=730" alt="Midjourney V6" class="news-image" />
+            <div class="news-card-content">
+              <span class="news-badge">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.79999 11.2H5.19997V12H2.79999V11.2ZM2.39999 10H5.59997V10.8H2.39999V10ZM6.83546 1.16726C6.08371 0.414511 5.07672 1.13361e-05 3.99998 1.13361e-05C3.47435 -0.00124152 2.95364 0.101366 2.46778 0.301941C1.98191 0.502516 1.54046 0.797106 1.16878 1.16879C0.7971 1.54047 0.502513 1.98193 0.301939 2.46779C0.101366 2.95366 -0.00124152 3.47437 1.13361e-05 4.00001C1.13361e-05 5.16551 0.446758 6.25576 1.225 6.99101L1.334 7.09325C1.78425 7.51425 2.39999 8.091 2.39999 8.6V9.6H3.59998V6.32776L2.49299 5.70001L2.94999 5.04301L3.99998 5.60001L5.03222 5.04026L5.50972 5.68226L4.39998 6.33226V9.6H5.59997V8.6C5.59997 8.103 6.20896 7.52675 6.65371 7.10575L6.77646 6.98925C7.57695 6.22501 7.99995 5.19026 7.99995 4.00001C8.0026 3.47432 7.90105 2.95332 7.70118 2.4671C7.5013 1.98089 7.20706 1.5391 6.83546 1.16726Z" fill="#B9B9B9"/>
+                </svg>
+                AI News
+              </span>
+              <h3 class="news-title">Midjourney V6: The Ultimate Guide</h3>
+              <p class="news-description">OpenAI announces revolutionary capabilities in GPT-5, featuring enhanced reasoning, multimodal understanding, and unprecedented performance across all benchmarks.</p>
+              <a href="#" class="news-link">
+                Read
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrapper prompts-section">
+        <div class="section-header">
+          <h2 class="section-title">ChatGPT AI Prompts</h2>
+          <svg class="arrow-icon" width="24" height="8" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.3536 4.03544C23.5488 3.84018 23.5488 3.52359 23.3536 3.32833L20.1716 0.146351C19.9763 -0.0489113 19.6597 -0.0489113 19.4645 0.146351C19.2692 0.341613 19.2692 0.658195 19.4645 0.853458L22.2929 3.68188L19.4645 6.51031C19.2692 6.70557 19.2692 7.02216 19.4645 7.21742C19.6597 7.41268 19.9763 7.41268 20.1716 7.21742L23.3536 4.03544ZM0 3.68188V4.18188H23V3.68188V3.18188H0V3.68188Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="prompts-grid">
+          <article class="prompt-card">
+            <div class="prompt-card-content">
+              <span class="prompt-badge">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.79999 11.2H5.19997V12H2.79999V11.2ZM2.39999 10H5.59997V10.8H2.39999V10ZM6.83546 1.16726C6.08371 0.414511 5.07672 1.13361e-05 3.99998 1.13361e-05C3.47435 -0.00124152 2.95364 0.101366 2.46778 0.301941C1.98191 0.502516 1.54046 0.797106 1.16878 1.16879C0.7971 1.54047 0.502513 1.98193 0.301939 2.46779C0.101366 2.95366 -0.00124152 3.47437 1.13361e-05 4.00001C1.13361e-05 5.16551 0.446758 6.25576 1.225 6.99101L1.334 7.09325C1.78425 7.51425 2.39999 8.091 2.39999 8.6V9.6H3.59998V6.32776L2.49299 5.70001L2.94999 5.04301L3.99998 5.60001L5.03222 5.04026L5.50972 5.68226L4.39998 6.33226V9.6H5.59997V8.6C5.59997 8.103 6.20896 7.52675 6.65371 7.10575L6.77646 6.98925C7.57695 6.22501 7.99995 5.19026 7.99995 4.00001C8.0026 3.47432 7.90105 2.95332 7.70118 2.4671C7.5013 1.98089 7.20706 1.5391 6.83546 1.16726Z" fill="#B9B9B9"/>
+                </svg>
+                chatgpt prompts
+              </span>
+              <h3 class="prompt-title">Master ChatGPT: 50 Prompts for Developers</h3>
+              <p class="prompt-description">Essential prompts for code review, debugging, documentation, and software architecture discussions.</p>
+              <a href="#" class="prompt-link">
+                Open
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article class="prompt-card">
+            <div class="prompt-card-content">
+              <span class="prompt-badge">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.79999 11.2H5.19997V12H2.79999V11.2ZM2.39999 10H5.59997V10.8H2.39999V10ZM6.83546 1.16726C6.08371 0.414511 5.07672 1.13361e-05 3.99998 1.13361e-05C3.47435 -0.00124152 2.95364 0.101366 2.46778 0.301941C1.98191 0.502516 1.54046 0.797106 1.16878 1.16879C0.7971 1.54047 0.502513 1.98193 0.301939 2.46779C0.101366 2.95366 -0.00124152 3.47437 1.13361e-05 4.00001C1.13361e-05 5.16551 0.446758 6.25576 1.225 6.99101L1.334 7.09325C1.78425 7.51425 2.39999 8.091 2.39999 8.6V9.6H3.59998V6.32776L2.49299 5.70001L2.94999 5.04301L3.99998 5.60001L5.03222 5.04026L5.50972 5.68226L4.39998 6.33226V9.6H5.59997V8.6C5.59997 8.103 6.20896 7.52675 6.65371 7.10575L6.77646 6.98925C7.57695 6.22501 7.99995 5.19026 7.99995 4.00001C8.0026 3.47432 7.90105 2.95332 7.70118 2.4671C7.5013 1.98089 7.20706 1.5391 6.83546 1.16726Z" fill="#B9B9B9"/>
+                </svg>
+                chatgpt prompts
+              </span>
+              <h3 class="prompt-title">Master ChatGPT: 50 Prompts for Developers</h3>
+              <p class="prompt-description">Essential prompts for code review, debugging, documentation, and software architecture discussions.</p>
+              <a href="#" class="prompt-link">
+                Open
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article class="prompt-card">
+            <div class="prompt-card-content">
+              <span class="prompt-badge">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.79999 11.2H5.19997V12H2.79999V11.2ZM2.39999 10H5.59997V10.8H2.39999V10ZM6.83546 1.16726C6.08371 0.414511 5.07672 1.13361e-05 3.99998 1.13361e-05C3.47435 -0.00124152 2.95364 0.101366 2.46778 0.301941C1.98191 0.502516 1.54046 0.797106 1.16878 1.16879C0.7971 1.54047 0.502513 1.98193 0.301939 2.46779C0.101366 2.95366 -0.00124152 3.47437 1.13361e-05 4.00001C1.13361e-05 5.16551 0.446758 6.25576 1.225 6.99101L1.334 7.09325C1.78425 7.51425 2.39999 8.091 2.39999 8.6V9.6H3.59998V6.32776L2.49299 5.70001L2.94999 5.04301L3.99998 5.60001L5.03222 5.04026L5.50972 5.68226L4.39998 6.33226V9.6H5.59997V8.6C5.59997 8.103 6.20896 7.52675 6.65371 7.10575L6.77646 6.98925C7.57695 6.22501 7.99995 5.19026 7.99995 4.00001C8.0026 3.47432 7.90105 2.95332 7.70118 2.4671C7.5013 1.98089 7.20706 1.5391 6.83546 1.16726Z" fill="#B9B9B9"/>
+                </svg>
+                chatgpt prompts
+              </span>
+              <h3 class="prompt-title">Master ChatGPT: 50 Prompts for Developers</h3>
+              <p class="prompt-description">Essential prompts for code review, debugging, documentation, and software architecture discussions.</p>
+              <a href="#" class="prompt-link">
+                Open
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.7423 4.03544C11.9375 3.84018 11.9375 3.52359 11.7423 3.32833L8.56027 0.146351C8.36501 -0.0489113 8.04843 -0.0489113 7.85316 0.146351C7.6579 0.341613 7.6579 0.658195 7.85316 0.853458L10.6816 3.68188L7.85316 6.51031C7.6579 6.70557 7.6579 7.02216 7.85316 7.21742C8.04843 7.41268 8.36501 7.41268 8.56027 7.21742L11.7423 4.03544ZM0 3.68188V4.18188H11.3887V3.68188V3.18188H0V3.68188Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="newsletter-footer">
+      <div class="newsletter-footer-content">
+        <div class="newsletter-footer-left">
+          <h2 class="newsletter-footer-title">A Newsletter All about Tools</h2>
+          <p class="newsletter-footer-description">Get AI Jobs Alerts instantly</p>
+          <div class="newsletter-footer-form">
+            <input type="email" placeholder="Your Mail" class="newsletter-footer-input" />
+            <button class="newsletter-footer-btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="newsletter-footer-right">
+          <div class="footer-brand">
+            <h3 class="footer-brand-name">AITOOLS</h3>
+            <p class="footer-brand-description">Your one-stop destination for AI tools, prompts, and resources. Stay ahead with the latest AI innovations.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.5839 8.81404C17.5839 3.94872 13.6451 6.10352e-05 8.79195 6.10352e-05C3.93879 6.10352e-05 0 3.94872 0 8.81404C0 13.08 3.02443 16.632 7.03356 17.4517V11.4582H5.27517V8.81404H7.03356V6.61055C7.03356 4.90945 8.41389 3.52565 10.1107 3.52565H12.3087V6.16985H10.5503C10.0668 6.16985 9.67114 6.56648 9.67114 7.05125V8.81404H12.3087V11.4582H9.67114V17.584C14.1111 17.1433 17.5839 13.3885 17.5839 8.81404Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.62 0H12.38C15.62 0 18 2.38 18 5.62V12.38C18 15.62 15.62 18 12.38 18H5.62C2.38 18 0 15.62 0 12.38V5.62C0 2.38 2.38 0 5.62 0ZM12.38 16.2C14.63 16.2 16.2 14.63 16.2 12.38V5.62C16.2 3.37 14.63 1.8 12.38 1.8H5.62C3.37 1.8 1.8 3.37 1.8 5.62V12.38C1.8 14.63 3.37 16.2 5.62 16.2H12.38Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.45 5.32C17.26 4.62 16.71 4.07 16.01 3.88C14.73 3.5 9 3.5 9 3.5C9 3.5 3.27 3.5 1.99 3.88C1.29 4.07 0.74 4.62 0.55 5.32C0.17 6.6 0.17 9.28 0.17 9.28C0.17 9.28 0.17 11.96 0.55 13.24C0.74 13.94 1.29 14.49 1.99 14.68C3.27 15.06 9 15.06 9 15.06C9 15.06 14.73 15.06 16.01 14.68C16.71 14.49 17.26 13.94 17.45 13.24C17.83 11.96 17.83 9.28 17.83 9.28C17.83 9.28 17.83 6.6 17.45 5.32Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter/X">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.85 0.82H16.55L10.66 7.57L17.59 16.76H12.16L7.91 11.19L3.05 16.76H0.35L6.65 9.54L0 0.83H5.57L9.41 5.92L13.85 0.82Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4 class="footer-column-title">Company</h4>
+              <a href="#">About Us</a>
+              <a href="#">Contact</a>
+              <a href="#">Submit a Tool</a>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-column-title">Legal</h4>
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-column-title">Resources</h4>
+              <a href="#">Blog</a>
+              <a href="#">Newsletter</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 AITOOLS. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
