@@ -1008,14 +1008,18 @@ body {
 }
 
 @media (max-width: 1600px) {
+  .logo img {
+    height: 55px;
+  }
+
   .vertical-divider {
     left: 250px;
   }
-  
+
   .main-wrapper {
     padding-left: calc(250px + 2rem);
   }
-  
+
   .newsletter-footer-content,
   .footer-bottom {
     padding-left: calc(250px + 2rem);
