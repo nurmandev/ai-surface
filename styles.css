@@ -437,6 +437,7 @@ body {
   gap: 1.2rem;
   padding-right: 1rem;
   transition: transform 0.2s;
+  position: relative;
 }
 
 .tool-card:hover {
@@ -468,6 +469,45 @@ body {
   font-size: 12px;
   font-weight: 300;
   color: #fff;
+}
+
+.tool-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 5px 18px;
+  background: #353535;
+  border-radius: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  top: 18px;
+  left: 36px;
+  z-index: 2;
+}
+
+.tool-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.tool-link:hover {
+  opacity: 0.7;
+}
+
+.tool-link svg {
+  width: 18px;
+  height: 8px;
 }
 
 .news-grid {
