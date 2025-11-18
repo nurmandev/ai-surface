@@ -1027,15 +1027,19 @@ body {
 }
 
 @media (max-width: 1400px) {
+  .logo img {
+    height: 52px;
+  }
+
   .featured-grid,
   .newest-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   .news-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .prompts-grid {
     grid-template-columns: repeat(2, 1fr);
   }
