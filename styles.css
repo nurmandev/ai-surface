@@ -244,6 +244,47 @@ body {
   height: 15px;
 }
 
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 158px;
+  width: 310px;
+  height: calc(100vh - 158px);
+  background: #000;
+  border-right: 1px solid rgba(201, 201, 201, 0.25);
+  padding: 2rem 0;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-left-color: #fff;
+}
+
 .vertical-divider {
   position: fixed;
   left: 310px;
