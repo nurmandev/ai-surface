@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const sidebarSectionTitles = document.querySelectorAll('.sidebar-section-title');
 
   sidebarSectionTitles.forEach(title => {
-    title.addEventListener('click', function() {
+    title.addEventListener('click', function(e) {
+      e.stopPropagation();
       const isExpanded = this.getAttribute('aria-expanded') === 'true';
       const sectionLinks = this.nextElementSibling;
 
