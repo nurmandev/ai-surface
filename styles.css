@@ -138,10 +138,18 @@ body {
   gap: 2rem;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
 .logo img {
   height: 60px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
+  object-position: left;
 }
 
 .nav-links {
