@@ -55,15 +55,28 @@
 }
 
 .section-arrow {
-  width: 24px;
-  height: 8px;
+  width: auto;
+  height: auto;
   flex-shrink: 0;
   cursor: pointer;
   transition: transform 0.2s;
+  color: #fff;
+  font-size: 18px;
 }
 
 .section-arrow:hover {
   transform: translateX(4px);
+}
+
+.prompt-arrow-icon {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+.prompt-footer:hover .prompt-arrow-icon {
+  transform: translateX(2px);
 }
 
 .prompt-cards {
