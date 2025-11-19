@@ -100,6 +100,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Prevent sidebar clicks from closing the sidebar
+  if (sidebar) {
+    sidebar.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+
   // Close mobile menu when window is resized to desktop
   window.addEventListener('resize', function() {
     if (window.innerWidth > 1200) {
