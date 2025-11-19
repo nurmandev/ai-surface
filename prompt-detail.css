@@ -1,0 +1,657 @@
+/* Prompt Detail Page Styles */
+
+.detail-main-wrapper {
+  flex: 1;
+  background: #000;
+  position: relative;
+  border-left: 1px solid rgba(201, 201, 201, 0.25);
+  padding: 3rem 0;
+}
+
+.detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.detail-header {
+  margin-bottom: 3rem;
+}
+
+.detail-breadcrumb {
+  color: #c9c9c9;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.detail-nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.detail-nav-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.detail-nav-btn:hover {
+  transform: scale(1.1);
+}
+
+.detail-title {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.detail-description {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.detail-description p {
+  color: #e2e2e2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.detail-content {
+  color: #c9c9c9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.prompt-examples {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.prompt-example {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.example-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.example-title {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+}
+
+.example-name {
+  color: #c9c9c9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.example-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #000;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.example-text {
+  color: #c9c9c9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.example-placeholder {
+  color: #808080;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  font-style: italic;
+}
+
+.copy-btn {
+  align-self: flex-end;
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.copy-btn:hover {
+  background: #e2e2e2;
+}
+
+.categories-section {
+  margin-bottom: 3rem;
+}
+
+.categories-title {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 0 1.5rem 0;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.categories-list li {
+  color: #c9c9c9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.how-to-use-section {
+  border: 1px dashed #404040;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.how-to-use-title {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 0 1.5rem 0;
+}
+
+.how-to-use-steps {
+  color: #c9c9c9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.how-to-use-steps li {
+  margin-bottom: 0.75rem;
+}
+
+.how-to-use-steps li:last-child {
+  margin-bottom: 0;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 4rem;
+  padding: 0.875rem 1.5rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.download-btn:hover {
+  background: #e2e2e2;
+}
+
+.download-btn i {
+  font-size: 16px;
+}
+
+.detail-footer {
+  background: #000;
+  margin-top: 0;
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(201, 201, 201, 0.25);
+}
+
+.footer-content {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.25);
+}
+
+.footer-brand-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-brand-title {
+  color: #fff;
+  font-family: 'Righteous', sans-serif;
+  font-size: 49px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.footer-brand-desc {
+  color: #c9c9c9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 35px;
+  max-width: 466px;
+  margin: 0;
+}
+
+.footer-links-wrapper {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-column-title {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 35px;
+  margin: 0 0 0.5rem 0;
+}
+
+.footer-column a {
+  color: #c4c4c4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 35px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-social-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.25);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+.social-icons a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-bottom {
+  padding-top: 1.5rem;
+  text-align: left;
+}
+
+.footer-bottom p {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 35px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .detail-container {
+    padding: 0 2.5rem;
+  }
+
+  .detail-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .detail-nav-controls {
+    gap: 1.5rem;
+  }
+
+  .categories-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .detail-container {
+    padding: 0 2rem;
+  }
+
+  .detail-main-wrapper {
+    padding: 2rem 0;
+  }
+
+  .detail-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .prompt-example {
+    padding: 1.5rem;
+  }
+
+  .example-body {
+    padding: 1rem;
+  }
+
+  .how-to-use-section {
+    padding: 1.5rem;
+  }
+
+  .footer-links-wrapper {
+    gap: 2rem;
+  }
+
+  .footer-brand-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-container {
+    padding: 0 1.5rem;
+  }
+
+  .detail-nav-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .detail-nav-btn {
+    position: absolute;
+  }
+
+  .detail-nav-btn:first-of-type {
+    left: 1rem;
+    top: 3rem;
+  }
+
+  .detail-nav-btn:last-of-type {
+    right: 1rem;
+    top: 3rem;
+  }
+
+  .detail-title {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0 3rem;
+  }
+
+  .detail-description {
+    padding: 1.5rem;
+  }
+
+  .detail-description p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .detail-content {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .prompt-examples {
+    gap: 1.5rem;
+  }
+
+  .prompt-example {
+    padding: 1.25rem;
+  }
+
+  .categories-list {
+    gap: 1rem;
+  }
+
+  .categories-list li {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .how-to-use-section {
+    padding: 1.25rem;
+  }
+
+  .how-to-use-title {
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+
+  .how-to-use-steps {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .download-btn {
+    font-size: 13px;
+    margin-bottom: 3rem;
+  }
+
+  .footer-brand-title {
+    font-size: 28px;
+  }
+
+  .footer-brand-desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .footer-column-title {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .footer-column a {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .footer-links-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-container {
+    padding: 0 1rem;
+  }
+
+  .detail-main-wrapper {
+    padding: 1.5rem 0;
+  }
+
+  .detail-breadcrumb {
+    font-size: 12px;
+  }
+
+  .detail-title {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 2rem;
+  }
+
+  .detail-nav-btn {
+    font-size: 20px;
+  }
+
+  .detail-nav-btn:first-of-type {
+    left: 0.5rem;
+    top: 2.5rem;
+  }
+
+  .detail-nav-btn:last-of-type {
+    right: 0.5rem;
+    top: 2.5rem;
+  }
+
+  .detail-description {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .detail-description p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .detail-content {
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 2rem;
+  }
+
+  .prompt-example {
+    padding: 1rem;
+  }
+
+  .example-body {
+    padding: 0.75rem;
+  }
+
+  .categories-title {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .categories-list {
+    gap: 0.75rem;
+  }
+
+  .categories-list li {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .how-to-use-section {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .how-to-use-title {
+    font-size: 14px;
+  }
+
+  .how-to-use-steps {
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 1.25rem;
+  }
+
+  .download-btn {
+    font-size: 12px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-brand-title {
+    font-size: 24px;
+  }
+
+  .footer-brand-desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

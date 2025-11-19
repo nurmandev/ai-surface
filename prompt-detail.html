@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master ChatGPT: 50 Prompts for Developers - The AI Surface</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./prompt-detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700;800&family=Roboto:wght@300;400;500;600;700;800&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script defer src="./sidebar.js"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="social-links">
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5839 8.81404C17.5839 3.94872 13.6451 6.10352e-05 8.79195 6.10352e-05C3.93879 6.10352e-05 0 3.94872 0 8.81404C0 13.08 3.02443 16.632 7.03356 17.4517V11.4582H5.27517V8.81404H7.03356V6.61055C7.03356 4.90945 8.41389 3.52565 10.1107 3.52565H12.3087V6.16985H10.5503C10.0668 6.16985 9.67114 6.56648 9.67114 7.05125V8.81404H12.3087V11.4582H9.67114V17.584C14.1111 17.1433 17.5839 13.3885 17.5839 8.81404Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.62 0H12.38C15.62 0 18 2.38 18 5.62V12.38C18 15.62 15.62 18 12.38 18H5.62C2.38 18 0 15.62 0 12.38V5.62C0 2.38 2.38 0 5.62 0ZM12.38 16.2C14.63 16.2 16.2 14.63 16.2 12.38V5.62C16.2 3.37 14.63 1.8 12.38 1.8H5.62C3.37 1.8 1.8 3.37 1.8 5.62V12.38C1.8 14.63 3.37 16.2 5.62 16.2H12.38Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.45 5.32C17.26 4.62 16.71 4.07 16.01 3.88C14.73 3.5 9 3.5 9 3.5C9 3.5 3.27 3.5 1.99 3.88C1.29 4.07 0.74 4.62 0.55 5.32C0.17 6.6 0.17 9.28 0.17 9.28C0.17 9.28 0.17 11.96 0.55 13.24C0.74 13.94 1.29 14.49 1.99 14.68C3.27 15.06 9 15.06 9 15.06C9 15.06 14.73 15.06 16.01 14.68C16.71 14.49 17.26 13.94 17.45 13.24C17.83 11.96 17.83 9.28 17.83 9.28C17.83 9.28 17.83 6.6 17.45 5.32Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Twitter/X">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.85 0.82H16.55L10.66 7.57L17.59 16.76H12.16L7.91 11.19L3.05 16.76H0.35L6.65 9.54L0 0.83H5.57L9.41 5.92L13.85 0.82Z" fill="white"/>
+          </svg>
+        </a>
+      </div>
+      <div class="top-date">Wednesday, November 12, 2025</div>
+    </div>
+
+    <div class="breaking-news">
+      <div class="breaking-label">
+        <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.25 11.6667C4.49083 11.6667 4.69285 11.5867 4.85605 11.4267C5.01925 11.2667 5.10057 11.0689 5.1 10.8333C5.09943 10.5978 5.01783 10.4 4.8552 10.24C4.69257 10.08 4.49083 10 4.25 10C4.00917 10 3.80743 10.08 3.6448 10.24C3.48217 10.4 3.40057 10.5978 3.4 10.8333C3.39943 11.0689 3.48103 11.2669 3.6448 11.4275C3.80857 11.5881 4.0103 11.6678 4.25 11.6667ZM3.4 8.33333H5.1V3.33333H3.4V8.33333ZM7.65 11.6667H13.6V10H7.65V11.6667ZM7.65 8.33333H13.6V6.66667H7.65V8.33333ZM7.65 5H13.6V3.33333H7.65V5ZM1.7 15C1.2325 15 0.832433 14.8369 0.4998 14.5108C0.167167 14.1847 0.000566667 13.7922 0 13.3333V1.66667C0 1.20833 0.1666 0.816111 0.4998 0.49C0.833 0.163889 1.23307 0.000555555 1.7 0H15.3C15.7675 0 16.1678 0.163333 16.501 0.49C16.8342 0.816667 17.0006 1.20889 17 1.66667V13.3333C17 13.7917 16.8337 14.1842 16.501 14.5108C16.1684 14.8375 15.7681 15.0006 15.3 15H1.7Z" fill="white"/>
+        </svg>
+        BREAKING NEWS
+      </div>
+      <div class="news-content">
+        <p>Mobile Data, Not Internet Service Providers, To Be Blocked In Bali During Nyepi March 19, 2018</p>
+      </div>
+      <div class="news-nav">
+        <button class="news-prev" aria-label="Previous news">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="news-next" aria-label="Next news">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+      <nav class="sidebar-nav">
+        <a href="index.html" class="sidebar-nav-item">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.125 10.875L9.37499 9.375L10.875 4.125L5.625 5.625L4.125 10.875ZM7.5 8.625C7.1875 8.625 6.922 8.51575 6.7035 8.29725C6.485 8.07875 6.3755 7.813 6.375 7.5C6.3745 7.187 6.484 6.9215 6.7035 6.7035C6.923 6.4855 7.1885 6.376 7.5 6.375C7.8115 6.374 8.07725 6.4835 8.29725 6.7035C8.51725 6.9235 8.6265 7.189 8.625 7.5C8.6235 7.811 8.51425 8.07675 8.29725 8.29725C8.08025 8.51775 7.8145 8.627 7.5 8.625ZM7.5 15C6.4625 15 5.4875 14.803 4.575 14.409C3.6625 14.015 2.86875 13.4807 2.19375 12.8062C1.51875 12.1317 0.9845 11.338 0.591001 10.425C0.197501 9.512 0.000500949 8.537 9.49366e-07 7.5C-0.00049905 6.463 0.196501 5.488 0.591001 4.575C0.9855 3.662 1.51975 2.86825 2.19375 2.19375C2.86775 1.51925 3.6615 0.985 4.575 0.591C5.4885 0.197 6.4635 0 7.5 0C8.5365 0 9.51149 0.197 10.425 0.591C11.3385 0.985 12.1322 1.51925 12.8062 2.19375C13.4802 2.86825 14.0147 3.662 14.4097 4.575C14.8047 5.488 15.0015 6.463 15 7.5C14.9985 8.537 14.8015 9.512 14.409 10.425C14.0165 11.338 13.4822 12.1317 12.8062 12.8062C12.1302 13.4807 11.3365 14.0152 10.425 14.4097C9.51349 14.8042 8.5385 15.001 7.5 15Z" fill="white"/>
+          </svg>
+          <span>Explore</span>
+        </a>
+
+        <a href="articles.html" class="sidebar-nav-item">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.66667 15C1.20833 15 0.816111 14.8369 0.49 14.5108C0.163889 14.1847 0.000555556 13.7922 0 13.3333V1.66667C0 1.20833 0.163333 0.816111 0.49 0.49C0.816667 0.163889 1.20889 0.000555556 1.66667 0H10.8333L15 4.16667V13.3333C15 13.7917 14.8369 14.1842 14.5108 14.5108C14.1847 14.8375 13.7922 15.0006 13.3333 15H1.66667ZM3.33333 11.6667H11.6667V10H3.33333V11.6667ZM3.33333 8.33333H11.6667V6.66667H3.33333V8.33333ZM10 5H13.3333L10 1.66667V5ZM3.33333 5H7.5V3.33333H3.33333V5Z" fill="white"/>
+          </svg>
+          <span>Articles</span>
+        </a>
+
+        <a href="ai-prompts.html" class="sidebar-nav-item highlighted">
+          <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.00001 14H4.00001C3.86741 14 3.74023 14.0527 3.64646 14.1465C3.55269 14.2402 3.50001 14.3674 3.50001 14.5C3.50001 14.6326 3.55269 14.7598 3.64646 14.8536C3.74023 14.9473 3.86741 15 4.00001 15H6.00001C6.13262 15 6.2598 14.9473 6.35357 14.8536C6.44734 14.7598 6.50001 14.6326 6.50001 14.5C6.50001 14.3674 6.44734 14.2402 6.35357 14.1465C6.2598 14.0527 6.13262 14 6.00001 14ZM6.50001 12.5H3.50001C3.36741 12.5 3.24023 12.5527 3.14646 12.6465C3.05269 12.7402 3.00001 12.8674 3.00001 13C3.00001 13.1326 3.05269 13.2598 3.14646 13.3536C3.24023 13.4473 3.36741 13.5 3.50001 13.5H6.50001C6.63262 13.5 6.7598 13.4473 6.85357 13.3536C6.94734 13.2598 7.00001 13.1326 7.00001 13C7.00001 12.8674 6.94734 12.7402 6.85357 12.6465C6.7598 12.5527 6.63262 12.5 6.50001 12.5ZM8.54439 1.45908C7.6047 0.518139 6.34595 1.41702e-05 5.00001 1.41702e-05C4.34297 -0.00155191 3.69208 0.126708 3.08475 0.377427C2.47741 0.628146 1.92559 0.996383 1.46099 1.46099C0.996383 1.92559 0.628146 2.47741 0.377427 3.08475C0.126708 3.69208 -0.00155191 4.34297 1.41702e-05 5.00001C1.41702e-05 6.45689 0.558452 7.8197 1.53126 8.73876L1.66751 8.86658C2.23033 9.39283 3.00001 10.1138 3.00001 10.75V11.5C3.00001 11.6326 3.05269 11.7598 3.14646 11.8536C3.24023 11.9473 3.36741 12 3.50001 12H4.25001C4.31632 12 4.37991 11.9737 4.42679 11.9268C4.47368 11.8799 4.50001 11.8163 4.50001 11.75V8.08814C4.50003 8.03758 4.48472 7.98821 4.4561 7.94653C4.42748 7.90486 4.38689 7.87284 4.3397 7.8547C4.05098 7.73692 3.77669 7.58646 3.51876 7.40383C2.38714 6.51234 1.68001 5.21549 1.68001 3.75001C1.68001 1.69032 3.30814 0.00189697 5.00001 0.00189697C6.69188 0.00189697 8.32001 1.69032 8.32001 3.75001C8.32001 5.21549 7.61288 6.51234 6.48126 7.40383C6.22333 7.58646 5.94904 7.73692 5.66032 7.8547C5.61313 7.87284 5.57254 7.90486 5.54392 7.94653C5.5153 7.98821 5.49999 8.03758 5.50001 8.08814V11.75C5.50001 11.8163 5.52634 11.8799 5.57322 11.9268C5.62011 11.9737 5.68369 12 5.75001 12H6.50001C6.63262 12 6.7598 11.9473 6.85357 11.8536C6.94734 11.7598 7.00001 11.6326 7.00001 11.5V10.75C7.00001 10.1138 7.76969 9.39283 8.33251 8.86658L8.46876 8.73876C9.44158 7.8197 10 6.45689 10 5.00001C10 3.65406 9.48439 2.39998 8.54439 1.45908Z" fill="white"/>
+          </svg>
+          <span>AI Prompts</span>
+          <svg class="chevron-icon" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.8012 4.44438L0.960104 8L0 7.11125L3.36104 4L0 0.888749L0.960104 0L4.8012 3.55563C4.92849 3.67349 5 3.83333 5 4C5 4.16667 4.92849 4.32651 4.8012 4.44438Z" fill="white"/>
+          </svg>
+        </a>
+
+        <div class="sidebar-subcategories">
+          <a href="#" class="sidebar-subcategory active">Chatgpt</a>
+          <a href="#" class="sidebar-subcategory">Midjourney</a>
+          <a href="#" class="sidebar-subcategory">Stable Diffusion</a>
+          <a href="#" class="sidebar-subcategory">Writing Prompts</a>
+          <a href="#" class="sidebar-subcategory">Designing Prompts</a>
+        </div>
+
+        <a href="#" class="sidebar-nav-item">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.02008 20.5791L8.01099 20.5807L7.95724 20.6072L7.9421 20.6102L7.9315 20.6072L7.87775 20.5799C7.86968 20.5779 7.86362 20.5794 7.85958 20.5844L7.85656 20.592L7.84369 20.916L7.84747 20.9312L7.85504 20.941L7.93377 20.997L7.94513 21.0001L7.95421 20.997L8.03295 20.941L8.04203 20.9289L8.04506 20.916L8.03219 20.5928C8.03017 20.5847 8.02613 20.5802 8.02008 20.5791ZM8.21994 20.4936L8.20934 20.4951L8.07004 20.5655L8.06247 20.5731L8.0602 20.5814L8.07383 20.9069L8.07761 20.916L8.08367 20.9221L8.23583 20.9917C8.24542 20.9943 8.25274 20.9922 8.25779 20.9857L8.26082 20.9751L8.23508 20.5103C8.23255 20.5007 8.22751 20.4951 8.21994 20.4936ZM7.67865 20.4951C7.67531 20.4931 7.67133 20.4924 7.66752 20.4933C7.66371 20.4941 7.66038 20.4964 7.65821 20.4997L7.65367 20.5103L7.62793 20.9751C7.62843 20.9842 7.63272 20.9902 7.6408 20.9932L7.65215 20.9917L7.80432 20.9213L7.81189 20.9153L7.81416 20.9069L7.82779 20.5814L7.82552 20.5723L7.81795 20.5648L7.67865 20.4951Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08449 6C9.68682 6 10.2645 6.23928 10.6904 6.6652C11.1163 7.09111 11.3556 7.66878 11.3556 8.27112H13.6267C14.0283 8.27112 14.4134 8.43064 14.6973 8.71459C14.9813 8.99853 15.1408 9.38364 15.1408 9.7852V17.3556C15.1408 17.7572 14.9813 18.1423 14.6973 18.4262C14.4134 18.7102 14.0283 18.8697 13.6267 18.8697H1.51408C1.11252 18.8697 0.727409 18.7102 0.443464 18.4262C0.159519 18.1423 0 17.7572 0 17.3556V9.7852C0 9.38364 0.159519 8.99853 0.443464 8.71459C0.727409 8.43064 1.11252 8.27112 1.51408 8.27112H3.7852C3.7852 7.66878 4.02448 7.09111 4.4504 6.6652C4.87632 6.23928 5.45399 6 6.05632 6H9.08449ZM4.54224 9.02816C4.35682 9.02819 4.17785 9.09626 4.03929 9.21948C3.90072 9.34269 3.8122 9.51248 3.7905 9.69663L3.7852 9.7852V17.3556C3.78542 17.5486 3.8593 17.7342 3.99176 17.8745C4.12422 18.0148 4.30525 18.0992 4.49788 18.1105C4.6905 18.1218 4.88017 18.0591 5.02814 17.9353C5.1761 17.8115 5.27119 17.6358 5.29398 17.4442L5.29928 17.3556V9.7852C5.29928 9.58442 5.21952 9.39187 5.07755 9.24989C4.93558 9.10792 4.74302 9.02816 4.54224 9.02816ZM10.5986 9.02816C10.3978 9.02816 10.2052 9.10792 10.0633 9.24989C9.92129 9.39187 9.84153 9.58442 9.84153 9.7852V17.3556C9.84153 17.5564 9.92129 17.7489 10.0633 17.8909C10.2052 18.0329 10.3978 18.1126 10.5986 18.1126C10.7993 18.1126 10.9919 18.0329 11.1339 17.8909C11.2758 17.7489 11.3556 17.5564 11.3556 17.3556V9.7852C11.3556 9.58442 11.2758 9.39187 11.1339 9.24989C10.9919 9.10792 10.7993 9.02816 1..." fill="white"/>
+          </svg>
+          <span>AI Jobs</span>
+          <svg class="chevron-icon" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.8012 4.44438L0.960104 8L0 7.11125L3.36104 4L0 0.888749L0.960104 0L4.8012 3.55563C4.92849 3.67349 5 3.83333 5 4C5 4.16667 4.92849 4.32651 4.8012 4.44438Z" fill="white"/>
+          </svg>
+        </a>
+
+        <a href="#" class="sidebar-nav-item">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.02008 20.5791L8.01099 20.5807L7.95724 20.6072L7.9421 20.6102L7.9315 20.6072L7.87775 20.5799C7.86968 20.5779 7.86362 20.5794 7.85958 20.5844L7.85656 20.592L7.84369 20.916L7.84747 20.9312L7.85504 20.941L7.93377 20.997L7.94513 21.0001L7.95421 20.997L8.03295 20.941L8.04203 20.9289L8.04506 20.916L8.03219 20.5928C8.03017 20.5847 8.02613 20.5802 8.02008 20.5791ZM8.21994 20.4936L8.20934 20.4951L8.07004 20.5655L8.06247 20.5731L8.0602 20.5814L8.07383 20.9069L8.07761 20.916L8.08367 20.9221L8.23583 20.9917C8.24542 20.9943 8.25274 20.9922 8.25779 20.9857L8.26082 20.9751L8.23508 20.5103C8.23255 20.5007 8.22751 20.4951 8.21994 20.4936ZM7.67865 20.4951C7.67531 20.4931 7.67133 20.4924 7.66752 20.4933C7.66371 20.4941 7.66038 20.4964 7.65821 20.4997L7.65367 20.5103L7.62793 20.9751C7.62843 20.9842 7.63272 20.9902 7.6408 20.9932L7.65215 20.9917L7.80432 20.9213L7.81189 20.9153L7.81416 20.9069L7.82779 20.5814L7.82552 20.5723L7.81795 20.5648L7.67865 20.4951Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08449 6C9.68682 6 10.2645 6.23928 10.6904 6.6652C11.1163 7.09111 11.3556 7.66878 11.3556 8.27112H13.6267C14.0283 8.27112 14.4134 8.43064 14.6973 8.71459C14.9813 8.99853 15.1408 9.38364 15.1408 9.7852V17.3556C15.1408 17.7572 14.9813 18.1423 14.6973 18.4262C14.4134 18.7102 14.0283 18.8697 13.6267 18.8697H1.51408C1.11252 18.8697 0.727409 18.7102 0.443464 18.4262C0.159519 18.1423 0 17.7572 0 17.3556V9.7852C0 9.38364 0.159519 8.99853 0.443464 8.71459C0.727409 8.43064 1.11252 8.27112 1.51408 8.27112H3.7852C3.7852 7.66878 4.02448 7.09111 4.4504 6.6652C4.87632 6.23928 5.45399 6 6.05632 6H9.08449ZM4.54224 9.02816C4.35682 9.02819 4.17785 9.09626 4.03929 9.21948C3.90072 9.34269 3.8122 9.51248 3.7905 9.69663L3.7852 9.7852V17.3556C3.78542 17.5486 3.8593 17.7342 3.99176 17.8745C4.12422 18.0148 4.30525 18.0992 4.49788 18.1105C4.6905 18.1218 4.88017 18.0591 5.02814 17.9353C5.1761 17.8115 5.27119 17.6358 5.29398 17.4442L5.29928 17.3556V9.7852C5.29928 9.58442 5.21952 9.39187 5.07755 9.24989C4.93558 9.10792 4.74302 9.02816 4.54224 9.02816ZM10.5986 9.02816C10.3978 9.02816 10.2052 9.10792 10.0633 9.24989C9.92129 9.39187 9.84153 9.58442 9.84153 9.7852V17.3556C9.84153 17.5564 9.92129 17.7489 10.0633 17.8909C10.2052 18.0329 10.3978 18.1126 10.5986 18.1126C10.7993 18.1126 10.9919 18.0329 11.1339 17.8909C11.2758 17.7489 11.3556 17.5564 11.3556 17.3556V9.7852C11.3556 9.58442 11.2758 9.39187 11.1339 9.24989C10.9919 9.10792 10.7993 9.02816 1..." fill="white"/>
+          </svg>
+          <span>AI Tools</span>
+          <svg class="chevron-icon" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.8012 4.44438L0.960104 8L0 7.11125L3.36104 4L0 0.888749L0.960104 0L4.8012 3.55563C4.92849 3.67349 5 3.83333 5 4C5 4.16667 4.92849 4.32651 4.8012 4.44438Z" fill="white"/>
+          </svg>
+        </a>
+
+        <div class="sidebar-section">
+          <button class="sidebar-section-title" aria-expanded="true">
+            <span>Categories</span>
+            <i class="fas fa-chevron-down sidebar-toggle-icon"></i>
+          </button>
+          <ul class="sidebar-section-links">
+            <li><a href="ai-prompts.html" class="sidebar-link">AI Prompts</a></li>
+            <li><a href="index.html" class="sidebar-link">AI Jobs</a></li>
+            <li><a href="articles.html" class="sidebar-link">AI News</a></li>
+            <li><a href="#" class="sidebar-link">Submit</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <button class="sidebar-section-title" aria-expanded="true">
+            <span>Legal</span>
+            <i class="fas fa-chevron-down sidebar-toggle-icon"></i>
+          </button>
+          <ul class="sidebar-section-links">
+            <li><a href="#" class="sidebar-link">Contact Us</a></li>
+            <li><a href="#" class="sidebar-link">Terms & Conditions</a></li>
+            <li><a href="#" class="sidebar-link">Disclaimer</a></li>
+            <li><a href="#" class="sidebar-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="https://api.builder.io/api/v1/image/assets/TEMP/5625c1f9e340703f26010a681f5e12b6014b6a44?width=814" alt="The AI Surface" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Explore</a></li>
+          <li><a href="index.html">AI Tools</a></li>
+          <li><a href="ai-prompts.html" class="active">AI Prompts</a></li>
+          <li><a href="index.html">AI Jobs</a></li>
+          <li><a href="articles.html">Articles</a></li>
+        </ul>
+
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div class="nav-right">
+          <div class="search-container">
+            <svg class="search-icon" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.3408 16L9.51867 10.4C9.0566 10.7556 8.52521 11.037 7.92452 11.2444C7.32383 11.4519 6.68463 11.5556 6.00693 11.5556C4.32807 11.5556 2.90735 10.9961 1.74478 9.87733C0.58221 8.75852 0.000616584 7.392 4.88964e-07 5.77778C-0.000615606 4.16356 0.580978 2.79704 1.74478 1.67822C2.90858 0.559407 4.3293 0 6.00693 0C7.68455 0 9.10557 0.559407 10.27 1.67822C11.4344 2.79704 12.0157 4.16356 12.0139 5.77778C12.0139 6.42963 11.906 7.04444 11.6904 7.62222C11.4748 8.2 11.1821 8.71111 10.8125 9.15556L16.6346 14.7556L15.3408 16ZM6.00693 9.77778C7.1621 9.77778 8.14416 9.38904 8.95309 8.61156C9.76202 7.83407 10.1662 6.88948 10.1656 5.77778C10.165 4.66607 9.76079 3.72178 8.95309 2.94489C8.14539 2.168 7.16334 1.77896 6.00693 1.77778C4.85052 1.77659 3.86877 2.16563 3.06168 2.94489C2.2546 3.72415 1.85013 4.66844 1.84829 5.77778C1.84644 6.88711 2.2509 7.8317 3.06168 8.61156C3.87246 9.39141 4.85421 9.78015 6.00693 9.77778Z" fill="#6D6D6D"/>
+            </svg>
+            <input type="text" class="search-input" placeholder="Search" />
+          </div>
+          <button class="submit-btn">
+            <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 15H12V13.2353H0V15ZM0 6.17647H3.42857V11.4706H8.57143V6.17647H12L6 0L0 6.17647Z" fill="black"/>
+            </svg>
+            <span>Submit a Tool</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="vertical-divider"></div>
+
+    <main class="detail-main-wrapper">
+      <div class="detail-container">
+        <div class="detail-header">
+          <div class="detail-breadcrumb">Chatgpt</div>
+          <div class="detail-nav-controls">
+            <button class="detail-nav-btn" aria-label="Previous prompt">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <h1 class="detail-title">Master ChatGPT: 50 Prompts for Developers</h1>
+            <button class="detail-nav-btn" aria-label="Next prompt">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="detail-description">
+          <p>Unlock the full power of ChatGPT for coding, debugging, and project building. This curated pack includes 50 expertly-crafted prompts designed specifically for developers to accelerate productivity, learn faster, and automate repetitive coding tasks.</p>
+        </div>
+
+        <div class="detail-content">
+          <p>Master ChatGPT: 50 Prompts for Developers is a comprehensive collection built to supercharge your coding workflow using AI. This prompt pack transforms ChatGPT into your personal coding assistant—capable of writing, debugging, and documenting code with ease. Whether you're a full-stack developer, specialist, or new learner, these prompts guide ChatGPT to deliver clean, efficient, and well-explained coding tasks. With systematic instructions on using each prompt, this collection helps developers can quickly tweak them for specific projects or languages. From SQL query generation to API documentation, from AI assistant problem solving, this library empowers you to code faster and smarter while continuously improving your coding efficiency. Our Master ChatGPT: 50 Prompts for Developers make development tasks easier, faster, and more intuitive.</p>
+        </div>
+
+        <div class="prompt-examples">
+          <div class="prompt-example">
+            <div class="example-header">
+              <h3 class="example-title">Prompt Example (1/50)</h3>
+              <span class="example-name">Prompt Name: Code Optimizer - Improve My Code Efficiency</span>
+            </div>
+            <div class="example-body">
+              <p class="example-text">You are an expert software engineer. Review the following code for optimization, performance, and readability improvements. Explain what changes you make and why.</p>
+              <p class="example-placeholder">[Paste your code here]</p>
+            </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+
+          <div class="prompt-example">
+            <div class="example-header">
+              <h3 class="example-title">Prompt Example (2/50)</h3>
+              <span class="example-name">Prompt Name: Bug Finder & Debugger</span>
+            </div>
+            <div class="example-body">
+              <p class="example-text">You are an experienced developer specializing in debugging. Identify and explain errors in the following code, then provide a corrected version.</p>
+              <p class="example-placeholder">[Paste your code here]</p>
+            </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+
+          <div class="prompt-example">
+            <div class="example-header">
+              <h3 class="example-title">Prompt Example (3/50)</h3>
+              <span class="example-name">Prompt Name: Database Query Assistant</span>
+            </div>
+            <div class="example-body">
+              <p class="example-text">Generate optimized SQL queries for the following use case. Include explanations and alternative indexing suggestions for faster execution.</p>
+              <p class="example-placeholder">[Describe your scenario]</p>
+            </div>
+            <button class="copy-btn">Copy</button>
+          </div>
+        </div>
+
+        <div class="categories-section">
+          <h2 class="categories-title">Included Categories:</h2>
+          <ul class="categories-list">
+            <li>Web Development (HTML, CSS, JS)</li>
+            <li>Backend & APIs (Node.js, Python, PHP)</li>
+            <li>AI & Automation</li>
+            <li>Debugging & Code Review</li>
+            <li>Algorithm & Logic Building</li>
+            <li>Learning & Documentation</li>
+          </ul>
+        </div>
+
+        <div class="how-to-use-section">
+          <h2 class="how-to-use-title">How to Use This Prompt Pack</h2>
+          <ol class="how-to-use-steps">
+            <li>Open ChatGPT (or any GPT-based tool)</li>
+            <li>Copy any prompt and paste it into your chat</li>
+            <li>Fill in the bracketed sections [like this] with your actual content</li>
+            <li>Read the explanation, tweak the prompt, and run for better results.</li>
+          </ol>
+        </div>
+
+        <button class="download-btn">
+          <i class="fas fa-download"></i>
+          Download Complete Prompt Pack
+        </button>
+      </div>
+    </main>
+
+    <footer class="detail-footer">
+      <div class="footer-content">
+        <div class="footer-brand-section">
+          <h2 class="footer-brand-title">AITOOLS</h2>
+          <p class="footer-brand-desc">All in one place. Whether you're a developer, creator, or enthusiast, our platform helps you stay ahead in the AI revolution.</p>
+        </div>
+        <div class="footer-links-wrapper">
+          <div class="footer-column">
+            <h3 class="footer-column-title">Categories</h3>
+            <a href="ai-prompts.html">AI Prompts</a>
+            <a href="index.html">AI Jobs</a>
+            <a href="articles.html">AI News</a>
+            <a href="#">Submit</a>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-column-title">Legal</h3>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-social-section">
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 10.0251C20 4.49123 15.52 0 10 0C4.48 0 0 4.49123 0 10.0251C0 14.8772 3.44 18.9173 8 19.8496V13.0326H6V10.0251H8V7.5188C8 5.58396 9.57 4.01003 11.5 4.01003H14V7.01754H12C11.45 7.01754 11 7.46867 11 8.02005V10.0251H14V13.0326H11V20C16.05 19.4987 20 15.2281 20 10.0251Z" fill="#A2A2A2"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="none" stroke="#C4C4C4" stroke-width="2"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="none" stroke="#C4C4C4" stroke-width="2"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="X / Twitter">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="none" stroke="#C4C4C4" stroke-width="2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 aisurface. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
