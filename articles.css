@@ -511,9 +511,13 @@ body {
   opacity: 0.7;
 }
 
-.read-more svg {
+.read-more svg,
+.read-more i {
   width: 12px;
   height: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer */
