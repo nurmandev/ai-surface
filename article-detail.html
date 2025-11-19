@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Screen Studio vs Tella: Which is Better? - The AI Surface</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./article-detail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body>
     <!-- Breaking News Bar -->
@@ -41,56 +43,60 @@
         </div>
     </div>
 
-    <!-- Breaking News -->
     <div class="breaking-news">
-        <div class="breaking-news-container">
-            <div class="breaking-label">
-                <svg width="17" height="15" viewBox="0 0 17 15" fill="none">
-                    <path d="M4.25 11.6667C4.49083 11.6667 4.69285 11.5867 4.85605 11.4267C5.01925 11.2667 5.10057 11.0689 5.1 10.8333C5.09943 10.5978 5.01783 10.4 4.8552 10.24C4.69257 10.08 4.49083 10 4.25 10C4.00917 10 3.80743 10.08 3.6448 10.24C3.48217 10.4 3.40057 10.5978 3.4 10.8333C3.39943 11.0689 3.48103 11.2669 3.6448 11.4275C3.80857 11.5881 4.0103 11.6678 4.25 11.6667ZM3.4 8.33333H5.1V3.33333H3.4V8.33333ZM7.65 11.6667H13.6V10H7.65V11.6667ZM7.65 8.33333H13.6V6.66667H7.65V8.33333ZM7.65 5H13.6V3.33333H7.65V5ZM1.7 15C1.2325 15 0.832433 14.8369 0.4998 14.5108C0.167167 14.1847 0.000566667 13.7922 0 13.3333V1.66667C0 1.20833 0.1666 0.816111 0.4998 0.49C0.833 0.163889 1.23307 0.000555555 1.7 0H15.3C15.7675 0 16.1678 0.163333 16.501 0.49C16.8342 0.816667 17.0006 1.20889 17 1.66667V13.3333C17 13.7917 16.8337 14.1842 16.501 14.5108C16.1684 14.8375 15.7681 15.0006 15.3 15H1.7Z" fill="white"/>
-                </svg>
-                <span>BREAKING NEWS</span>
-            </div>
-            <div class="breaking-content">
-                <p>Mobile Data, Not Internet Service Providers, To Be Blocked In Bali During Nyepi March 19, 2018</p>
-                <div class="news-nav">
-                    <button class="news-prev" aria-label="Previous news">
-                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none">
-                            <path d="M8.65584 14.6698C8.87621 14.4584 9 14.1716 9 13.8725C9 13.5735 8.87621 13.2867 8.65584 13.0753L2.83731 7.49319L8.65584 1.91111C8.86996 1.69843 8.98844 1.41357 8.98576 1.11789C8.98308 0.822216 8.85946 0.539376 8.64152 0.330293C8.42358 0.12121 8.12876 0.00261297 7.82056 4.36405e-05C7.51236 -0.00252569 7.21543 0.111139 6.99374 0.316558L0.344158 6.69591C0.123793 6.90739 -7.46373e-07 7.19417 -7.20232e-07 7.49319C-6.9409e-07 7.79222 0.123794 8.079 0.344158 8.29047L6.99374 14.6698C7.21417 14.8812 7.5131 15 7.82479 15C8.13648 15 8.43541 14.8812 8.65584 14.6698Z" fill="#4C4C4C"/>
-                        </svg>
-                    </button>
-                    <button class="news-next" aria-label="Next news">
-                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none">
-                            <path d="M0.344159 0.330173C0.123794 0.541647 0 0.828428 0 1.12745C0 1.42648 0.123794 1.71326 0.344159 1.92473L6.16269 7.50681L0.344159 13.0889C0.130039 13.3016 0.0115592 13.5864 0.0142373 13.8821C0.0169155 14.1778 0.140538 14.4606 0.358478 14.6697C0.576418 14.8788 0.871238 14.9974 1.17944 15C1.48764 15.0025 1.78457 14.8889 2.00626 14.6834L8.65584 8.30409C8.87621 8.09261 9 7.80583 9 7.50681C9 7.20778 8.87621 6.921 8.65584 6.70953L2.00626 0.330173C1.78583 0.118763 1.4869 0 1.17521 0C0.863519 0 0.564591 0.118763 0.344159 0.330173Z" fill="white"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
+      <div class="breaking-label">
+        <i class="fas fa-bell"></i>
+        BREAKING NEWS
+      </div>
+      <div class="news-content">
+        <p>Mobile Data, Not Internet Service Providers, To Be Blocked In Bali During Nyepi March 19, 2018</p>
+      </div>
+      <div class="news-nav">
+        <button class="news-prev" aria-label="Previous news">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="news-next" aria-label="Next news">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
     </div>
 
-    <!-- Main Header -->
-    <div class="main-header">
-        <div class="header-container">
-            <a href="index.html" class="header-logo">
-                <img src="https://api.builder.io/api/v1/image/assets/TEMP/5625c1f9e340703f26010a681f5e12b6014b6a44?width=814" alt="The AI Surface">
-            </a>
-            <nav class="header-nav">
-                <a href="articles.html" class="nav-link">Articles</a>
-                <div class="search-box">
-                    <svg class="search-icon" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                        <path d="M15.3408 16L9.51867 10.4C9.0566 10.7556 8.52521 11.037 7.92452 11.2444C7.32383 11.4519 6.68463 11.5556 6.00693 11.5556C4.32807 11.5556 2.90735 10.9961 1.74478 9.87733C0.58221 8.75852 0.000616584 7.392 4.88964e-07 5.77778C-0.000615606 4.16356 0.580978 2.79704 1.74478 1.67822C2.90858 0.559407 4.3293 0 6.00693 0C7.68455 0 9.10557 0.559407 10.27 1.67822C11.4344 2.79704 12.0157 4.16356 12.0139 5.77778C12.0139 6.42963 11.906 7.04444 11.6904 7.62222C11.4748 8.2 11.1821 8.71111 10.8125 9.15556L16.6346 14.7556L15.3408 16ZM6.00693 9.77778C7.1621 9.77778 8.14416 9.38904 8.95309 8.61156C9.76202 7.83407 10.1662 6.88948 10.1656 5.77778C10.165 4.66607 9.76079 3.72178 8.95309 2.94489C8.14539 2.168 7.16334 1.77896 6.00693 1.77778C4.85052 1.77659 3.86877 2.16563 3.06168 2.94489C2.2546 3.72415 1.85013 4.66844 1.84829 5.77778C1.84644 6.88711 2.2509 7.8317 3.06168 8.61156C3.87246 9.39141 4.85421 9.78015 6.00693 9.77778Z" fill="#6D6D6D"/>
-                    </svg>
-                    <input type="text" placeholder="Search">
-                </div>
-                <button class="submit-tool-btn">
-                    <svg width="12" height="15" viewBox="0 0 12 15" fill="none">
-                        <path d="M0 15H12V13.2353H0V15ZM0 6.17647H3.42857V11.4706H8.57143V6.17647H12L6 0L0 6.17647Z" fill="black"/>
-                    </svg>
-                    <span>Submit a Tool</span>
-                </button>
-            </nav>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="https://api.builder.io/api/v1/image/assets/TEMP/5625c1f9e340703f26010a681f5e12b6014b6a44?width=814" alt="The AI Surface" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Explore</a></li>
+          <li><a href="index.html">AI Tools</a></li>
+          <li><a href="index.html">AI Prompts</a></li>
+          <li><a href="index.html">AI Jobs</a></li>
+          <li><a href="articles.html">Articles</a></li>
+        </ul>
+
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div class="nav-right">
+          <div class="search-container">
+            <svg class="search-icon" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.3408 16L9.51867 10.4C9.0566 10.7556 8.52521 11.037 7.92452 11.2444C7.32383 11.4519 6.68463 11.5556 6.00693 11.5556C4.32807 11.5556 2.90735 10.9961 1.74478 9.87733C0.58221 8.75852 0.000616584 7.392 4.88964e-07 5.77778C-0.000615606 4.16356 0.580978 2.79704 1.74478 1.67822C2.90858 0.559407 4.3293 0 6.00693 0C7.68455 0 9.10557 0.559407 10.27 1.67822C11.4344 2.79704 12.0157 4.16356 12.0139 5.77778C12.0139 6.42963 11.906 7.04444 11.6904 7.62222C11.4748 8.2 11.1821 8.71111 10.8125 9.15556L16.6346 14.7556L15.3408 16ZM6.00693 9.77778C7.1621 9.77778 8.14416 9.38904 8.95309 8.61156C9.76202 7.83407 10.1662 6.88948 10.1656 5.77778C10.165 4.66607 9.76079 3.72178 8.95309 2.94489C8.14539 2.168 7.16334 1.77896 6.00693 1.77778C4.85052 1.77659 3.86877 2.16563 3.06168 2.94489C2.2546 3.72415 1.85013 4.66844 1.84829 5.77778C1.84644 6.88711 2.2509 7.8317 3.06168 8.61156C3.87246 9.39141 4.85421 9.78015 6.00693 9.77778Z" fill="#6D6D6D"/>
+            </svg>
+            <input type="text" class="search-input" placeholder="Search" />
+          </div>
+          <button class="submit-btn">
+            <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 15H12V13.2353H0V15ZM0 6.17647H3.42857V11.4706H8.57143V6.17647H12L6 0L0 6.17647Z" fill="black"/>
+            </svg>
+            <span>Submit a Tool</span>
+          </button>
         </div>
-    </div>
+      </div>
+    </nav>
 
     <!-- Sidebar -->
     <aside class="sidebar">
