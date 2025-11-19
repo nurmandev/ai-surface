@@ -43,12 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Toggle sidebar sections
   sidebarSectionTitles.forEach(function(title) {
-    title.addEventListener('click', function() {
+    title.addEventListener('click', function(e) {
+      e.stopPropagation();
       const isExpanded = this.getAttribute('aria-expanded') === 'true';
       const links = this.nextElementSibling;
-      
+
       this.setAttribute('aria-expanded', !isExpanded);
-      
+
       if (links && links.classList.contains('sidebar-section-links')) {
         if (isExpanded) {
           links.classList.add('collapsed');
