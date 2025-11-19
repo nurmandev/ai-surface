@@ -89,8 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Back button functionality
   if (backBtn) {
     backBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.history.back();
+      if (!backBtn.href.includes('index.html')) {
+        e.preventDefault();
+        window.history.back();
+      }
     });
   }
 
