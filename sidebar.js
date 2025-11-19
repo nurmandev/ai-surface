@@ -25,6 +25,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Close sidebar when a link is clicked on mobile
+  const sidebarLinks = document.querySelectorAll('.sidebar-link');
+  sidebarLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (window.innerWidth <= 768) {
+        hamburgerMenu.classList.remove('active');
+        sidebar.classList.remove('mobile-open');
+        sidebarOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+
   // Toggle sidebar sections
   sidebarSectionTitles.forEach(function(title) {
     title.addEventListener('click', function() {
