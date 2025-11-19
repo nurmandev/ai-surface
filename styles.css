@@ -107,17 +107,25 @@ body {
   align-items: center;
   justify-content: center;
   transition: opacity 0.2s;
+  font-size: 1.2rem;
+  color: #4C4C4C;
 }
 
 .news-prev:hover,
 .news-next:hover {
   opacity: 0.7;
+  color: #fff;
 }
 
 .news-prev svg,
 .news-next svg {
   width: 9px;
   height: 15px;
+}
+
+.news-prev i,
+.news-next i {
+  font-size: 1.2rem;
 }
 
 .navbar {
@@ -624,8 +632,12 @@ body {
 }
 
 .arrow-icon {
-  width: 24px;
-  height: 8px;
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .featured-grid {
