@@ -25,15 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Close sidebar when a link is clicked on mobile
-  const sidebarLinks = document.querySelectorAll('.sidebar-link');
+  // Close sidebar when a navigation link is clicked on mobile (not section titles)
+  const sidebarLinks = document.querySelectorAll('.sidebar-section-links .sidebar-link');
   sidebarLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
-      if (window.innerWidth <= 768) {
-        hamburgerMenu.classList.remove('active');
-        sidebar.classList.remove('mobile-open');
-        sidebarOverlay.classList.remove('active');
-        document.body.style.overflow = '';
+    link.addEventListener('click', function(e) {
+      // Only close if it's a real navigation link, not an anchor
+      if (this.href && !this.href.endsWith('#')) {
+        if (window.innerWidth <= 768) {
+          hamburgerMenu.classList.remove('active');
+          sidebar.classList.remove('mobile-open');
+          sidebarOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
       }
     });
   });
