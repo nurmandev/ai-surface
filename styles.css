@@ -387,11 +387,13 @@ body {
 }
 
 .sidebar-toggle-icon {
-  width: 10px;
-  height: 6px;
+  font-size: 0.75rem;
   transition: transform 0.3s ease;
   flex-shrink: 0;
   opacity: 0.6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar-section-title:hover .sidebar-toggle-icon {
