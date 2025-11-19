@@ -718,9 +718,13 @@ body {
   opacity: 0.7;
 }
 
-.tool-link svg {
+.tool-link svg,
+.tool-link i {
   width: 18px;
   height: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .news-grid {
@@ -806,9 +810,13 @@ body {
   opacity: 0.7;
 }
 
-.news-link svg {
+.news-link svg,
+.news-link i {
   width: 12px;
   height: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prompts-grid {
@@ -883,9 +891,13 @@ body {
   opacity: 0.7;
 }
 
-.prompt-link svg {
+.prompt-link svg,
+.prompt-link i {
   width: 12px;
   height: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .newsletter-footer {
