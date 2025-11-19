@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Toggle mobile menu
   if (hamburgerMenu) {
-    hamburgerMenu.addEventListener('click', function() {
+    hamburgerMenu.addEventListener('click', function(e) {
+      e.stopPropagation();
       this.classList.toggle('active');
       sidebar.classList.toggle('mobile-open');
       sidebarOverlay.classList.toggle('active');
