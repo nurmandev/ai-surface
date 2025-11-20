@@ -31,7 +31,7 @@ body {
 
 /* Tools Sections */
 .tools-section {
-  padding: 2rem 2rem;
+  padding: 2rem 0;
   border-bottom: 1px solid rgba(201, 201, 201, 0.25);
 }
 
