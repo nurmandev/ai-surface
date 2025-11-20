@@ -1,37 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Screen Studio vs Tella: Which is Better? - The AI Surface</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./article-detail.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./article-detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script defer src="./app.js"></script>
+    <script defer src="./dates.js"></script>
+  </head>
+  <body>
     <div class="top-bar">
       <div class="social-links">
         <a href="#" class="social-icon" aria-label="Facebook">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.5839 8.81404C17.5839 3.94872 13.6451 6.10352e-05 8.79195 6.10352e-05C3.93879 6.10352e-05 0 3.94872 0 8.81404C0 13.08 3.02443 16.632 7.03356 17.4517V11.4582H5.27517V8.81404H7.03356V6.61055C7.03356 4.90945 8.41389 3.52565 10.1107 3.52565H12.3087V6.16985H10.5503C10.0668 6.16985 9.67114 6.56648 9.67114 7.05125V8.81404H12.3087V11.4582H9.67114V17.584C14.1111 17.1433 17.5839 13.3885 17.5839 8.81404Z" fill="white"/>
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5839 8.81404C17.5839 3.94872 13.6451 6.10352e-05 8.79195 6.10352e-05C3.93879 6.10352e-05 0 3.94872 0 8.81404C0 13.08 3.02443 16.632 7.03356 17.4517V11.4582H5.27517V8.81404H7.03356V6.61055C7.03356 4.90945 8.41389 3.52565 10.1107 3.52565H12.3087V6.16985H10.5503C10.0668 6.16985 9.67114 6.56648 9.67114 7.05125V8.81404H12.3087V11.4582H9.67114V17.584C14.1111 17.1433 17.5839 13.3885 17.5839 8.81404Z"
+              fill="white"
+            />
           </svg>
         </a>
         <a href="#" class="social-icon" aria-label="Instagram">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.62 0H12.38C15.62 0 18 2.38 18 5.62V12.38C18 15.62 15.62 18 12.38 18H5.62C2.38 18 0 15.62 0 12.38V5.62C0 2.38 2.38 0 5.62 0ZM12.38 16.2C14.63 16.2 16.2 14.63 16.2 12.38V5.62C16.2 3.37 14.63 1.8 12.38 1.8H5.62C3.37 1.8 1.8 3.37 1.8 5.62V12.38C1.8 14.63 3.37 16.2 5.62 16.2H12.38ZM4.5 9C4.5 6.52 6.52 4.5 9 4.5C11.48 4.5 13.5 6.52 13.5 9C13.5 11.48 11.48 13.5 9 13.5C6.52 13.5 4.5 11.48 4.5 9ZM6.3 9C6.3 10.49 7.51 11.7 9 11.7C10.49 11.7 11.7 10.49 11.7 9C11.7 7.51 10.49 6.3 9 6.3C7.51 6.3 6.3 7.51 6.3 9ZM13.5 3.6C13.5 3.27 13.77 3 14.1 3C14.43 3 14.7 3.27 14.7 3.6C14.7 3.93 14.43 4.2 14.1 4.2C13.77 4.2 13.5 3.93 13.5 3.6Z" fill="white"/>
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.62 0H12.38C15.62 0 18 2.38 18 5.62V12.38C18 15.62 15.62 18 12.38 18H5.62C2.38 18 0 15.62 0 12.38V5.62C0 2.38 2.38 0 5.62 0ZM12.38 16.2C14.63 16.2 16.2 14.63 16.2 12.38V5.62C16.2 3.37 14.63 1.8 12.38 1.8H5.62C3.37 1.8 1.8 3.37 1.8 5.62V12.38C1.8 14.63 3.37 16.2 5.62 16.2H12.38ZM4.5 9C4.5 6.52 6.52 4.5 9 4.5C11.48 4.5 13.5 6.52 13.5 9C13.5 11.48 11.48 13.5 9 13.5C6.52 13.5 4.5 11.48 4.5 9ZM6.3 9C6.3 10.49 7.51 11.7 9 11.7C10.49 11.7 11.7 10.49 11.7 9C11.7 7.51 10.49 6.3 9 6.3C7.51 6.3 6.3 7.51 6.3 9ZM13.5 3.6C13.5 3.27 13.77 3 14.1 3C14.43 3 14.7 3.27 14.7 3.6C14.7 3.93 14.43 4.2 14.1 4.2C13.77 4.2 13.5 3.93 13.5 3.6Z"
+              fill="white"
+            />
           </svg>
         </a>
         <a href="#" class="social-icon" aria-label="YouTube">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.45 5.32C17.26 4.62 16.71 4.07 16.01 3.88C14.73 3.5 9 3.5 9 3.5C9 3.5 3.27 3.5 1.99 3.88C1.29 4.07 0.74 4.62 0.55 5.32C0.17 6.6 0.17 9.28 0.17 9.28C0.17 9.28 0.17 11.96 0.55 13.24C0.74 13.94 1.29 14.49 1.99 14.68C3.27 15.06 9 15.06 9 15.06C9 15.06 14.73 15.06 16.01 14.68C16.71 14.49 17.26 13.94 17.45 13.24C17.83 11.96 17.83 9.28 17.83 9.28C17.83 9.28 17.83 6.6 17.45 5.32ZM7.2 11.68V6.88L11.88 9.28L7.2 11.68Z" fill="white"/>
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17.45 5.32C17.26 4.62 16.71 4.07 16.01 3.88C14.73 3.5 9 3.5 9 3.5C9 3.5 3.27 3.5 1.99 3.88C1.29 4.07 0.74 4.62 0.55 5.32C0.17 6.6 0.17 9.28 0.17 9.28C0.17 9.28 0.17 11.96 0.55 13.24C0.74 13.94 1.29 14.49 1.99 14.68C3.27 15.06 9 15.06 9 15.06C9 15.06 14.73 15.06 16.01 14.68C16.71 14.49 17.26 13.94 17.45 13.24C17.83 11.96 17.83 9.28 17.83 9.28C17.83 9.28 17.83 6.6 17.45 5.32ZM7.2 11.68V6.88L11.88 9.28L7.2 11.68Z"
+              fill="white"
+            />
           </svg>
         </a>
         <a href="#" class="social-icon" aria-label="Twitter/X">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.85 0.82H16.55L10.66 7.57L17.59 16.76H12.16L7.91 11.19L3.05 16.76H0.35L6.65 9.54L0 0.83H5.57L9.41 5.92L13.85 0.82ZM12.9 15.14H14.39L4.75 2.36H3.15L12.9 15.14Z" fill="white"/>
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.85 0.82H16.55L10.66 7.57L17.59 16.76H12.16L7.91 11.19L3.05 16.76H0.35L6.65 9.54L0 0.83H5.57L9.41 5.92L13.85 0.82ZM12.9 15.14H14.39L4.75 2.36H3.15L12.9 15.14Z"
+              fill="white"
+            />
           </svg>
         </a>
       </div>
@@ -40,13 +88,25 @@
 
     <div class="breaking-news">
       <div class="breaking-label">
-        <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.25 11.6667C4.49083 11.6667 4.69285 11.5867 4.85605 11.4267C5.01925 11.2667 5.10057 11.0689 5.1 10.8333C5.09943 10.5978 5.01783 10.4 4.8552 10.24C4.69257 10.08 4.49083 10 4.25 10C4.00917 10 3.80743 10.08 3.6448 10.24C3.48217 10.4 3.40057 10.5978 3.4 10.8333C3.39943 11.0689 3.48103 11.2669 3.6448 11.4275C3.80857 11.5881 4.0103 11.6678 4.25 11.6667ZM3.4 8.33333H5.1V3.33333H3.4V8.33333ZM7.65 11.6667H13.6V10H7.65V11.6667ZM7.65 8.33333H13.6V6.66667H7.65V8.33333ZM7.65 5H13.6V3.33333H7.65V5ZM1.7 15C1.2325 15 0.832433 14.8369 0.4998 14.5108C0.167167 14.1847 0.000566667 13.7922 0 13.3333V1.66667C0 1.20833 0.1666 0.816111 0.4998 0.49C0.833 0.163889 1.23307 0.000555555 1.7 0H15.3C15.7675 0 16.1678 0.163333 16.501 0.49C16.8342 0.816667 17.0006 1.20889 17 1.66667V13.3333C17 13.7917 16.8337 14.1842 16.501 14.5108C16.1684 14.8375 15.7681 15.0006 15.3 15H1.7Z" fill="white"/>
+        <svg
+          width="17"
+          height="15"
+          viewBox="0 0 17 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.25 11.6667C4.49083 11.6667 4.69285 11.5867 4.85605 11.4267C5.01925 11.2667 5.10057 11.0689 5.1 10.8333C5.09943 10.5978 5.01783 10.4 4.8552 10.24C4.69257 10.08 4.49083 10 4.25 10C4.00917 10 3.80743 10.08 3.6448 10.24C3.48217 10.4 3.40057 10.5978 3.4 10.8333C3.39943 11.0689 3.48103 11.2669 3.6448 11.4275C3.80857 11.5881 4.0103 11.6678 4.25 11.6667ZM3.4 8.33333H5.1V3.33333H3.4V8.33333ZM7.65 11.6667H13.6V10H7.65V11.6667ZM7.65 8.33333H13.6V6.66667H7.65V8.33333ZM7.65 5H13.6V3.33333H7.65V5ZM1.7 15C1.2325 15 0.832433 14.8369 0.4998 14.5108C0.167167 14.1847 0.000566667 13.7922 0 13.3333V1.66667C0 1.20833 0.1666 0.816111 0.4998 0.49C0.833 0.163889 1.23307 0.000555555 1.7 0H15.3C15.7675 0 16.1678 0.163333 16.501 0.49C16.8342 0.816667 17.0006 1.20889 17 1.66667V13.3333C17 13.7917 16.8337 14.1842 16.501 14.5108C16.1684 14.8375 15.7681 15.0006 15.3 15H1.7Z"
+            fill="white"
+          />
         </svg>
         BREAKING NEWS
       </div>
       <div class="news-content">
-        <p>Mobile Data, Not Internet Service Providers, To Be Blocked In Bali During Nyepi March 19, 2018</p>
+        <p>
+          Mobile Data, Not Internet Service Providers, To Be Blocked In Bali
+          During Nyepi March 19, 2018
+        </p>
       </div>
       <div class="news-nav">
         <button class="news-prev" aria-label="Previous news">
@@ -69,7 +129,9 @@
           <ul class="sidebar-section-links">
             <li><a href="index.html" class="sidebar-link">Explore</a></li>
             <li><a href="index.html" class="sidebar-link">AI Tools</a></li>
-            <li><a href="ai-prompts.html" class="sidebar-link">AI Prompts</a></li>
+            <li>
+              <a href="ai-prompts.html" class="sidebar-link">AI Prompts</a>
+            </li>
             <li><a href="index.html" class="sidebar-link">AI Jobs</a></li>
             <li><a href="articles.html" class="sidebar-link">Articles</a></li>
           </ul>
@@ -81,7 +143,9 @@
             <i class="fas fa-chevron-down sidebar-toggle-icon"></i>
           </button>
           <ul class="sidebar-section-links">
-            <li><a href="ai-prompts.html" class="sidebar-link">AI Prompts</a></li>
+            <li>
+              <a href="ai-prompts.html" class="sidebar-link">AI Prompts</a>
+            </li>
             <li><a href="index.html" class="sidebar-link">AI Jobs</a></li>
             <li><a href="articles.html" class="sidebar-link">AI News</a></li>
             <li><a href="#" class="sidebar-link">Submit</a></li>
@@ -106,7 +170,10 @@
     <nav class="navbar">
       <div class="nav-container">
         <a href="index.html" class="logo">
-          <img src="https://api.builder.io/api/v1/image/assets/TEMP/5625c1f9e340703f26010a681f5e12b6014b6a44?width=814" alt="The AI Surface" />
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/5625c1f9e340703f26010a681f5e12b6014b6a44?width=814"
+            alt="The AI Surface"
+          />
         </a>
 
         <ul class="nav-links">
@@ -117,7 +184,11 @@
           <li><a href="articles.html" class="active">Articles</a></li>
         </ul>
 
-        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation menu">
+        <button
+          class="hamburger-menu"
+          id="hamburgerMenu"
+          aria-label="Toggle navigation menu"
+        >
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -125,14 +196,33 @@
 
         <div class="nav-right">
           <div class="search-container">
-            <svg class="search-icon" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15.3408 16L9.51867 10.4C9.0566 10.7556 8.52521 11.037 7.92452 11.2444C7.32383 11.4519 6.68463 11.5556 6.00693 11.5556C4.32807 11.5556 2.90735 10.9961 1.74478 9.87733C0.58221 8.75852 0.000616584 7.392 4.88964e-07 5.77778C-0.000615606 4.16356 0.580978 2.79704 1.74478 1.67822C2.90858 0.559407 4.3293 0 6.00693 0C7.68455 0 9.10557 0.559407 10.27 1.67822C11.4344 2.79704 12.0157 4.16356 12.0139 5.77778C12.0139 6.42963 11.906 7.04444 11.6904 7.62222C11.4748 8.2 11.1821 8.71111 10.8125 9.15556L16.6346 14.7556L15.3408 16ZM6.00693 9.77778C7.1621 9.77778 8.14416 9.38904 8.95309 8.61156C9.76202 7.83407 10.1662 6.88948 10.1656 5.77778C10.165 4.66607 9.76079 3.72178 8.95309 2.94489C8.14539 2.168 7.16334 1.77896 6.00693 1.77778C4.85052 1.77659 3.86877 2.16563 3.06168 2.94489C2.2546 3.72415 1.85013 4.66844 1.84829 5.77778C1.84644 6.88711 2.2509 7.8317 3.06168 8.61156C3.87246 9.39141 4.85421 9.78015 6.00693 9.77778Z" fill="#6D6D6D"/>
+            <svg
+              class="search-icon"
+              width="17"
+              height="16"
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.3408 16L9.51867 10.4C9.0566 10.7556 8.52521 11.037 7.92452 11.2444C7.32383 11.4519 6.68463 11.5556 6.00693 11.5556C4.32807 11.5556 2.90735 10.9961 1.74478 9.87733C0.58221 8.75852 0.000616584 7.392 4.88964e-07 5.77778C-0.000615606 4.16356 0.580978 2.79704 1.74478 1.67822C2.90858 0.559407 4.3293 0 6.00693 0C7.68455 0 9.10557 0.559407 10.27 1.67822C11.4344 2.79704 12.0157 4.16356 12.0139 5.77778C12.0139 6.42963 11.906 7.04444 11.6904 7.62222C11.4748 8.2 11.1821 8.71111 10.8125 9.15556L16.6346 14.7556L15.3408 16ZM6.00693 9.77778C7.1621 9.77778 8.14416 9.38904 8.95309 8.61156C9.76202 7.83407 10.1662 6.88948 10.1656 5.77778C10.165 4.66607 9.76079 3.72178 8.95309 2.94489C8.14539 2.168 7.16334 1.77896 6.00693 1.77778C4.85052 1.77659 3.86877 2.16563 3.06168 2.94489C2.2546 3.72415 1.85013 4.66844 1.84829 5.77778C1.84644 6.88711 2.2509 7.8317 3.06168 8.61156C3.87246 9.39141 4.85421 9.78015 6.00693 9.77778Z"
+                fill="#6D6D6D"
+              />
             </svg>
             <input type="text" class="search-input" placeholder="Search" />
           </div>
           <button class="submit-btn">
-            <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 15H12V13.2353H0V15ZM0 6.17647H3.42857V11.4706H8.57143V6.17647H12L6 0L0 6.17647Z" fill="black"/>
+            <svg
+              width="12"
+              height="15"
+              viewBox="0 0 12 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 15H12V13.2353H0V15ZM0 6.17647H3.42857V11.4706H8.57143V6.17647H12L6 0L0 6.17647Z"
+                fill="black"
+              />
             </svg>
             <span>Submit a Tool</span>
           </button>
@@ -143,113 +233,183 @@
     <div class="vertical-divider"></div>
 
     <main class="main-wrapper">
-        <article class="article-detail">
-            <!-- Article Navigation -->
-            <div class="article-nav">
-                <button class="nav-prev" aria-label="Previous article">
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
-                        <rect width="25" height="25" rx="12.5" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.11113 11.793L14.7681 6.13601L16.1821 7.55001L11.2321 12.5L16.1821 17.45L14.7681 18.864L9.11113 13.207C8.92366 13.0195 8.81834 12.7652 8.81834 12.5C8.81834 12.2349 8.92366 11.9805 9.11113 11.793Z" fill="black"/>
-                    </svg>
-                </button>
-                <button class="nav-next" aria-label="Next article">
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
-                        <rect x="25" y="25" width="25" height="25" rx="12.5" transform="rotate(180 25 25)" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8889 13.207L10.2319 18.864L8.81788 17.45L13.7679 12.5L8.81787 7.54999L10.2319 6.13599L15.8889 11.793C16.0763 11.9805 16.1817 12.2348 16.1817 12.5C16.1817 12.7651 16.0763 13.0195 15.8889 13.207Z" fill="black"/>
-                    </svg>
-                </button>
-            </div>
+      <article class="article-detail">
+        <!-- Article Navigation -->
+        <div class="article-nav">
+          <button class="nav-prev" aria-label="Previous article">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <rect width="25" height="25" rx="12.5" fill="white" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.11113 11.793L14.7681 6.13601L16.1821 7.55001L11.2321 12.5L16.1821 17.45L14.7681 18.864L9.11113 13.207C8.92366 13.0195 8.81834 12.7652 8.81834 12.5C8.81834 12.2349 8.92366 11.9805 9.11113 11.793Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <button class="nav-next" aria-label="Next article">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <rect
+                x="25"
+                y="25"
+                width="25"
+                height="25"
+                rx="12.5"
+                transform="rotate(180 25 25)"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.8889 13.207L10.2319 18.864L8.81788 17.45L13.7679 12.5L8.81787 7.54999L10.2319 6.13599L15.8889 11.793C16.0763 11.9805 16.1817 12.2348 16.1817 12.5C16.1817 12.7651 16.0763 13.0195 15.8889 13.207Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
 
-            <!-- Article Header -->
-            <header class="article-header">
-                <div class="article-date">4 November 2025</div>
-                <h1 class="article-title">Screen Studio vs Tella: Which is Better?</h1>
-                <p class="article-subtitle">A clear, side-by-side look at two leading screen recorders to help you choose the right one for your work.</p>
-                
-                <div class="article-author">
-                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/dfef09e39da0cc6b3c3923263b2e2b808cb44b34?width=54" alt="Yogesh" class="author-avatar">
-                    <span class="author-name">Yogesh</span>
-                </div>
-            </header>
+        <!-- Article Header -->
+        <header class="article-header">
+          <div class="article-date">4 November 2025</div>
+          <h1 class="article-title">
+            Screen Studio vs Tella: Which is Better?
+          </h1>
+          <p class="article-subtitle">
+            A clear, side-by-side look at two leading screen recorders to help
+            you choose the right one for your work.
+          </p>
 
-            <!-- Article Featured Image -->
-            <div class="article-featured-image">
-                <img src="https://api.builder.io/api/v1/image/assets/TEMP/46b53d40a35b01f7b672a502d4796b50ed1563a5?width=1490" alt="Screen Studio vs Tella comparison">
-            </div>
+          <div class="article-author">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/dfef09e39da0cc6b3c3923263b2e2b808cb44b34?width=54"
+              alt="Yogesh"
+              class="author-avatar"
+            />
+            <span class="author-name">Yogesh</span>
+          </div>
+        </header>
 
-            <!-- Article Body -->
-            <div class="article-body">
-                <p>Screen Studio and Tella are both screen recording tools, but they work very differently. Screen Studio is a Mac-only app that offers both monthly subscription and one-time payment options. Tella works on Mac and Windows and starts free. It combines screen recording with webcam capture and has built-in editing tools.</p>
+        <!-- Article Featured Image -->
+        <div class="article-featured-image">
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/46b53d40a35b01f7b672a502d4796b50ed1563a5?width=1490"
+            alt="Screen Studio vs Tella comparison"
+          />
+        </div>
 
-                <p><strong>Here's what this comparison covers:</strong></p>
+        <!-- Article Body -->
+        <div class="article-body">
+          <p>
+            Screen Studio and Tella are both screen recording tools, but they
+            work very differently. Screen Studio is a Mac-only app that offers
+            both monthly subscription and one-time payment options. Tella works
+            on Mac and Windows and starts free. It combines screen recording
+            with webcam capture and has built-in editing tools.
+          </p>
 
-                <ul class="article-list">
-                    <li><strong>Pricing and plans</strong> - Which gives better value for your budget</li>
-                    <li><strong>Recording quality</strong> - How the output actually looks and sounds</li>
-                    <li><strong>Ease of use</strong> - Which is faster to learn and use daily</li>
-                    <li><strong>Features</strong> - What each tool can and cannot do</li>
-                    <li><strong>Best use cases</strong> - Which tool fits different types of work</li>
-                </ul>
+          <p><strong>Here's what this comparison covers:</strong></p>
 
-                <p>By the end, you'll know which tool matches your specific needs and budget. We tested both extensively to give you the real pros and cons of each.</p>
+          <ul class="article-list">
+            <li>
+              <strong>Pricing and plans</strong> - Which gives better value for
+              your budget
+            </li>
+            <li>
+              <strong>Recording quality</strong> - How the output actually looks
+              and sounds
+            </li>
+            <li>
+              <strong>Ease of use</strong> - Which is faster to learn and use
+              daily
+            </li>
+            <li>
+              <strong>Features</strong> - What each tool can and cannot do
+            </li>
+            <li>
+              <strong>Best use cases</strong> - Which tool fits different types
+              of work
+            </li>
+          </ul>
 
-                <h2 class="section-heading">Screen Studio</h2>
-            </div>
-        </article>
+          <p>
+            By the end, you'll know which tool matches your specific needs and
+            budget. We tested both extensively to give you the real pros and
+            cons of each.
+          </p>
+
+          <h2 class="section-heading">Screen Studio</h2>
+        </div>
+      </article>
     </main>
 
     <!-- Footer -->
     <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h2>AITOOLS</h2>
-                <p>All in one place. Whether you're a developer, creator, or enthusiast, our platform helps you stay ahead in the AI revolution.</p>
-                <div class="footer-social">
-                    <a href="#" class="footer-social-link" aria-label="Facebook">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M20 10.0251C20 4.49123 15.52 0 10 0C4.48 0 0 4.49123 0 10.0251C0 14.8772 3.44 18.9173 8 19.8496V13.0326H6V10.0251H8V7.5188C8 5.58396 9.57 4.01003 11.5 4.01003H14V7.01754H12C11.45 7.01754 11 7.46867 11 8.02005V10.0251H14V13.0326H11V20C16.05 19.4987 20 15.2281 20 10.0251Z" fill="#A2A2A2"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="footer-social-link" aria-label="Instagram">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8.88889C0 4.69889 -1.32455e-07 2.60333 1.30222 1.30222C2.60444 0.00111103 4.69889 0 8.88889 0H11.1111C15.3011 0 17.3967 -1.32455e-07 18.6978 1.30222C19.9989 2.60444 20 4.69889 20 8.88889V11.1111C20 15.3011 20 17.3967 18.6978 18.6978C17.3956 19.9989 15.3011 20 11.1111 20H8.88889C4.69889 20 2.60333 20 1.30222 18.6978C0.00111103 17.3956 0 15.3011 0 11.1111V8.88889ZM16.6667 5C16.6667 5.44203 16.4911 5.86595 16.1785 6.17851C15.866 6.49107 15.442 6.66667 15 6.66667C14.558 6.66667 14.134 6.49107 13.8215 6.17851C13.5089 5.86595 13.3333 5.44203 13.3333 5C13.3333 4.55797 13.5089 4.13405 13.8215 3.82149C14.134 3.50893 14.558 3.33333 15 3.33333C15.442 3.33333 15.866 3.50893 16.1785 3.82149C16.4911 4.13405 16.6667 4.55797 16.6667 5ZM12.2222 11.1111C12.2222 11.7005 11.9881 12.2657 11.5713 12.6825C11.1546 13.0992 10.5894 13.3333 10 13.3333C9.41063 13.3333 8.8454 13.0992 8.42865 12.6825C8.0119 12.2657 7.77778 11.7005 7.77778 11.1111C7.77778 10.5217 8.0119 9.95651 8.42865 9.53976C8.8454 9.12302 9.41063 8.88889 10 8.88889C10.5894 8.88889 11.1546 9.12302 11.5713 9.53976C11.9881 9.95651 12.2222 10.5217 12.2222 11.1111ZM14.4444 11.1111C14.4444 12.2899 13.9762 13.4203 13.1427 14.2538C12.3092 15.0873 11.1787 15.5556 10 15.5556C8.82126 15.5556 7.6908 15.0873 6.8573 14.2538C6.02381 13.4203 5.55556 12.2899 5.55556 11.1111C5.55556 9.93237 6.02381 8.80191 6.8573 7.96841C7.6908 7.13492 8.82126 6.66667 10 6.66667C11.1787 6.66667 12.3792 7.13492 13.2127 7.96841C14.0462 8.80191 14.5144 9.93237 14.5144 11.1111C14.4444 12.2899 13.9762 13.4203 13.1427 14.2538C12.3092 15.0873 11.1787 15.5556 10 15.5556C8.82126 15.5556 7.6908 15.0873 6.8573 14.2538C6.02381 13.4203 5.55556 12.2899 5.55556 11.1111Z" fill="#A2A2A2"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="footer-social-link" aria-label="YouTube">
-                        <svg width="20" height="15" viewBox="0 0 20 15" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C8.89209 0 7.6 0.0267499 6.34047 0.0630533L6.2893 0.0649639C5.00744 0.102223 3.97302 0.131839 3.15814 0.270365C2.30884 0.414623 1.60372 0.69072 1.04 1.28591C0.474419 1.883 0.227907 2.62149 0.111628 3.50519C6.93077e-09 4.35545 0 5.43309 0 6.7725V8.22846C0 9.56595 6.93077e-09 10.6436 0.111628 11.4948C0.226977 12.3785 0.474419 13.117 1.04 13.7141C1.60372 14.3102 2.30884 14.5854 3.15814 14.7296C3.97302 14.8682 5.00744 14.8978 6.2893 14.935L6.34047 14.9369C7.60093 14.9732 8.89209 15 10 15C11.1079 15 12.4 14.9732 13.6595 14.9369L13.7107 14.935C14.9926 14.8978 16.027 14.8682 16.8419 14.7296C17.6912 14.5854 18.3963 14.3093 18.96 13.7141C19.5256 13.117 19.773 12.3785 19.8884 11.4948C20 10.6445 20 9.56691 20 8.2275V6.77154C20 5.43309 20 4.35545 19.8884 3.50519C19.773 2.62149 19.5256 1.883 18.96 1.28591C18.3963 0.689765 17.6912 0.414623 16.8419 0.270365C16.027 0.131839 14.9926 0.102223 13.7098 0.0649639L13.6595 0.0630533C12.44 0.0250386 11.2201 0.00401893 10 0ZM8.9507 10.0322C8.84461 10.0944 8.72447 10.1269 8.60229 10.1265C8.48012 10.1261 8.36019 10.0927 8.25452 10.0297C8.14884 9.96678 8.06112 9.87641 8.00013 9.76769C7.93914 9.65897 7.90702 9.5357 7.90698 9.41023V5.58882C7.90702 5.46334 7.93914 5.34008 8.00013 5.23135C8.06112 5.12263 8.14884 5.03227 8.25452 4.9693C8.36019 4.90633 8.48012 4.87296 8.60229 4.87254C8.72447 4.87211 8.84461 4.90465 8.9507 4.96688L12.2065 6.87759C12.3132 6.94028 12.4019 7.03082 12.5 7.09326L12.5 9.28671C12.4019 9.34916 12.3132 9.43971 12.2065 9.50242L8.9507 11.4131C8.84461 11.4754 8.72447 11.5079 8.60229 11.5075C8.48012 11.5071 8.36019 11.4738 8.25452 11.4108C8.14884 11.3479 8.06112 11.2576 8.00013 11.1488C7.93914 11.0401 7.90702 10.9168 7.90698 10.7914V8.20862C7.90702 8.08314 7.93914 7.95988 8.00013 7.85115C8.06112 7.74243 8.14884 7.65207 8.25452 7.5891C8.36019 7.52614 8.48012 7.49276 8.60229 7.49234C8.72447 7.49192 8.84461 7.52446 8.9507 7.58669L12.2065 9.49739C12.3132 9.56008 12.4019 9.65062 12.5 9.71307L12.5 9.28671C12.4019 9.34916 12.3132 9.43971 12.2065 9.50242L8.9507 11.4131Z" fill="#A2A2A2"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h3>Categories</h3>
-                    <ul>
-                        <li><a href="ai-prompts.html">AI Prompts</a></li>
-                        <li><a href="index.html">AI Jobs</a></li>
-                        <li><a href="articles.html">AI News</a></li>
-                        <li><a href="#">Submit</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Legal</h3>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Disclaimer</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>AITOOLS</h2>
+          <p>
+            All in one place. Whether you're a developer, creator, or
+            enthusiast, our platform helps you stay ahead in the AI revolution.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M20 10.0251C20 4.49123 15.52 0 10 0C4.48 0 0 4.49123 0 10.0251C0 14.8772 3.44 18.9173 8 19.8496V13.0326H6V10.0251H8V7.5188C8 5.58396 9.57 4.01003 11.5 4.01003H14V7.01754H12C11.45 7.01754 11 7.46867 11 8.02005V10.0251H14V13.0326H11V20C16.05 19.4987 20 15.2281 20 10.0251Z"
+                  fill="#A2A2A2"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 8.88889C0 4.69889 -1.32455e-07 2.60333 1.30222 1.30222C2.60444 0.00111103 4.69889 0 8.88889 0H11.1111C15.3011 0 17.3967 -1.32455e-07 18.6978 1.30222C19.9989 2.60444 20 4.69889 20 8.88889V11.1111C20 15.3011 20 17.3967 18.6978 18.6978C17.3956 19.9989 15.3011 20 11.1111 20H8.88889C4.69889 20 2.60333 20 1.30222 18.6978C0.00111103 17.3956 0 15.3011 0 11.1111V8.88889ZM16.6667 5C16.6667 5.44203 16.4911 5.86595 16.1785 6.17851C15.866 6.49107 15.442 6.66667 15 6.66667C14.558 6.66667 14.134 6.49107 13.8215 6.17851C13.5089 5.86595 13.3333 5.44203 13.3333 5C13.3333 4.55797 13.5089 4.13405 13.8215 3.82149C14.134 3.50893 14.558 3.33333 15 3.33333C15.442 3.33333 15.866 3.50893 16.1785 3.82149C16.4911 4.13405 16.6667 4.55797 16.6667 5ZM12.2222 11.1111C12.2222 11.7005 11.9881 12.2657 11.5713 12.6825C11.1546 13.0992 10.5894 13.3333 10 13.3333C9.41063 13.3333 8.8454 13.0992 8.42865 12.6825C8.0119 12.2657 7.77778 11.7005 7.77778 11.1111C7.77778 10.5217 8.0119 9.95651 8.42865 9.53976C8.8454 9.12302 9.41063 8.88889 10 8.88889C10.5894 8.88889 11.1546 9.12302 11.5713 9.53976C11.9881 9.95651 12.2222 10.5217 12.2222 11.1111ZM14.4444 11.1111C14.4444 12.2899 13.9762 13.4203 13.1427 14.2538C12.3092 15.0873 11.1787 15.5556 10 15.5556C8.82126 15.5556 7.6908 15.0873 6.8573 14.2538C6.02381 13.4203 5.55556 12.2899 5.55556 11.1111C5.55556 9.93237 6.02381 8.80191 6.8573 7.96841C7.6908 7.13492 8.82126 6.66667 10 6.66667C11.1787 6.66667 12.3792 7.13492 13.2127 7.96841C14.0462 8.80191 14.5144 9.93237 14.5144 11.1111C14.4444 12.2899 13.9762 13.4203 13.1427 14.2538C12.3092 15.0873 11.1787 15.5556 10 15.5556C8.82126 15.5556 7.6908 15.0873 6.8573 14.2538C6.02381 13.4203 5.55556 12.2899 5.55556 11.1111Z"
+                  fill="#A2A2A2"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="YouTube">
+              <svg width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10 0C8.89209 0 7.6 0.0267499 6.34047 0.0630533L6.2893 0.0649639C5.00744 0.102223 3.97302 0.131839 3.15814 0.270365C2.30884 0.414623 1.60372 0.69072 1.04 1.28591C0.474419 1.883 0.227907 2.62149 0.111628 3.50519C6.93077e-09 4.35545 0 5.43309 0 6.7725V8.22846C0 9.56595 6.93077e-09 10.6436 0.111628 11.4948C0.226977 12.3785 0.474419 13.117 1.04 13.7141C1.60372 14.3102 2.30884 14.5854 3.15814 14.7296C3.97302 14.8682 5.00744 14.8978 6.2893 14.935L6.34047 14.9369C7.60093 14.9732 8.89209 15 10 15C11.1079 15 12.4 14.9732 13.6595 14.9369L13.7107 14.935C14.9926 14.8978 16.027 14.8682 16.8419 14.7296C17.6912 14.5854 18.3963 14.3093 18.96 13.7141C19.5256 13.117 19.773 12.3785 19.8884 11.4948C20 10.6445 20 9.56691 20 8.2275V6.77154C20 5.43309 20 4.35545 19.8884 3.50519C19.773 2.62149 19.5256 1.883 18.96 1.28591C18.3963 0.689765 17.6912 0.414623 16.8419 0.270365C16.027 0.131839 14.9926 0.102223 13.7098 0.0649639L13.6595 0.0630533C12.44 0.0250386 11.2201 0.00401893 10 0ZM8.9507 10.0322C8.84461 10.0944 8.72447 10.1269 8.60229 10.1265C8.48012 10.1261 8.36019 10.0927 8.25452 10.0297C8.14884 9.96678 8.06112 9.87641 8.00013 9.76769C7.93914 9.65897 7.90702 9.5357 7.90698 9.41023V5.58882C7.90702 5.46334 7.93914 5.34008 8.00013 5.23135C8.06112 5.12263 8.14884 5.03227 8.25452 4.9693C8.36019 4.90633 8.48012 4.87296 8.60229 4.87254C8.72447 4.87211 8.84461 4.90465 8.9507 4.96688L12.2065 6.87759C12.3132 6.94028 12.4019 7.03082 12.5 7.09326L12.5 9.28671C12.4019 9.34916 12.3132 9.43971 12.2065 9.50242L8.9507 11.4131C8.84461 11.4754 8.72447 11.5079 8.60229 11.5075C8.48012 11.5071 8.36019 11.4738 8.25452 11.4108C8.14884 11.3479 8.06112 11.2576 8.00013 11.1488C7.93914 11.0401 7.90702 10.9168 7.90698 10.7914V8.20862C7.90702 8.08314 7.93914 7.95988 8.00013 7.85115C8.06112 7.74243 8.14884 7.65207 8.25452 7.5891C8.36019 7.52614 8.48012 7.49276 8.60229 7.49234C8.72447 7.49192 8.84461 7.52446 8.9507 7.58669L12.2065 9.49739C12.3132 9.56008 12.4019 9.65062 12.5 9.71307L12.5 9.28671C12.4019 9.34916 12.3132 9.43971 12.2065 9.50242L8.9507 11.4131Z"
+                  fill="#A2A2A2"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>© 2025 aisurface. All rights reserved.</p>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="ai-prompts.html">AI Prompts</a></li>
+              <li><a href="index.html">AI Jobs</a></li>
+              <li><a href="articles.html">AI News</a></li>
+              <li><a href="#">Submit</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 aisurface. All rights reserved.</p>
+      </div>
     </footer>
 
     <script defer src="./article-detail.js"></script>
-</body>
+  </body>
 </html>
