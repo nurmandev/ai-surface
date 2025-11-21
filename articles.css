@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Roboto', -apple-system, sans-serif;
+  font-family: "Roboto", -apple-system, sans-serif;
   background: #000;
   color: #fff;
   overflow-x: hidden;
@@ -31,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 700;
   white-space: nowrap;
@@ -52,7 +52,7 @@ body {
 
 .breaking-content p {
   flex: 1;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
@@ -80,7 +80,7 @@ body {
 }
 
 .news-date {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 400;
   white-space: nowrap;
@@ -136,7 +136,7 @@ body {
 }
 
 .nav-link {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 25px;
   font-weight: 600;
   color: #fff;
@@ -170,14 +170,14 @@ body {
   border-radius: 8px;
   padding: 0 1rem 0 2.75rem;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   outline: none;
   transition: border-color 0.2s;
 }
 
 .search-box input::placeholder {
-  color: #6D6D6D;
+  color: #6d6d6d;
 }
 
 .search-box input:focus {
@@ -193,7 +193,7 @@ body {
   border: none;
   border-radius: 29px;
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #000;
@@ -234,7 +234,7 @@ body {
   text-align: left;
   cursor: pointer;
   transition: background 0.2s;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #fff;
@@ -248,7 +248,7 @@ body {
 }
 
 .sidebar-item.highlighted {
-  background: #2B2B2B;
+  background: #2b2b2b;
 }
 
 .sidebar-item.active {
@@ -270,7 +270,12 @@ body {
 
 /* Newsletter Hero */
 .newsletter-hero {
-  background: linear-gradient(90deg, #4049FF 0.05%, #333BCC 27.12%, rgba(38, 44, 153, 0.12) 108.33%);
+  background: linear-gradient(
+    90deg,
+    #4049ff 0.05%,
+    #333bcc 27.12%,
+    rgba(38, 44, 153, 0.12) 108.33%
+  );
   border: 1px solid rgba(201, 201, 201, 0.25);
   border-radius: 15px;
   margin: 2rem 2.5rem;
@@ -284,10 +289,11 @@ body {
 }
 
 .newsletter-hero::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: url('https://api.builder.io/api/v1/image/assets/TEMP/fa332d931e4d2d1670a6999d17ea407c581d551e?width=3144') center/cover;
+  background: url("https://api.builder.io/api/v1/image/assets/TEMP/fa332d931e4d2d1670a6999d17ea407c581d551e?width=3144")
+    center/cover;
   opacity: 0.3;
   z-index: 0;
 }
@@ -299,19 +305,19 @@ body {
 }
 
 .newsletter-content h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
   font-weight: 800;
-  color: #E2E2E2;
+  color: #e2e2e2;
   line-height: 1.2;
   margin: 0 0 0.5rem 0;
 }
 
 .newsletter-content p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 400;
-  color: #A9A9A9;
+  color: #a9a9a9;
   line-height: 1.4;
   margin: 0;
 }
@@ -335,13 +341,13 @@ body {
   border: none;
   padding: 0 1.5rem;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   outline: none;
 }
 
 .newsletter-signup input::placeholder {
-  color: #6D6D6D;
+  color: #6d6d6d;
 }
 
 .newsletter-signup button {
@@ -349,7 +355,7 @@ body {
   border: none;
   border-radius: 29px;
   padding: 0.75rem 2.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #000;
@@ -376,7 +382,7 @@ body {
 .tab {
   background: none;
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -446,7 +452,7 @@ body {
   border-radius: 29px;
   border: 1px solid #212121;
   background: #191919;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 10px;
   font-weight: 400;
   color: #fff;
@@ -465,7 +471,7 @@ body {
 }
 
 .article-content h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.3;
@@ -478,7 +484,7 @@ body {
 }
 
 .article-content p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
@@ -495,10 +501,10 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
-  color: #E2E2E2;
+  color: #e2e2e2;
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -543,7 +549,7 @@ body {
 }
 
 .footer-brand h2 {
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   font-size: 49px;
   font-weight: 400;
   color: #fff;
@@ -551,11 +557,11 @@ body {
 }
 
 .footer-brand p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 2;
-  color: #C9C9C9;
+  color: #c9c9c9;
   margin: 0 0 2rem 0;
 }
 
@@ -586,7 +592,7 @@ body {
 }
 
 .footer-column h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #fff;
@@ -605,11 +611,11 @@ body {
 }
 
 .footer-column a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 500;
   line-height: 2;
-  color: #C4C4C4;
+  color: #c4c4c4;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -624,7 +630,7 @@ body {
 }
 
 .footer-bottom p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 2.3;
@@ -707,6 +713,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
   .breaking-news-container {
     flex-wrap: wrap;
     gap: 0.75rem;
@@ -797,6 +807,22 @@ body {
     display: none;
     transform: translateX(-100%);
     z-index: 999;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+    display: flex;
+  }
+
+  .sidebar-mobile-header {
+    flex-shrink: 0;
+  }
+
+  .sidebar-nav {
+    overflow-y: auto;
+    flex: 1;
   }
 
   .sidebar.open {

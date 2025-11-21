@@ -20,7 +20,7 @@
 
 .detail-breadcrumb {
   color: #c9c9c9;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -53,7 +53,7 @@
 
 .detail-title {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
@@ -72,7 +72,7 @@
 
 .detail-description p {
   color: #e2e2e2;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -81,7 +81,7 @@
 
 .detail-content {
   color: #c9c9c9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -114,7 +114,7 @@
 
 .example-title {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 1;
@@ -123,7 +123,7 @@
 
 .example-name {
   color: #c9c9c9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 1.5;
@@ -140,7 +140,7 @@
 
 .example-text {
   color: #c9c9c9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
@@ -149,7 +149,7 @@
 
 .example-placeholder {
   color: #808080;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
@@ -164,7 +164,7 @@
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
@@ -181,7 +181,7 @@
 
 .categories-title {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1;
@@ -199,7 +199,7 @@
 
 .categories-list li {
   color: #c9c9c9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -214,7 +214,7 @@
 
 .how-to-use-title {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
@@ -223,7 +223,7 @@
 
 .how-to-use-steps {
   color: #c9c9c9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -252,7 +252,7 @@
   color: #000;
   border: none;
   border-radius: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -292,7 +292,7 @@
 
 .footer-brand-title {
   color: #fff;
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   font-size: 49px;
   font-weight: 400;
   line-height: normal;
@@ -301,7 +301,7 @@
 
 .footer-brand-desc {
   color: #c9c9c9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 35px;
@@ -322,7 +322,7 @@
 
 .footer-column-title {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 35px;
@@ -331,7 +331,7 @@
 
 .footer-column a {
   color: #c4c4c4;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 500;
   line-height: 35px;
@@ -378,7 +378,7 @@
 
 .footer-bottom p {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 35px;
@@ -445,6 +445,10 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
   .detail-container {
     padding: 0 1.5rem;
   }

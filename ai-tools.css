@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Roboto', -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "Roboto", -apple-system, Roboto, Helvetica, sans-serif;
   background: #000;
   color: #fff;
   overflow-x: hidden;
@@ -47,10 +47,10 @@ body {
 }
 
 .section-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 800;
-  color: #E2E2E2;
+  color: #e2e2e2;
 }
 
 .arrow-icon {
@@ -102,7 +102,7 @@ body {
 }
 
 .tool-name {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -110,7 +110,7 @@ body {
 }
 
 .tool-category {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 300;
   color: #fff;
@@ -152,7 +152,7 @@ body {
   padding: 5px 18px;
   background: #353535;
   border-radius: 19px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #fff;
@@ -170,7 +170,7 @@ body {
   background: #191919;
   border: 1px solid #212121;
   border-radius: 29px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 10px;
   font-weight: 400;
   color: #fff;
@@ -178,7 +178,7 @@ body {
 }
 
 .card-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
@@ -190,8 +190,8 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  color: #E2E2E2;
-  font-family: 'Roboto', sans-serif;
+  color: #e2e2e2;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
   text-decoration: none;
@@ -221,7 +221,7 @@ body {
 }
 
 .footer-brand {
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   font-size: 49px;
   font-weight: 400;
   color: #fff;
@@ -229,10 +229,10 @@ body {
 }
 
 .footer-description {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 400;
-  color: #C9C9C9;
+  color: #c9c9c9;
   line-height: 35px;
   margin-bottom: 1.5rem;
 }
@@ -267,7 +267,7 @@ body {
 }
 
 .footer-column-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #fff;
@@ -276,10 +276,10 @@ body {
 }
 
 .footer-column a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 500;
-  color: #C4C4C4;
+  color: #c4c4c4;
   text-decoration: none;
   line-height: 35px;
   transition: opacity 0.2s;
@@ -295,7 +295,7 @@ body {
 }
 
 .footer-bottom p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -313,7 +313,7 @@ body {
   .tools-grid.five-col {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .tools-grid.four-col {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -327,7 +327,7 @@ body {
   .tools-grid.five-col {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .tools-grid.four-col {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -358,7 +358,7 @@ body {
   .tools-grid.five-col {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .tools-grid.four-col {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -378,6 +378,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
   .page-header {
     flex-direction: column;
     align-items: flex-start;

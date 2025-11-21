@@ -47,7 +47,7 @@
 
 .section-title {
   color: #e2e2e2;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: 800;
   line-height: 1;
@@ -111,7 +111,7 @@
   background: #191919;
   color: #fff;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 1;
@@ -126,7 +126,7 @@
 
 .prompt-card-title {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 23px;
@@ -136,7 +136,7 @@
 
 .prompt-card-desc {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
@@ -152,7 +152,7 @@
 
 .prompt-open-link {
   color: #e2e2e2;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 1;
@@ -195,7 +195,7 @@
 
 .footer-brand-title {
   color: #fff;
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   font-size: 49px;
   font-weight: 400;
   line-height: normal;
@@ -204,7 +204,7 @@
 
 .footer-brand-desc {
   color: #c9c9c9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 35px;
@@ -225,7 +225,7 @@
 
 .footer-column-title {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 35px;
@@ -234,7 +234,7 @@
 
 .footer-column a {
   color: #c4c4c4;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 500;
   line-height: 35px;
@@ -281,7 +281,7 @@
 
 .footer-bottom p {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 35px;
@@ -367,6 +367,10 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
   .prompt-sections-container {
     padding: 1.5rem 1rem;
   }

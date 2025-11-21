@@ -119,60 +119,89 @@
 
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <aside class="sidebar" id="sidebar">
+      <div class="sidebar-mobile-header">
+        <button
+          class="sidebar-close-btn"
+          id="sidebarCloseBtn"
+          aria-label="Close navigation menu"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </div>
       <nav class="sidebar-nav">
-        <div class="sidebar-section">
-          <button class="sidebar-section-title" aria-expanded="true">
-            <span>Navigation</span>
-            <i class="fas fa-chevron-down sidebar-toggle-icon"></i>
-          </button>
-          <ul class="sidebar-section-links">
-            <li><a href="index.html" class="sidebar-link">Explore</a></li>
-            <li><a href="ai-tools.html" class="sidebar-link">AI Tools</a></li>
-            <li>
-              <a href="ai-prompts.html" class="sidebar-link">AI Prompts</a>
-            </li>
-            <li><a href="ai-jobs.html" class="sidebar-link">AI Jobs</a></li>
-            <li><a href="articles.html" class="sidebar-link">Articles</a></li>
-          </ul>
-        </div>
-
-        <div class="sidebar-section">
-          <button class="sidebar-section-title" aria-expanded="true">
-            <span>Categories</span>
-            <i class="fas fa-chevron-down sidebar-toggle-icon"></i>
-          </button>
-          <ul class="sidebar-section-links">
-            <li>
-              <a href="ai-prompts.html" class="sidebar-link">AI Prompts</a>
-            </li>
-            <li><a href="ai-jobs.html" class="sidebar-link">AI Jobs</a></li>
-            <li><a href="articles.html" class="sidebar-link">AI News</a></li>
-            <li><a href="#" class="sidebar-link">Submit</a></li>
-          </ul>
-        </div>
-
-        <div class="sidebar-section">
-          <button class="sidebar-section-title" aria-expanded="true">
-            <span>Legal</span>
-            <i class="fas fa-chevron-down sidebar-toggle-icon"></i>
-          </button>
-          <ul class="sidebar-section-links">
-            <li><a href="#" class="sidebar-link">Contact Us</a></li>
-            <li><a href="#" class="sidebar-link">Terms & Conditions</a></li>
-            <li><a href="#" class="sidebar-link">Disclaimer</a></li>
-            <li><a href="#" class="sidebar-link">Privacy Policy</a></li>
-          </ul>
-        </div>
+        <ul class="sidebar-list">
+          <li>
+            <a href="index.html" class="sidebar-link active">
+              <i class="fas fa-compass"></i>
+              <span>Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="articles.html" class="sidebar-link">
+              <i class="fas fa-file-alt"></i>
+              <span>Articles</span>
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+            <button class="sidebar-link dropdown-toggle" aria-expanded="true">
+              <div class="link-content">
+                <i class="fas fa-lightbulb"></i>
+                <span>AI Prompts</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="sidebar-submenu">
+              <li><a href="#" class="sidebar-sublink">Chatgpt</a></li>
+              <li><a href="#" class="sidebar-sublink">Midjourney</a></li>
+              <li><a href="#" class="sidebar-sublink">Stable Diffusion</a></li>
+              <li><a href="#" class="sidebar-sublink">Writing Prompts</a></li>
+              <li><a href="#" class="sidebar-sublink">Designing Prompts</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-dropdown">
+            <button class="sidebar-link dropdown-toggle" aria-expanded="false">
+              <div class="link-content">
+                <i class="fas fa-briefcase"></i>
+                <span>AI Jobs</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="sidebar-submenu collapsed">
+              <li><a href="#" class="sidebar-sublink">Machine Learning</a></li>
+              <li><a href="#" class="sidebar-sublink">Data Science</a></li>
+              <li><a href="#" class="sidebar-sublink">AI Engineering</a></li>
+              <li>
+                <a href="#" class="sidebar-sublink">Prompt Engineering</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-dropdown">
+            <button class="sidebar-link dropdown-toggle" aria-expanded="false">
+              <div class="link-content">
+                <i class="fas fa-toolbox"></i>
+                <span>AI Tools</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="sidebar-submenu collapsed">
+              <li><a href="#" class="sidebar-sublink">Text Generation</a></li>
+              <li><a href="#" class="sidebar-sublink">Image Creation</a></li>
+              <li><a href="#" class="sidebar-sublink">Video Editing</a></li>
+              <li><a href="#" class="sidebar-sublink">Code Assistants</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
+      <div class="sidebar-search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search" />
+      </div>
     </aside>
 
     <nav class="navbar">
       <div class="nav-container">
         <a href="index.html" class="logo">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/5625c1f9e340703f26010a681f5e12b6014b6a44?width=814"
-            alt="The AI Surface"
-          />
+          <img src="./logo.png" alt="The AI Surface" />
         </a>
 
         <ul class="nav-links">
@@ -233,11 +262,7 @@
     <main class="main-wrapper">
       <section class="hero-section">
         <div class="hero-gradient"></div>
-        <img
-          class="hero-bg"
-          src="https://api.builder.io/api/v1/image/assets/TEMP/4f92c32a94e86e3c9af075883f3a7081d99d0094?width=3144"
-          alt=""
-        />
+        <img class="hero-bg" src="./images/Rectangle 6.png" alt="" />
         <div class="hero-content">
           <h1 class="hero-title">
             <span class="title-light">All the </span
@@ -268,7 +293,7 @@
         <div class="featured-grid">
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b63700faec842a750963c2706df30abf2b15eb99?width=728"
+              src="./images/Rectangle 9.png"
               alt="ScribHow"
               class="tool-image"
             />
@@ -298,7 +323,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b32b0c08d99b9a7e1930487da379f924b3de854e?width=728"
+              src="./images/Rectangle 9 (1).png"
               alt="ProofHub"
               class="tool-image"
             />
@@ -328,7 +353,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/6ec0c60f99c6143e7bef768540b68f0264651798?width=728"
+              src="./images/Rectangle 9 (2).png"
               alt="Blaze"
               class="tool-image"
             />
@@ -378,7 +403,7 @@
         <div class="newest-grid">
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/8da0adbec606770eed35c7cef5d904e435b95bb0?width=146"
+              src="./images/Group 35.png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -389,7 +414,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/eb293e86b38251f1ab1e3888545724cfe8f2b9bb?width=146"
+              src="./images/Group 35 (1).png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -400,7 +425,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/9528fc605d18bb5ca4fc54b16ad6dc2c7a970866?width=146"
+              src="./images/Group 35 (2).png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -411,7 +436,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/1641594c10235f3ed2f68eeb76a213ef11ed1c3f?width=146"
+              src="./images/Group 35 (3).png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -422,7 +447,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b0d8ef2b046b14f02e94087d801a3fe1e88abf66?width=146"
+              src="./images/Group 35.png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -433,7 +458,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/8cb6ce71d7ece0f47e025c9328c8a630c4436b41?width=146"
+              src="./images/Group 35 (1).png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -444,7 +469,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/67f19b875cd4929879d96253ad6d6e641329308c?width=146"
+              src="./images/Group 35 (2).png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -455,7 +480,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/eafa5e32a89e3cb32eb2d41d9c02b9b0bf4265b4?width=146"
+              src="./images/Group 35 (3).png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -466,7 +491,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/daf97265c675cfac5ef945b1b34b319ab8ec9d9a?width=146"
+              src="./images/Group 35.png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -477,7 +502,7 @@
           </div>
           <div class="tool-card featured-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f5cad805d4afcce06a62217dcaead385023788a0?width=146"
+              src="./images/Group 35 (1).png"
               alt="Shadcraft"
               class="tool-image"
             />
@@ -493,7 +518,7 @@
         <div class="news-grid">
           <article class="news-card">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/e3f2a9fe5372c9035964de8b957440d4bcfa8b8d?width=730"
+              src="./images/Rectangle 9 (2).png"
               alt="Midjourney V6"
               class="news-image"
             />

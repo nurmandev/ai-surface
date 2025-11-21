@@ -122,60 +122,89 @@
 
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <aside class="sidebar" id="sidebar">
+      <div class="sidebar-mobile-header">
+        <button
+          class="sidebar-close-btn"
+          id="sidebarCloseBtn"
+          aria-label="Close navigation menu"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </div>
       <nav class="sidebar-nav">
-        <div class="sidebar-section">
-          <button class="sidebar-section-title" aria-expanded="true">
-            <span>Navigation</span>
-            <i class="fas fa-chevron-down sidebar-toggle-icon"></i>
-          </button>
-          <ul class="sidebar-section-links">
-            <li><a href="index.html" class="sidebar-link">Explore</a></li>
-            <li><a href="ai-tools.html" class="sidebar-link">AI Tools</a></li>
-            <li>
-              <a href="ai-prompts.html" class="sidebar-link">AI Prompts</a>
-            </li>
-            <li><a href="ai-jobs.html" class="sidebar-link">AI Jobs</a></li>
-            <li><a href="articles.html" class="sidebar-link">Articles</a></li>
-          </ul>
-        </div>
-
-        <div class="sidebar-section">
-          <button class="sidebar-section-title" aria-expanded="true">
-            <span>Categories</span>
-            <i class="fas fa-chevron-down sidebar-toggle-icon"></i>
-          </button>
-          <ul class="sidebar-section-links">
-            <li>
-              <a href="ai-prompts.html" class="sidebar-link">AI Prompts</a>
-            </li>
-            <li><a href="ai-jobs.html" class="sidebar-link">AI Jobs</a></li>
-            <li><a href="articles.html" class="sidebar-link">AI News</a></li>
-            <li><a href="#" class="sidebar-link">Submit</a></li>
-          </ul>
-        </div>
-
-        <div class="sidebar-section">
-          <button class="sidebar-section-title" aria-expanded="true">
-            <span>Legal</span>
-            <i class="fas fa-chevron-down sidebar-toggle-icon"></i>
-          </button>
-          <ul class="sidebar-section-links">
-            <li><a href="#" class="sidebar-link">Contact Us</a></li>
-            <li><a href="#" class="sidebar-link">Terms & Conditions</a></li>
-            <li><a href="#" class="sidebar-link">Disclaimer</a></li>
-            <li><a href="#" class="sidebar-link">Privacy Policy</a></li>
-          </ul>
-        </div>
+        <ul class="sidebar-list">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-compass"></i>
+              <span>Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="articles.html" class="sidebar-link">
+              <i class="fas fa-file-alt"></i>
+              <span>Articles</span>
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+            <button class="sidebar-link dropdown-toggle" aria-expanded="false">
+              <div class="link-content">
+                <i class="fas fa-lightbulb"></i>
+                <span>AI Prompts</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="sidebar-submenu collapsed">
+              <li><a href="#" class="sidebar-sublink">Chatgpt</a></li>
+              <li><a href="#" class="sidebar-sublink">Midjourney</a></li>
+              <li><a href="#" class="sidebar-sublink">Stable Diffusion</a></li>
+              <li><a href="#" class="sidebar-sublink">Writing Prompts</a></li>
+              <li><a href="#" class="sidebar-sublink">Designing Prompts</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-dropdown">
+            <button class="sidebar-link dropdown-toggle" aria-expanded="true">
+              <div class="link-content">
+                <i class="fas fa-briefcase"></i>
+                <span>AI Jobs</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="sidebar-submenu">
+              <li><a href="#" class="sidebar-sublink">Machine Learning</a></li>
+              <li><a href="#" class="sidebar-sublink">Data Science</a></li>
+              <li><a href="#" class="sidebar-sublink">AI Engineering</a></li>
+              <li>
+                <a href="#" class="sidebar-sublink">Prompt Engineering</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-dropdown">
+            <button class="sidebar-link dropdown-toggle" aria-expanded="false">
+              <div class="link-content">
+                <i class="fas fa-toolbox"></i>
+                <span>AI Tools</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="sidebar-submenu collapsed">
+              <li><a href="#" class="sidebar-sublink">Text Generation</a></li>
+              <li><a href="#" class="sidebar-sublink">Image Creation</a></li>
+              <li><a href="#" class="sidebar-sublink">Video Editing</a></li>
+              <li><a href="#" class="sidebar-sublink">Code Assistants</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
+      <div class="sidebar-search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search" />
+      </div>
     </aside>
 
     <nav class="navbar">
       <div class="nav-container">
         <a href="index.html" class="logo">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/5625c1f9e340703f26010a681f5e12b6014b6a44?width=814"
-            alt="The AI Surface"
-          />
+          <img src="./logo.png" alt="The AI Surface" />
         </a>
 
         <ul class="nav-links">

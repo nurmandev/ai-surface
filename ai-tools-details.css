@@ -410,6 +410,10 @@ footer {
 
 /* Mobile (Stack everything) */
 @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
   body {
     flex-direction: column;
     height: auto;

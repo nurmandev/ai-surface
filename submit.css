@@ -35,7 +35,33 @@ a {
   min-height: 100vh;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 /* Sidebar */
+.sidebar-mobile-header {
+  display: none;
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
 .sidebar {
   width: 310px;
   background-color: var(--bg-color);
@@ -529,8 +555,74 @@ a {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
   .sidebar {
-    display: none; /* In reality, you'd implement a hamburger menu */
+    display: flex;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    width: 80%;
+    max-width: 300px;
+    z-index: 1000;
+    overflow: hidden;
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0;
+  }
+
+  .nav-menu {
+    overflow-y: auto;
+    flex: 1;
+    margin-top: 0; /* Reset margin if needed, or keep it */
+    padding-top: 20px;
+  }
+
+  .sidebar-mobile-header .logo img {
+    height: 32px;
+    width: auto;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+  }
+
+  .hamburger-line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
   }
 
   .main-content {
