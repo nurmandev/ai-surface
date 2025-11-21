@@ -1240,7 +1240,40 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  body.sidebar-open .navbar {
     display: none;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    order: 2;
+    margin-left: auto;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    order: 3;
+    margin-left: 1rem;
   }
 
   .sidebar {

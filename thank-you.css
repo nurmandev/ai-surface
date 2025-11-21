@@ -313,10 +313,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
-
   .sidebar {
     display: flex;
     transform: translateX(-100%);

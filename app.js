@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburgerMenu.classList.toggle("active");
     sidebar.classList.toggle("mobile-open");
     sidebarOverlay.classList.toggle("active");
+    document.body.classList.toggle("sidebar-open");
     document.body.style.overflow = sidebar.classList.contains("mobile-open")
       ? "hidden"
       : "";

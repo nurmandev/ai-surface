@@ -633,10 +633,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
-
   .breaking-news-bar {
     padding: 0.5rem 0;
   }

@@ -367,10 +367,6 @@
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
-
   .prompt-sections-container {
     padding: 1.5rem 1rem;
   }

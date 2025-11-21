@@ -378,10 +378,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
-
   .page-header {
     flex-direction: column;
     align-items: flex-start;

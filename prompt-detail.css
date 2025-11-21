@@ -445,10 +445,6 @@
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
-
   .detail-container {
     padding: 0 1.5rem;
   }
