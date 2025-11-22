@@ -157,7 +157,7 @@ body {
 }
 
 .logo img {
-  height: 60px;
+  height: 16px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
@@ -1101,13 +1101,13 @@ body {
 
 @media (min-width: 1920px) {
   .logo img {
-    height: 70px;
+    height: 16px;
   }
 }
 
 @media (max-width: 1600px) {
   .logo img {
-    height: 55px;
+    height: 16px;
   }
 
   .vertical-divider {
@@ -1126,7 +1126,7 @@ body {
 
 @media (max-width: 1400px) {
   .logo img {
-    height: 52px;
+    height: 16px;
   }
 
   .featured-grid,
@@ -1145,7 +1145,7 @@ body {
 
 @media (max-width: 1200px) {
   .logo img {
-    height: 48px;
+    height: 16px;
   }
 
   .sidebar {
@@ -1191,7 +1191,7 @@ body {
 
 @media (max-width: 992px) {
   .logo img {
-    height: 40px;
+    height: 16px;
   }
 
   .top-bar {
@@ -1689,7 +1689,7 @@ body {
 
 @media (max-width: 640px) {
   .logo img {
-    height: 30px;
+    height: 16px;
   }
 }
 
@@ -1720,7 +1720,7 @@ body {
 
 @media (max-width: 480px) {
   .logo img {
-    height: 20px;
+    height: 16px;
   }
 
   .navbar {
