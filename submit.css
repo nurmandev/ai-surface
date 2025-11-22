@@ -225,6 +225,12 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 120px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  background: #1f1f1f;
 }
 
 .stat-card h3 {
@@ -260,6 +266,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.submission-card:hover {
+  transform: translateY(-5px);
+  background: #1f1f1f;
 }
 
 .card-content {
@@ -346,6 +358,12 @@ a {
   flex-direction: column;
   gap: 12px;
   align-items: flex-start;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  background: #1f1f1f;
 }
 
 .feature-item h4 {
@@ -382,6 +400,12 @@ a {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  background: #1f1f1f;
 }
 
 .user-info {

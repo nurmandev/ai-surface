@@ -423,10 +423,17 @@ body {
 
 .article-card:hover {
   transform: translateY(-4px);
+  background: #fff;
 }
 
-.article-card.featured {
-  background: #fff;
+.article-card:hover .article-content h3,
+.article-card:hover .article-content p,
+.article-card:hover .read-more {
+  color: #000;
+}
+
+.article-card:hover .read-more svg path {
+  fill: #000;
 }
 
 .article-card img {
@@ -459,12 +466,6 @@ body {
   width: fit-content;
 }
 
-.article-card.featured .article-category {
-  border: 1px solid #212121;
-  background: #191919;
-  color: #fff;
-}
-
 .article-category svg {
   width: 8px;
   height: 12px;
@@ -479,10 +480,6 @@ body {
   margin: 0;
 }
 
-.article-card.featured .article-content h3 {
-  color: #000;
-}
-
 .article-content p {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -491,10 +488,6 @@ body {
   color: #fff;
   margin: 0;
   flex: 1;
-}
-
-.article-card.featured .article-content p {
-  color: #000;
 }
 
 .read-more {
@@ -507,10 +500,6 @@ body {
   color: #e2e2e2;
   text-decoration: none;
   transition: opacity 0.2s;
-}
-
-.article-card.featured .read-more {
-  color: #000;
 }
 
 .read-more:hover {

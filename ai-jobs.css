@@ -78,7 +78,7 @@ body {
 
 .job-card:hover {
   transform: translateY(-2px);
-  background: #1a1a1a;
+  background: #1f1f1f;
   border-color: rgba(201, 201, 201, 0.25);
 }
 
