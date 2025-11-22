@@ -205,4 +205,23 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  // FAQ Accordion
+  const faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    if (question) {
+      question.addEventListener("click", function () {
+        // Close all other FAQ items
+        faqItems.forEach((otherItem) => {
+          if (otherItem !== item && otherItem.classList.contains("open")) {
+            otherItem.classList.remove("open");
+          }
+        });
+
+        // Toggle current item
+        item.classList.toggle("open");
+      });
+    }
+  });
 });

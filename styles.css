@@ -1434,103 +1434,6 @@ body {
     outline: none;
   }
 
-  .sidebar-search input::placeholder {
-    color: #666;
-  }
-
-  .sidebar-mobile-header .logo img {
-    height: 32px;
-  }
-
-  .top-bar {
-    padding: 0.5rem 1rem;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .social-links {
-    gap: 0.75rem;
-  }
-
-  .social-icon {
-    width: 15px;
-    height: 15px;
-  }
-
-  .top-date {
-    font-size: 12px;
-  }
-
-  .breaking-news {
-    padding: 0.75rem 1rem;
-    gap: 1rem;
-  }
-
-  .breaking-label {
-    font-size: 12px;
-  }
-
-  .breaking-label svg {
-    width: 12px;
-    height: 10px;
-  }
-
-  .news-content p {
-    font-size: 12px;
-  }
-
-  .news-prev svg,
-  .news-next svg {
-    width: 7px;
-    height: 12px;
-  }
-
-  .navbar {
-    padding: 0.75rem 1rem;
-  }
-
-  .nav-container {
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo img {
-    height: 32px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .hamburger-menu {
-    display: flex;
-  }
-
-  .nav-right {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-
-  .search-container {
-    display: none;
-  }
-
-  .submit-btn {
-    padding: 0.6rem 1.5rem;
-    font-size: 12px;
-    border-radius: 29px;
-  }
-
-  .submit-btn svg {
-    width: 10px;
-    height: 13px;
-  }
-
-  .vertical-divider {
-    display: none;
-  }
-
   .main-wrapper {
     padding: 0 1rem;
     padding-left: 1rem;
@@ -1734,7 +1637,16 @@ body {
 
 @media (max-width: 480px) {
   .logo img {
-    height: 26px;
+    height: 20px;
+  }
+
+  .navbar {
+    padding: 0.6rem 1rem;
+  }
+
+  .submit-btn {
+    padding: 0.5rem 1.3rem;
+    font-size: 11px;
   }
 
   .nav-links a {
