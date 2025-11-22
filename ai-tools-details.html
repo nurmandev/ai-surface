@@ -3,197 +3,237 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Surface</title>
-    <link rel="stylesheet" href="./ai-tools-details.css" />
-    <!-- Font Awesome for Icons -->
+    <title>CodeGenie - AI Surface</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="ai-tools-details.css" />
   </head>
   <body>
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="logo">
-        <h2>AI SURFACE</h2>
-      </div>
-
-      <nav class="menu">
-        <a href="#" class="menu-item"
-          ><i class="fa-solid fa-compass"></i> Explore
-          <i class="fa-solid fa-chevron-right arrow"></i
-        ></a>
-        <a href="#" class="menu-item"
-          ><i class="fa-regular fa-file-lines"></i> Articles
-          <i class="fa-solid fa-chevron-right arrow"></i
-        ></a>
-        <a href="#" class="menu-item"
-          ><i class="fa-solid fa-lightbulb"></i> AI Prompts
-          <i class="fa-solid fa-chevron-right arrow"></i
-        ></a>
-        <a href="#" class="menu-item"
-          ><i class="fa-solid fa-briefcase"></i> AI Jobs
-          <i class="fa-solid fa-chevron-right arrow"></i
-        ></a>
-
-        <!-- Active Dropdown -->
-        <div class="menu-group active">
-          <a href="#" class="menu-item active-parent"
-            ><i class="fa-solid fa-robot"></i> AI Tools
-            <i class="fa-solid fa-chevron-down arrow"></i
-          ></a>
-          <div class="submenu">
-            <a href="#" class="submenu-item active">Text Generation</a>
-            <a href="#" class="submenu-item">Image Creation</a>
-            <a href="#" class="submenu-item">Video Editing</a>
-            <a href="#" class="submenu-item">Code Assistants</a>
-          </div>
-        </div>
-      </nav>
-
-      <div class="sidebar-footer">
-        <button class="btn-submit">
-          <i class="fa-solid fa-upload"></i> Submit a Tool
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-mobile-header">
+        <button
+          class="sidebar-close-btn"
+          id="sidebarCloseBtn"
+          aria-label="Close navigation menu"
+        >
+          <i class="fas fa-arrow-left"></i>
         </button>
+      </div>
+      <nav class="sidebar-nav">
+        <ul class="sidebar-list">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-compass"></i>
+              <span>Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="articles.html" class="sidebar-link">
+              <i class="fas fa-file-alt"></i>
+              <span>Articles</span>
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+            <button class="sidebar-link dropdown-toggle" aria-expanded="false">
+              <div class="link-content">
+                <i class="fas fa-lightbulb"></i>
+                <span>AI Prompts</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="sidebar-submenu collapsed">
+              <li>
+                <a href="ai-prompts.html" class="sidebar-sublink"
+                  >All Prompts</a
+                >
+              </li>
+              <li><a href="#" class="sidebar-sublink">Chatgpt</a></li>
+              <li><a href="#" class="sidebar-sublink">Midjourney</a></li>
+              <li><a href="#" class="sidebar-sublink">Stable Diffusion</a></li>
+              <li><a href="#" class="sidebar-sublink">Writing Prompts</a></li>
+              <li><a href="#" class="sidebar-sublink">Designing Prompts</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-dropdown">
+            <button class="sidebar-link dropdown-toggle" aria-expanded="false">
+              <div class="link-content">
+                <i class="fas fa-briefcase"></i>
+                <span>AI Jobs</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="sidebar-submenu collapsed">
+              <li>
+                <a href="ai-jobs.html" class="sidebar-sublink">All Jobs</a>
+              </li>
+              <li><a href="#" class="sidebar-sublink">Machine Learning</a></li>
+              <li><a href="#" class="sidebar-sublink">Data Science</a></li>
+              <li><a href="#" class="sidebar-sublink">AI Engineering</a></li>
+              <li>
+                <a href="#" class="sidebar-sublink">Prompt Engineering</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-dropdown">
+            <button class="sidebar-link dropdown-toggle" aria-expanded="true">
+              <div class="link-content">
+                <i class="fas fa-toolbox"></i>
+                <span>AI Tools</span>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="ai-tools.html" class="sidebar-sublink active"
+                  >All Tools</a
+                >
+              </li>
+              <li><a href="#" class="sidebar-sublink">Text Generation</a></li>
+              <li><a href="#" class="sidebar-sublink">Image Creation</a></li>
+              <li><a href="#" class="sidebar-sublink">Video Editing</a></li>
+              <li><a href="#" class="sidebar-sublink">Code Assistants</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar-search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="sidebar-footer">
+        <a href="submit.html" class="submit-btn-sidebar">
+          <i class="fas fa-plus"></i>
+          <span>Submit a Tool</span>
+        </a>
       </div>
     </aside>
 
-    <!-- Main Content Wrapper -->
-    <div class="main-wrapper">
-      <!-- Top Header -->
-      <header class="top-header">
-        <div class="header-left">
-          <a href="#" class="back-link"
-            ><i class="fa-solid fa-circle-chevron-left"></i> Back</a
-          >
-        </div>
-        <div class="header-center">
-          <h1>Text Generation</h1>
-        </div>
-        <div class="header-right">
-          <div class="search-bar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search" />
-          </div>
-        </div>
-      </header>
+    <main class="main-content">
+      <div class="hero-section">
+        <h1>CodeGenie – AI Code Assistant</h1>
+        <p class="description">
+          CodeGenie is an advanced AI-powered coding assistant that helps
+          developers write, debug, and optimize code in real time. It supports
+          over 20 programming languages and integrates seamlessly with popular
+          IDEs like VS Code, JetBrains, and GitHub Copilot.
+        </p>
 
-      <!-- Content Scroll Area -->
-      <main class="content">
-        <div class="hero-section">
-          <h1>CodeGenie – AI Code Assistant</h1>
-          <p class="description">
-            CodeGenie is an advanced AI-powered coding assistant that helps
-            developers write, debug, and optimize code in real time. It supports
-            over 20 programming languages and integrates seamlessly with popular
-            IDEs like VS Code, JetBrains, and GitHub Copilot.
-          </p>
-
-          <div class="tags">
-            <span>AI tools</span>
-            <span>CodeAssistant</span>
-            <span>DeveloperTools</span>
-            <span>Productivity</span>
-          </div>
-
-          <!-- Placeholder for the Thumbnail Image -->
-          <div class="tool-image-container">
-            <img
-              src="https://placehold.co/800x450/1a1a1a/FFF?text=The+ultimate+thumbnail%0Atool+for+everyone"
-              alt="CodeGenie Dashboard"
-            />
-          </div>
+        <div class="tags">
+          <span>AI tools</span>
+          <span>CodeAssistant</span>
+          <span>DeveloperTools</span>
+          <span>Productivity</span>
         </div>
 
-        <section class="tool-info">
-          <h3>Tool Overview:</h3>
-          <p>
-            CodeGenie revolutionizes the development workflow by combining the
-            power of large language models with practical programming tools.
-            With intelligent code completions, contextual debugging suggestions,
-            and instant documentation generation, developers can boost
-            productivity and minimize repetitive work. The tool learns your
-            coding style, analyzes your repositories, and tailors
-            recommendations to your projects—making it a must-have companion for
-            both beginners and experienced programmers.
-          </p>
-        </section>
+        <!-- Placeholder for the Thumbnail Image -->
+        <div class="tool-image-container">
+          <img
+            src="https://placehold.co/800x450/1a1a1a/FFF?text=The+ultimate+thumbnail%0Atool+for+everyone"
+            alt="CodeGenie Dashboard"
+          />
+        </div>
+      </div>
 
-        <section class="tool-details">
-          <h3>Tool Details:</h3>
-          <div class="details-box">
-            <div class="detail-row">
-              <span class="label">Developer</span>
-              <span class="separator">:</span>
-              <span class="value">CodeGenie Technologies</span>
-            </div>
-            <div class="detail-row">
-              <span class="label">Launched</span>
-              <span class="separator">:</span>
-              <span class="value">May 2025</span>
-            </div>
-            <div class="detail-row">
-              <span class="label">Version</span>
-              <span class="separator">:</span>
-              <span class="value">2.1.0</span>
-            </div>
-            <div class="detail-row">
-              <span class="label">License</span>
-              <span class="separator">:</span>
-              <span class="value">Freemium</span>
-            </div>
-            <div class="detail-row">
-              <span class="label">Website</span>
-              <span class="separator">:</span>
-              <span class="value"
-                ><a href="#" target="_blank"
-                  >https://codegenie.ai
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i></a
-              ></span>
-            </div>
-          </div>
-        </section>
+      <section class="tool-info">
+        <h3>Tool Overview:</h3>
+        <p>
+          CodeGenie revolutionizes the development workflow by combining the
+          power of large language models with practical programming tools. With
+          intelligent code completions, contextual debugging suggestions, and
+          instant documentation generation, developers can boost productivity
+          and minimize repetitive work. The tool learns your coding style,
+          analyzes your repositories, and tailors recommendations to your
+          projects—making it a must-have companion for both beginners and
+          experienced programmers.
+        </p>
+      </section>
 
-        <!-- Footer -->
-        <footer>
-          <div class="footer-content">
-            <div class="footer-brand">
-              <h2>AITOOLS</h2>
-              <p>
-                All in one place. Whether you're a developer, creator, or
-                enthusiast, our platform helps you stay ahead in the AI
-                revolution.
-              </p>
-              <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              </div>
-            </div>
-            <div class="footer-links">
-              <div class="link-column">
-                <h4>Categories</h4>
-                <a href="#">AI Prompts</a>
-                <a href="#">AI Jobs</a>
-                <a href="#">AI News</a>
-                <a href="#">Submit</a>
-              </div>
-              <div class="link-column">
-                <h4>Legal</h4>
-                <a href="#">Contact Us</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Disclaimer</a>
-                <a href="#">Privacy Policy</a>
-              </div>
+      <section class="tool-details">
+        <h3>Tool Details:</h3>
+        <div class="details-box">
+          <div class="detail-row">
+            <span class="label">Developer</span>
+            <span class="separator">:</span>
+            <span class="value">CodeGenie Technologies</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Launched</span>
+            <span class="separator">:</span>
+            <span class="value">May 2025</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Version</span>
+            <span class="separator">:</span>
+            <span class="value">2.1.0</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">License</span>
+            <span class="separator">:</span>
+            <span class="value">Freemium</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Website</span>
+            <span class="separator">:</span>
+            <span class="value"
+              ><a href="#" target="_blank"
+                >https://codegenie.ai
+                <i class="fa-solid fa-arrow-up-right-from-square"></i></a
+            ></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="divider"></div>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h2>AITOOLS</h2>
+            <p>
+              All in one place. Whether you’re a developer, creator, or
+              enthusiast, our platform helps you stay ahead in the AI
+              revolution.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
           </div>
-          <div class="footer-bottom">
-            <p>&copy; 2025 aisurface. All rights reserved.</p>
+          <div class="footer-lists">
+            <div class="footer-col">
+              <h4>Categories</h4>
+              <a href="ai-prompts.html">AI Prompts</a>
+              <a href="ai-jobs.html">AI Jobs</a>
+              <a href="#">AI News</a>
+              <a href="submit.html">Submit</a>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <a href="#">Contact Us</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Disclaimer</a>
+              <a href="#">Privacy Policy</a>
+            </div>
           </div>
-        </footer>
-      </main>
-    </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="divider"></div>
+          <p>© 2025 aisurface. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="app.js"></script>
   </body>
 </html>
-
