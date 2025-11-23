@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Jobs - AI Surface</title>
+
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./ai-jobs.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,9 +16,110 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="ai-jobs.css" />
+
+    <script defer src="./ai-jobs.js"></script>
+    <script defer src="./dates.js"></script>
   </head>
   <body>
+    <div class="top-bar">
+      <div class="social-links">
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5839 8.81404C17.5839 3.94872 13.6451 6.10352e-05 8.79195 6.10352e-05C3.93879 6.10352e-05 0 3.94872 0 8.81404C0 13.08 3.02443 16.632 7.03356 17.4517V11.4582H5.27517V8.81404H7.03356V6.61055C7.03356 4.90945 8.41389 3.52565 10.1107 3.52565H12.3087V6.16985H10.5503C10.0668 6.16985 9.67114 6.56648 9.67114 7.05125V8.81404H12.3087V11.4582H9.67114V17.584C14.1111 17.1433 17.5839 13.3885 17.5839 8.81404Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.62 0H12.38C15.62 0 18 2.38 18 5.62V12.38C18 15.62 15.62 18 12.38 18H5.62C2.38 18 0 15.62 0 12.38V5.62C0 2.38 2.38 0 5.62 0ZM12.38 16.2C14.63 16.2 16.2 14.63 16.2 12.38V5.62C16.2 3.37 14.63 1.8 12.38 1.8H5.62C3.37 1.8 1.8 3.37 1.8 5.62V12.38C1.8 14.63 3.37 16.2 5.62 16.2H12.38ZM4.5 9C4.5 6.52 6.52 4.5 9 4.5C11.48 4.5 13.5 6.52 13.5 9C13.5 11.48 11.48 13.5 9 13.5C6.52 13.5 4.5 11.48 4.5 9ZM6.3 9C6.3 10.49 7.51 11.7 9 11.7C10.49 11.7 11.7 10.49 11.7 9C11.7 7.51 10.49 6.3 9 6.3C7.51 6.3 6.3 7.51 6.3 9ZM13.5 3.6C13.5 3.27 13.77 3 14.1 3C14.43 3 14.7 3.27 14.7 3.6C14.7 3.93 14.43 4.2 14.1 4.2C13.77 4.2 13.5 3.93 13.5 3.6Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="YouTube">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17.45 5.32C17.26 4.62 16.71 4.07 16.01 3.88C14.73 3.5 9 3.5 9 3.5C9 3.5 3.27 3.5 1.99 3.88C1.29 4.07 0.74 4.62 0.55 5.32C0.17 6.6 0.17 9.28 0.17 9.28C0.17 9.28 0.17 11.96 0.55 13.24C0.74 13.94 1.29 14.49 1.99 14.68C3.27 15.06 9 15.06 9 15.06C9 15.06 14.73 15.06 16.01 14.68C16.71 14.49 17.26 13.94 17.45 13.24C17.83 11.96 17.83 9.28 17.83 9.28C17.83 9.28 17.83 6.6 17.45 5.32Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Twitter/X">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.85 0.82H16.55L10.66 7.57L17.59 16.76H12.16L7.91 11.19L3.05 16.76H0.35L6.65 9.54L0 0.83H5.57L9.41 5.92L13.85 0.82ZM12.9 15.14H14.39L4.75 2.36H3.15L12.9 15.14Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="top-date">Wednesday, November 12, 2025</div>
+    </div>
+
+    <div class="breaking-news">
+      <div class="breaking-label">
+        <svg
+          width="17"
+          height="15"
+          viewBox="0 0 17 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.25 11.6667C4.49083 11.6667 4.69285 11.5867 4.85605 11.4267C5.01925 11.2667 5.10057 11.0689 5.1 10.8333C5.09943 10.5978 5.01783 10.4 4.8552 10.24C4.69257 10.08 4.49083 10 4.25 10C4.00917 10 3.80743 10.08 3.6448 10.24C3.48217 10.4 3.40057 10.5978 3.4 10.8333C3.39943 11.0689 3.48103 11.2669 3.6448 11.4275C3.80857 11.5881 4.0103 11.6678 4.25 11.6667ZM3.4 8.33333H5.1V3.33333H3.4V8.33333ZM7.65 11.6667H13.6V10H7.65V11.6667ZM7.65 8.33333H13.6V6.66667H7.65V8.33333ZM7.65 5H13.6V3.33333H7.65V5ZM1.7 15C1.2325 15 0.832433 14.8369 0.4998 14.5108C0.167167 14.1847 0.000566667 13.7922 0 13.3333V1.66667C0 1.20833 0.1666 0.816111 0.4998 0.49C0.833 0.163889 1.23307 0.000555555 1.7 0H15.3C15.7675 0 16.1678 0.163333 16.501 0.49C16.8342 0.816667 17.0006 1.20889 17 1.66667V13.3333C17 13.7917 16.8337 14.1842 16.501 14.5108C16.1684 14.8375 15.7681 15.0006 15.3 15H1.7Z"
+            fill="white"
+          />
+        </svg>
+        BREAKING NEWS
+      </div>
+      <div class="news-content">
+        <p>
+          Mobile Data, Not Internet Service Providers, To Be Blocked In Bali
+          During Nyepi March 19, 2018
+        </p>
+      </div>
+      <div class="news-nav">
+        <button class="news-prev" aria-label="Previous news">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="news-next" aria-label="Next news">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-mobile-header">
@@ -111,200 +212,728 @@
         <i class="fas fa-search"></i>
         <input type="text" placeholder="Search" />
       </div>
-      <div class="sidebar-footer">
-        <a href="submit.html" class="submit-btn-sidebar">
-          <i class="fas fa-plus"></i>
-          <span>Submit a Tool</span>
-        </a>
-      </div>
     </aside>
 
-    <main class="main-content">
-      <!-- Job Sections -->
-      <section class="job-section">
-        <div class="section-header">
-          <h2 class="section-title">Machine Learning</h2>
-          <svg
-            width="24"
-            height="8"
-            viewBox="0 0 24 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M23.3536 4.03556C23.5488 3.8403 23.5488 3.52372 23.3536 3.32845L20.1716 0.146473C19.9763 -0.0487893 19.6597 -0.0487893 19.4645 0.146473C19.2692 0.341735 19.2692 0.658318 19.4645 0.85358L22.2929 3.68201L19.4645 6.51043C19.2692 6.7057 19.2692 7.02228 19.4645 7.21754C19.6597 7.4128 19.9763 7.4128 20.1716 7.21754L23.3536 4.03556ZM0 3.68201V4.18201H23V3.68201V3.18201H0V3.68201Z"
-              fill="white"
-            />
-          </svg>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="./logo.png" alt="The AI Surface" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Explore</a></li>
+          <li><a href="ai-tools.html">AI Tools</a></li>
+          <li><a href="ai-prompts.html">AI Prompts</a></li>
+          <li><a href="ai-jobs.html" class="active">AI Jobs</a></li>
+          <li><a href="articles.html">Articles</a></li>
+        </ul>
+
+        <button
+          class="hamburger-menu"
+          id="hamburgerMenu"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div class="nav-right">
+          <div class="search-container">
+            <svg
+              class="search-icon"
+              width="17"
+              height="16"
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.3408 16L9.51867 10.4C9.0566 10.7556 8.52521 11.037 7.92452 11.2444C7.32383 11.4519 6.68463 11.5556 6.00693 11.5556C4.32807 11.5556 2.90735 10.9961 1.74478 9.87733C0.58221 8.75852 0.000616584 7.392 4.88964e-07 5.77778C-0.000615606 4.16356 0.580978 2.79704 1.74478 1.67822C2.90858 0.559407 4.3293 0 6.00693 0C7.68455 0 9.10557 0.559407 10.27 1.67822C11.4344 2.79704 12.0157 4.16356 12.0139 5.77778C12.0139 6.42963 11.906 7.04444 11.6904 7.62222C11.4748 8.2 11.1821 8.71111 10.8125 9.15556L16.6346 14.7556L15.3408 16ZM6.00693 9.77778C7.1621 9.77778 8.14416 9.38904 8.95309 8.61156C9.76202 7.83407 10.1662 6.88948 10.1656 5.77778C10.165 4.66607 9.76079 3.72178 8.95309 2.94489C8.14539 2.168 7.16334 1.77896 6.00693 1.77778C4.85052 1.77659 3.86877 2.16563 3.06168 2.94489C2.2546 3.72415 1.85013 4.66844 1.84829 5.77778C1.84644 6.88711 2.2509 7.8317 3.06168 8.61156C3.87246 9.39141 4.85421 9.78015 6.00693 9.77778Z"
+                fill="#6D6D6D"
+              />
+            </svg>
+            <input type="text" class="search-input" placeholder="Search" />
+          </div>
+          <button class="submit-btn">
+            <svg
+              width="12"
+              height="15"
+              viewBox="0 0 12 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 15H12V13.2353H0V15ZM0 6.17647H3.42857V11.4706H8.57143V6.17647H12L6 0L0 6.17647Z"
+                fill="black"
+              />
+            </svg>
+            <span>Submit a Tool</span>
+          </button>
         </div>
+      </div>
+    </nav>
 
+    <div class="vertical-divider"></div>
+    <main class="main-wrapper">
+      <section class="section-wrapper jobs-section">
         <div class="jobs-grid">
-          <!-- Job Card Template (repeated) -->
-          <div class="job-card">
-            <img
-              src="./images/Group 35.png"
-              alt="Company Logo"
-              class="company-logo"
-            />
-            <div class="job-info">
-              <div class="job-meta">
-                <div class="job-badge">
-                  <svg
-                    width="8"
-                    height="12"
-                    viewBox="0 0 8 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.79999 11.2H5.19997V12H2.79999V11.2ZM2.39999 10H5.59997V10.8H2.39999V10ZM6.83546 1.16726C6.08371 0.414511 5.07672 1.13361e-05 3.99998 1.13361e-05C3.47435 -0.00124152 2.95364 0.101366 2.46778 0.301941C1.98191 0.502516 1.54046 0.797106 1.16878 1.16879C0.7971 1.54047 0.502513 1.98193 0.301939 2.46779C0.101366 2.95366 -0.00124152 3.47437 1.13361e-05 4.00001C1.13361e-05 5.16551 0.446758 6.25576 1.225 6.991L1.334 7.09326C1.78425 7.51425 2.39999 8.091 2.39999 8.6V9.6H3.59998V6.32775L2.49299 5.70001L2.94999 5.04301L3.99998 5.60001L5.03222 5.04026L5.50972 5.68226L4.39998 6.33226V9.6H5.59997V8.6C5.59997 8.103 6.20896 7.52675 6.65371 7.10575L6.77646 6.98925C7.57695 6.22501 7.99995 5.19026 7.99995 4.00001C8.0026 3.47432 7.90105 2.95332 7.70118 2.4671C7.5013 1.98089 7.20706 1.5391 6.83546 1.16726Z"
-                      fill="#B9B9B9"
-                    />
-                  </svg>
-                  AI Jobs
-                </div>
-                <div class="job-time">
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6 0C5.21207 0 4.43185 0.155195 3.7039 0.456723C2.97595 0.758251 2.31451 1.20021 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.31451 10.7998 2.97595 11.2417 3.7039 11.5433C4.43185 11.8448 5.21207 12 6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 5.21207 11.8448 4.43185 11.5433 3.7039C11.2417 2.97595 10.7998 2.31451 10.2426 1.75736C9.68549 1.20021 9.02405 0.758251 8.2961 0.456723C7.56815 0.155195 6.78793 0 6 0ZM8.52 8.52L5.4 6.6V3H6.3V6.12L9 7.74L8.52 8.52Z"
-                      fill="#B9B9B9"
-                    />
-                  </svg>
-                  2 days ago
-                </div>
-              </div>
-
-              <h3 class="job-title">Lead AI Researcher</h3>
-
-              <p class="job-description">
-                Shape the future of autonomous vehicles with cutting-edge
-                research in computer vision and decision-making systems.
-              </p>
-
-              <div class="job-tags">
-                <span class="job-tag">Research</span>
-                <span class="job-tag">Autonomous</span>
-                <span class="job-tag">$180K - 250K</span>
-              </div>
-
-              <a href="#" class="apply-link">
-                Apply
-                <svg
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.6274 4.03556C11.8227 3.8403 11.8227 3.52372 11.6274 3.32845L8.44545 0.146473C8.25019 -0.0487893 7.93361 -0.0487893 7.73834 0.146473C7.54308 0.341735 7.54308 0.658318 7.73834 0.85358L10.5668 3.68201L7.73834 6.51043C7.54308 6.7057 7.54308 7.02228 7.73834 7.21754C7.93361 7.4128 8.25019 7.4128 8.44545 7.21754L11.6274 4.03556ZM0 3.68201V4.18201H11.2739V3.68201V3.18201H0V3.68201Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
+          <!-- Job Card 1 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
             </div>
-          </div>
-          <div class="job-card">
-            <img
-              src="./images/Group 35.png"
-              alt="Company Logo"
-              class="company-logo"
-            />
-            <div class="job-info">
-              <div class="job-meta">
-                <div class="job-badge">
-                  <svg
-                    width="8"
-                    height="12"
-                    viewBox="0 0 8 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.79999 11.2H5.19997V12H2.79999V11.2ZM2.39999 10H5.59997V10.8H2.39999V10ZM6.83546 1.16726C6.08371 0.414511 5.07672 1.13361e-05 3.99998 1.13361e-05C3.47435 -0.00124152 2.95364 0.101366 2.46778 0.301941C1.98191 0.502516 1.54046 0.797106 1.16878 1.16879C0.7971 1.54047 0.502513 1.98193 0.301939 2.46779C0.101366 2.95366 -0.00124152 3.47437 1.13361e-05 4.00001C1.13361e-05 5.16551 0.446758 6.25576 1.225 6.991L1.334 7.09326C1.78425 7.51425 2.39999 8.091 2.39999 8.6V9.6H3.59998V6.32775L2.49299 5.70001L2.94999 5.04301L3.99998 5.60001L5.03222 5.04026L5.50972 5.68226L4.39998 6.33226V9.6H5.59997V8.6C5.59997 8.103 6.20896 7.52675 6.65371 7.10575L6.77646 6.98925C7.57695 6.22501 7.99995 5.19026 7.99995 4.00001C8.0026 3.47432 7.90105 2.95332 7.70118 2.4671C7.5013 1.98089 7.20706 1.5391 6.83546 1.16726Z"
-                      fill="#B9B9B9"
-                    />
-                  </svg>
-                  AI Jobs
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
                 </div>
-                <div class="job-time">
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6 0C5.21207 0 4.43185 0.155195 3.7039 0.456723C2.97595 0.758251 2.31451 1.20021 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.31451 10.7998 2.97595 11.2417 3.7039 11.5433C4.43185 11.8448 5.21207 12 6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 5.21207 11.8448 4.43185 11.5433 3.7039C11.2417 2.97595 10.7998 2.31451 10.2426 1.75736C9.68549 1.20021 9.02405 0.758251 8.2961 0.456723C7.56815 0.155195 6.78793 0 6 0ZM8.52 8.52L5.4 6.6V3H6.3V6.12L9 7.74L8.52 8.52Z"
-                      fill="#B9B9B9"
-                    />
-                  </svg>
-                  2 days ago
-                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
               </div>
-
-              <h3 class="job-title">Lead AI Researcher</h3>
-
-              <p class="job-description">
-                Shape the future of autonomous vehicles with cutting-edge
-                research in computer vision and decision-making systems.
-              </p>
-
-              <div class="job-tags">
-                <span class="job-tag">Research</span>
-                <span class="job-tag">Autonomous</span>
-                <span class="job-tag">$180K - 250K</span>
-              </div>
-
-              <a href="#" class="apply-link">
-                Apply
-                <svg
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.6274 4.03556C11.8227 3.8403 11.8227 3.52372 11.6274 3.32845L8.44545 0.146473C8.25019 -0.0487893 7.93361 -0.0487893 7.73834 0.146473C7.54308 0.341735 7.54308 0.658318 7.73834 0.85358L10.5668 3.68201L7.73834 6.51043C7.54308 6.7057 7.54308 7.02228 7.73834 7.21754C7.93361 7.4128 8.25019 7.4128 8.44545 7.21754L11.6274 4.03556ZM0 3.68201V4.18201H11.2739V3.68201V3.18201H0V3.68201Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
             </div>
-          </div>
+          </article>
+          <!-- Job Card 2 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 3 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 4 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 5 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 6 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section-wrapper jobs-section">
+        <div class="jobs-grid">
+          <!-- Job Card 1 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 2 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 3 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 4 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 5 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 6 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section-wrapper jobs-section">
+        <div class="jobs-grid">
+          <!-- Job Card 1 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 2 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 3 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 4 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 5 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Job Card 6 -->
+          <article class="job-card">
+            <div class="job-meta">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Jobs</span>
+              <i class="far fa-clock"></i>
+              <span>2 days ago</span>
+            </div>
+            <div class="job-main">
+              <img
+                src="./images/job-logo.png"
+                alt="Company Logo"
+                class="job-logo"
+              />
+              <div class="job-details">
+                <h3 class="job-title">Lead AI Researcher</h3>
+                <p class="job-description">
+                  Shape the future of autonomous vehicles with cutting-edge
+                  research in computer vision and decision-making systems.
+                </p>
+                <div class="job-tags">
+                  <span class="job-tag">Research</span>
+                  <span class="job-tag">Autonomous</span>
+                  <span class="job-tag">$160k - 250k</span>
+                </div>
+                <a href="#" class="job-apply">
+                  Apply
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- Footer -->
       <footer class="page-footer">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <h2 class="footer-brand-name">AITOOLS</h2>
-            <p class="footer-brand-description">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h2 class="footer-brand">AITOOLS</h2>
+            <p class="footer-description">
               All in one place. Whether you're a developer, creator, or
               enthusiast, our platform helps you stay ahead in the AI
               revolution.
             </p>
             <div class="footer-social">
               <a href="#" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5839 8.81404C17.5839 3.94872 13.6451 6.10352e-05 8.79195 6.10352e-05C3.93879 6.10352e-05 0 3.94872 0 8.81404C0 13.08 3.02443 16.632 7.03356 17.4517V11.4582H5.27517V8.81404H7.03356V6.61055C7.03356 4.90945 8.41389 3.52565 10.1107 3.52565H12.3087V6.16985H10.5503C10.0668 6.16985 9.67114 6.56648 9.67114 7.05125V8.81404H12.3087V11.4582H9.67114V17.584C14.1111 17.1433 17.5839 13.3885 17.5839 8.81404Z"
+                    fill="#A2A2A2"
+                  />
+                </svg>
               </a>
               <a href="#" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.62 0H12.38C15.62 0 18 2.38 18 5.62V12.38C18 15.62 15.62 18 12.38 18H5.62C2.38 18 0 15.62 0 12.38V5.62C0 2.38 2.38 0 5.62 0ZM12.38 16.2C14.63 16.2 16.2 14.63 16.2 12.38V5.62C16.2 3.37 14.63 1.8 12.38 1.8H5.62C3.37 1.8 1.8 3.37 1.8 5.62V12.38C1.8 14.63 3.37 16.2 5.62 16.2H12.38Z"
+                    fill="#C4C4C4"
+                  />
+                </svg>
               </a>
               <a href="#" aria-label="YouTube">
-                <i class="fab fa-youtube"></i>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.45 5.32C17.26 4.62 16.71 4.07 16.01 3.88C14.73 3.5 9 3.5 9 3.5C9 3.5 3.27 3.5 1.99 3.88C1.29 4.07 0.74 4.62 0.55 5.32C0.17 6.6 0.17 9.28 0.17 9.28C0.17 9.28 0.17 11.96 0.55 13.24C0.74 13.94 1.29 14.49 1.99 14.68C3.27 15.06 9 15.06 9 15.06C9 15.06 14.73 15.06 16.01 14.68C16.71 14.49 17.26 13.94 17.45 13.24C17.83 11.96 17.83 9.28 17.83 9.28C17.83 9.28 17.83 6.6 17.45 5.32Z"
+                    fill="#C4C4C4"
+                  />
+                </svg>
               </a>
               <a href="#" aria-label="Twitter/X">
-                <i class="fab fa-x-twitter"></i>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.85 0.82H16.55L10.66 7.57L17.59 16.76H12.16L7.91 11.19L3.05 16.76H0.35L6.65 9.54L0 0.83H5.57L9.41 5.92L13.85 0.82Z"
+                    fill="#C4C4C4"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -329,11 +958,11 @@
         </div>
 
         <div class="footer-bottom">
-          <div class="footer-divider"></div>
-          <p>&copy; 2025 aisurface. All rights reserved.</p>
+          <p>© 2025 aisurface. All rights reserved.</p>
         </div>
       </footer>
     </main>
+
     <script src="app.js"></script>
   </body>
 </html>
