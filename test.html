@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSS Corner Shape Demo</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f6f6f6;
+      font-family: 'Poppins', sans-serif;
+      background: #000;
       margin: 0;
       padding: 40px;
       display: flex;
       justify-content: center;
+      color: #fff;
     }
 
     .grid {
@@ -24,48 +28,43 @@
     }
 
     .card {
-      background: white;
+      background: #111;
       padding: 30px;
       text-align: center;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
       border-radius: 24px;
       transition: 0.3s ease;
-      border: 2px solid #e8e8e8;
+      border: 2px solid #222;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
     }
 
     .card h3 {
       margin-bottom: 15px;
       font-size: 20px;
-      font-weight: bold;
+      font-weight: 600;
+      color: #fff;
     }
 
     /* --- Corner Shape Examples --- */
-
-    /* Rounded */
     .rounded {
       corner-shape: round;
       border-radius: 32px;
     }
 
-    /* Scoop */
     .scoop {
       corner-shape: scoop;
       border-radius: 32px;
     }
 
-    /* Bevel */
     .bevel {
       corner-shape: bevel;
       border-radius: 32px;
     }
 
-    /* Notch */
     .notch {
       corner-shape: notch;
       border-radius: 32px;
     }
 
-    /* Squircle */
     .squircle {
       corner-shape: round;
       border-radius: 40% / 60%;
@@ -75,6 +74,7 @@
     .card:hover {
       border-radius: 60px;
       transform: translateY(-5px);
+      border-color: #444;
     }
   </style>
 </head>
@@ -93,17 +93,17 @@
 
     <div class="card bevel">
       <h3>Bevel</h3>
-      Angular edges for a sharp look.
+      Angular edges for a sharp, modern look.
     </div>
 
     <div class="card notch">
       <h3>Notch</h3>
-      Cut-corner effect for modern layouts.
+      Cut-corner effect giving a bold style.
     </div>
 
     <div class="card squircle">
       <h3>Squircle</h3>
-      Between a circle and a square—great for modern branding.
+      A perfect blend between circle and square.
     </div>
   </div>
 </body>
