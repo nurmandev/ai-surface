@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Corner Shape Demo</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+      border-radius: 24px;
+      transition: 0.3s ease;
+      border: 2px solid #e8e8e8;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* --- Corner Shape Examples --- */
+
+    /* Rounded */
+    .rounded {
+      corner-shape: round;
+      border-radius: 32px;
+    }
+
+    /* Scoop */
+    .scoop {
+      corner-shape: scoop;
+      border-radius: 32px;
+    }
+
+    /* Bevel */
+    .bevel {
+      corner-shape: bevel;
+      border-radius: 32px;
+    }
+
+    /* Notch */
+    .notch {
+      corner-shape: notch;
+      border-radius: 32px;
+    }
+
+    /* Squircle */
+    .squircle {
+      corner-shape: round;
+      border-radius: 40% / 60%;
+    }
+
+    /* Hover Animation */
+    .card:hover {
+      border-radius: 60px;
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="card rounded">
+      <h3>Rounded</h3>
+      Smooth and traditional round corners.
+    </div>
+
+    <div class="card scoop">
+      <h3>Scoop</h3>
+      Inward curves for a softer UI.
+    </div>
+
+    <div class="card bevel">
+      <h3>Bevel</h3>
+      Angular edges for a sharp look.
+    </div>
+
+    <div class="card notch">
+      <h3>Notch</h3>
+      Cut-corner effect for modern layouts.
+    </div>
+
+    <div class="card squircle">
+      <h3>Squircle</h3>
+      Between a circle and a square—great for modern branding.
+    </div>
+  </div>
+</body>
+</html>
