@@ -44,6 +44,7 @@ body {
   align-items: center;
   gap: 27px;
   margin-bottom: 2rem;
+  padding: 0;
 }
 
 .section-title {
