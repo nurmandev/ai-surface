@@ -15,108 +15,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="ai-tools.css" />
+    <script defer src="./include.js"></script>
+    <script defer src="./app.js"></script>
+    <script defer src="./dates.js"></script>
   </head>
   <body>
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-mobile-header">
-        <button
-          class="sidebar-close-btn"
-          id="sidebarCloseBtn"
-          aria-label="Close navigation menu"
-        >
-          <i class="fas fa-arrow-left"></i>
-        </button>
-      </div>
-      <nav class="sidebar-nav">
-        <ul class="sidebar-list">
-          <li>
-            <a href="index.html" class="sidebar-link">
-              <i class="fas fa-compass"></i>
-              <span>Explore</span>
-            </a>
-          </li>
-          <li>
-            <a href="articles.html" class="sidebar-link">
-              <i class="fas fa-file-alt"></i>
-              <span>Articles</span>
-            </a>
-          </li>
-          <li class="sidebar-dropdown">
-            <button class="sidebar-link dropdown-toggle" aria-expanded="false">
-              <div class="link-content">
-                <i class="fas fa-lightbulb"></i>
-                <span>AI Prompts</span>
-              </div>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <ul class="sidebar-submenu collapsed">
-              <li>
-                <a href="ai-prompts.html" class="sidebar-sublink"
-                  >All Prompts</a
-                >
-              </li>
-              <li><a href="#" class="sidebar-sublink">Chatgpt</a></li>
-              <li><a href="#" class="sidebar-sublink">Midjourney</a></li>
-              <li><a href="#" class="sidebar-sublink">Stable Diffusion</a></li>
-              <li><a href="#" class="sidebar-sublink">Writing Prompts</a></li>
-              <li><a href="#" class="sidebar-sublink">Designing Prompts</a></li>
-            </ul>
-          </li>
-          <li class="sidebar-dropdown">
-            <button class="sidebar-link dropdown-toggle" aria-expanded="false">
-              <div class="link-content">
-                <i class="fas fa-briefcase"></i>
-                <span>AI Jobs</span>
-              </div>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <ul class="sidebar-submenu collapsed">
-              <li>
-                <a href="ai-jobs.html" class="sidebar-sublink">All Jobs</a>
-              </li>
-              <li><a href="#" class="sidebar-sublink">Machine Learning</a></li>
-              <li><a href="#" class="sidebar-sublink">Data Science</a></li>
-              <li><a href="#" class="sidebar-sublink">AI Engineering</a></li>
-              <li>
-                <a href="#" class="sidebar-sublink">Prompt Engineering</a>
-              </li>
-            </ul>
-          </li>
-          <li class="sidebar-dropdown">
-            <button class="sidebar-link dropdown-toggle" aria-expanded="true">
-              <div class="link-content">
-                <i class="fas fa-toolbox"></i>
-                <span>AI Tools</span>
-              </div>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <ul class="sidebar-submenu">
-              <li>
-                <a href="ai-tools.html" class="sidebar-sublink active"
-                  >All Tools</a
-                >
-              </li>
-              <li><a href="#" class="sidebar-sublink">Text Generation</a></li>
-              <li><a href="#" class="sidebar-sublink">Image Creation</a></li>
-              <li><a href="#" class="sidebar-sublink">Video Editing</a></li>
-              <li><a href="#" class="sidebar-sublink">Code Assistants</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <div class="sidebar-search">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search" />
-      </div>
-      <div class="sidebar-footer">
-        <a href="submit.html" class="submit-btn-sidebar">
-          <i class="fas fa-plus"></i>
-          <span>Submit a Tool</span>
-        </a>
-      </div>
-    </aside>
+    <div data-include="header.html"></div>
+    <div data-include="sidebar.html"></div>
+    <div data-include="navbar.html"></div>
   </body>
 </html>
       <!-- Main Content -->

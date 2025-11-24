@@ -1,59 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Hamburger menu toggle
-  // Hamburger menu toggle
-  const hamburgerMenu = document.getElementById("hamburgerMenu");
-  const sidebar = document.getElementById("sidebar");
-  const sidebarOverlay = document.getElementById("sidebarOverlay");
-  const sidebarCloseBtn = document.getElementById("sidebarCloseBtn");
-
-  function toggleSidebar() {
-    hamburgerMenu.classList.toggle("active");
-    sidebar.classList.toggle("mobile-open");
-    sidebarOverlay.classList.toggle("active");
-    document.body.classList.toggle("sidebar-open");
-    document.body.style.overflow = sidebar.classList.contains("mobile-open")
-      ? "hidden"
-      : "";
-  }
-
-  if (hamburgerMenu) {
-    hamburgerMenu.addEventListener("click", function (e) {
-      e.stopPropagation();
-      toggleSidebar();
-    });
-  }
-
-  if (sidebarCloseBtn) {
-    sidebarCloseBtn.addEventListener("click", function () {
-      toggleSidebar();
-    });
-  }
-
-  if (sidebarOverlay) {
-    sidebarOverlay.addEventListener("click", function () {
-      if (sidebar.classList.contains("mobile-open")) {
-        toggleSidebar();
-      }
-    });
-  }
-
-  // Sidebar Dropdowns
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-  dropdownToggles.forEach((toggle) => {
-    toggle.addEventListener("click", function () {
-      const submenu = this.nextElementSibling;
-      const isExpanded = this.getAttribute("aria-expanded") === "true";
-
-      this.setAttribute("aria-expanded", !isExpanded);
-      submenu.classList.toggle("collapsed");
-
-      const icon = this.querySelector(".fa-chevron-down");
-      if (icon) {
-        icon.style.transform = !isExpanded ? "rotate(180deg)" : "rotate(0)";
-      }
-    });
-  });
-
+  // Breaking news carousel
   const newsPrev = document.querySelector(".news-prev");
   const newsNext = document.querySelector(".news-next");
   const newsContent = document.querySelector(".news-content p");
@@ -170,27 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
     card.addEventListener("click", function () {
       console.log("Tool card clicked");
     });
-  });
-
-  const navLinks = document.querySelectorAll(".nav-links a");
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      navLinks.forEach((l) => l.classList.remove("active"));
-      this.classList.add("active");
-    });
-
-    // Set active based on current page
-    if (
-      window.location.pathname.includes("articles.html") &&
-      link.href.includes("articles.html")
-    ) {
-      link.classList.add("active");
-    } else if (
-      !window.location.pathname.includes("articles.html") &&
-      link.href.includes("index.html")
-    ) {
-      link.classList.add("active");
-    }
   });
 
   const searchInput = document.querySelector(".search-input");

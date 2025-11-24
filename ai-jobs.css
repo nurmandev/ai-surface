@@ -235,8 +235,16 @@ body {
     display: none;
   }
 
+  .vertical-divider {
+    display: none;
+  }
+
+  .main-wrapper {
+    padding-left: 2rem;
+  }
+
   .jobs-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer-content {
@@ -246,8 +254,16 @@ body {
 }
 
 @media (max-width: 992px) {
+  .main-wrapper {
+    padding: 0 1rem;
+  }
+
   .jobs-section {
     padding: 1.5rem 1rem;
+  }
+
+  .jobs-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .section-title {
