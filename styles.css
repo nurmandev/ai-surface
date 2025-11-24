@@ -2453,70 +2453,241 @@ body {
   }
 }
 
-/* Global Responsive Footer Styles */
+/* Page Footer Styles */
+.page-footer {
+  background: #000;
+  padding: 4rem 2rem 2rem;
+  margin-top: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  max-width: 1570px;
+  margin: 0 auto;
+  padding-left: calc(310px + 2rem);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 6rem;
+  margin-bottom: 3rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  object-position: left;
+}
+
+.footer-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #888;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 420px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer-social a {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.footer-social a:hover {
+  opacity: 0.6;
+}
+
+.footer-social svg {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-links {
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-end;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-column-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0.75rem 0;
+}
+
+.footer-column a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  line-height: 2;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  max-width: 1570px;
+  margin: 0 auto;
+  padding-left: calc(310px + 2rem);
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  text-align: left;
+}
+
+/* Footer Responsive Styles */
+@media (max-width: 1600px) {
+  .footer-content,
+  .footer-bottom {
+    padding-left: calc(250px + 2rem);
+  }
+}
+
 @media (max-width: 1200px) {
+  .footer-content,
+  .footer-bottom {
+    padding-left: 2rem;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+    gap: 4rem;
   }
 }
 
 @media (max-width: 992px) {
+  .page-footer {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .footer-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .footer-brand {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .footer-description {
-    font-size: 15px;
-    line-height: 28px;
+    font-size: 14px;
   }
 
   .footer-links {
-    gap: 2rem;
+    gap: 3rem;
   }
 }
 
 @media (max-width: 768px) {
+  .page-footer {
+    padding: 2.5rem 1rem 2rem;
+  }
+
   .footer-content {
-    gap: 1.5rem;
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-bottom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
   }
 
   .footer-brand {
     font-size: 28px;
   }
 
-  .footer-description,
-  .footer-column-title {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .footer-column a {
-    font-size: 14px;
-    line-height: 28px;
+  .footer-description {
+    font-size: 13px;
   }
 
   .footer-links {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .footer-bottom p {
-    font-size: 13px;
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .page-footer {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .footer-content {
+    gap: 1.5rem;
   }
 
   .footer-brand {
     font-size: 24px;
   }
 
-  .footer-content {
-    gap: 1.5rem;
+  .footer-description {
+    font-size: 13px;
+  }
+
+  .footer-column-title {
+    font-size: 14px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+  }
+
+  .footer-social {
+    gap: 0.75rem;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
   }
 }
