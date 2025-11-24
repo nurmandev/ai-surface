@@ -793,6 +793,31 @@ body {
   margin-right: 4px;
 }
 
+.featured-card:hover {
+  background: #fff !important;
+}
+
+.featured-card:hover .tool-info {
+  background: #fff !important;
+}
+
+.featured-card:hover .tool-name {
+  color: #000 !important;
+}
+
+.featured-card:hover .tool-category {
+  background: #f0f0f0 !important;
+  color: #333 !important;
+}
+
+.featured-card:hover .tool-link {
+  color: #000 !important;
+}
+
+.featured-card:hover .tool-link svg path {
+  fill: #000 !important;
+}
+
 .tool-badge {
   display: inline-flex;
   align-items: center;
@@ -1937,7 +1962,9 @@ body {
   }
 
   .featured-section .tool-card {
-    background: #fff;
+    background: #141414;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
   }
 
   .featured-section .tool-card .tool-image {
@@ -1949,13 +1976,13 @@ body {
   .featured-section .tool-info {
     padding: 1rem 1.25rem;
     width: 100%;
-    background: #fff;
-    border-radius: 0 0 7px 7px;
+    background: #141414;
+    border-radius: 0 0 12px 12px;
   }
 
   .featured-section .tool-name {
     font-size: 18px;
-    color: #000;
+    color: #fff;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     line-height: 23px;
