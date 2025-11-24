@@ -81,6 +81,8 @@ body {
   background: #141414;
   border-radius: 11px;
   transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
 
 .tool-card:hover {

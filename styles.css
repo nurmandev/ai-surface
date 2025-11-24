@@ -685,23 +685,6 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1.75rem;
-  padding: 0 2rem;
-}
-
-.tool-card {
-  background: #141414;
-  border-radius: 11px;
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  padding-right: 1rem;
-  transition: transform 0.2s;
-  position: relative;
-}
-
-.featured-card {
-  flex-direction: column;
-  align-items: flex-start;
   padding: 0;
   gap: 0;
   overflow: hidden;
@@ -2397,5 +2380,73 @@ body {
   .banner-btn {
     width: 100%;
     padding: 0.85rem 1.5rem;
+  }
+}
+
+/* Global Responsive Footer Styles */
+@media (max-width: 1200px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-brand {
+    font-size: 36px;
+  }
+
+  .footer-description {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .footer-links {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    gap: 1.5rem;
+  }
+
+  .footer-brand {
+    font-size: 28px;
+  }
+
+  .footer-description,
+  .footer-column-title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .footer-column a {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom p {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-brand {
+    font-size: 24px;
+  }
+
+  .footer-content {
+    gap: 1.5rem;
   }
 }
