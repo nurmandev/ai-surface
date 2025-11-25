@@ -330,9 +330,9 @@
     <!-- Submit Modal Overlay -->
     <div id="submitModalOverlay" class="modal-overlay" onclick="closeSubmitModal(event)">
       <!-- Submit Tool Modal -->
-      <div id="submitToolModal" class="submit-modal-container" onclick="event.stopPropagation()">
+      <div id="submitToolModal" class="submit-modal-container" style="display: none;" onclick="event.stopPropagation()">
         <h1 class="modal-title">Submit AI Tool</h1>
-        
+
         <!-- Form Fields -->
         <div class="form-group">
           <label class="field-label">Tool Name</label>
@@ -391,13 +391,91 @@
         <!-- Submit Button -->
         <button class="btn-modal-submit" onclick="submitToolForm()">Submit Tool</button>
       </div>
+
+      <!-- Submit Job Modal -->
+      <div id="submitJobModal" class="submit-modal-container" style="display: none;" onclick="event.stopPropagation()">
+        <h1 class="modal-title">Post Job Opening</h1>
+
+        <!-- Job Title -->
+        <div class="form-group">
+          <label class="field-label">Job Title*</label>
+          <input type="text" class="form-input" placeholder="e.g. AI Engineer, ML Researcher">
+        </div>
+
+        <!-- Company Name & Location -->
+        <div class="form-row">
+          <div class="form-group">
+            <label class="field-label">Company Name*</label>
+            <input type="text" class="form-input" placeholder="Company name">
+          </div>
+          <div class="form-group">
+            <label class="field-label">Location</label>
+            <input type="text" class="form-input" placeholder="e.g. Remote, USA">
+          </div>
+        </div>
+
+        <!-- Job Type & Salary Range -->
+        <div class="form-row">
+          <div class="form-group">
+            <label class="field-label">Job Type</label>
+            <select class="form-select">
+              <option>Full Time</option>
+              <option>Part Time</option>
+              <option>Contract</option>
+              <option>Freelance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="field-label">Salary Range</label>
+            <input type="text" class="form-input" placeholder="e.g.$120K - $350K">
+          </div>
+        </div>
+
+        <!-- Application URL -->
+        <div class="form-group">
+          <label class="field-label">Application URL</label>
+          <input type="text" class="form-input" placeholder="example.com">
+        </div>
+
+        <!-- Logo Upload -->
+        <div class="form-group">
+          <label class="field-label">Upload Company Logo</label>
+          <div class="upload-box">
+            <svg class="upload-icon" width="12" height="14" viewBox="0 0 12 14" fill="none">
+              <path d="M4.28571 10.625H7.71429C8.18571 10.625 8.57143 10.2453 8.57143 9.78121V5.56242H9.93429C10.6971 5.56242 11.0829 4.65117 10.5429 4.1196L6.60857 0.246752C6.52927 0.168533 6.43508 0.106476 6.33139 0.0641352C6.2277 0.0217942 6.11654 0 6.00429 0C5.89203 0 5.78087 0.0217942 5.67718 0.0641352C5.57349 0.106476 5.4793 0.168533 5.4 0.246752L1.46571 4.1196C0.925714 4.65117 1.30286 5.56242 2.06571 5.56242H3.42857V9.78121C3.42857 10.2453 3.81429 10.625 4.28571 10.625ZM0.857143 12.3125H11.1429C11.6143 12.3125 12 12.6922 12 13.1562C12 13.6203 11.6143 14 11.1429 14H0.857143C0.385714 14 0 13.6203 0 13.1562C0 12.6922 0.385714 12.3125 0.857143 12.3125Z" fill="#868686"/>
+            </svg>
+            <div class="upload-text">Upload</div>
+          </div>
+        </div>
+
+        <!-- Job Description -->
+        <div class="form-group">
+          <label class="field-label">Job Description</label>
+          <textarea class="form-textarea" placeholder="Describe the rol, requirement, responsibilities etc"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="btn-modal-submit" onclick="submitJobForm()">Post job Opening</button>
+      </div>
     </div>
 
     <script src="app.js"></script>
     <script>
       function openSubmitModal(type) {
         const overlay = document.getElementById('submitModalOverlay');
+        const toolModal = document.getElementById('submitToolModal');
+        const jobModal = document.getElementById('submitJobModal');
+
         overlay.classList.add('active');
+
+        if (type === 'tool') {
+          toolModal.style.display = 'flex';
+          jobModal.style.display = 'none';
+        } else if (type === 'job') {
+          toolModal.style.display = 'none';
+          jobModal.style.display = 'flex';
+        }
+
         document.body.style.overflow = 'hidden';
       }
 
@@ -411,7 +489,12 @@
       }
 
       function submitToolForm() {
-        alert('Form submitted!');
+        alert('Tool submitted!');
+        closeSubmitModal();
+      }
+
+      function submitJobForm() {
+        alert('Job posted!');
         closeSubmitModal();
       }
 
