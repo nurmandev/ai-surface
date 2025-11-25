@@ -70,7 +70,7 @@
                   innovation.
                 </p>
               </div>
-              <button class="btn-submit-card">
+              <button class="btn-submit-card" onclick="openSubmitModal('tool')">
                 <svg width="12" height="15" viewBox="0 0 12 15" fill="none">
                   <path
                     d="M0 15H12V13.2353H0V15ZM0 6.17647H3.42857V11.4706H8.57143V6.17647H12L6 0L0 6.17647Z"
@@ -99,14 +99,14 @@
                   and automation.
                 </p>
               </div>
-              <button class="btn-submit-card">
+              <button class="btn-submit-card" onclick="openSubmitModal('job')">
                 <svg width="12" height="15" viewBox="0 0 12 15" fill="none">
                   <path
                     d="M0 15H12V13.2353H0V15ZM0 6.17647H3.42857V11.4706H8.57143V6.17647H12L6 0L0 6.17647Z"
                     fill="black"
                   />
                 </svg>
-                Submit AI Tool
+                Submit Job
               </button>
             </div>
             <!-- Assuming similar visual placeholder for right card as per design consistency -->
@@ -167,7 +167,7 @@
           <div class="feature-item">
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none">
               <path
-                d="M10.1 18C9.81667 18 9.57933 17.904 9.388 17.712C9.19667 17.52 9.10067 17.2827 9.1 17C9.1 16.8833 9.125 16.7623 9.175 16.637C9.225 16.5117 9.3 16.3993 9.4 16.3L14.025 11.675L13.3 10.95L8.7 15.575C8.6 15.675 8.49167 15.75 8.375 15.8C8.25833 15.85 8.13333 15.875 8 15.875C7.71667 15.875 7.47933 15.7793 7.288 15.588C7.09667 15.3967 7.00067 15.159 7 14.875C7 14.7083 7.025 14.5707 7.075 14.462C7.125 14.3533 7.19167 14.2577 7.275 14.175L11.9 9.55L11.2 8.85L6.575 13.45C6.475 13.55 6.36667 13.625 6.25 13.675C6.13333 13.725 6 13.75 5.85 13.75C5.58333 13.75 5.35 13.65 5.15 13.45C4.95 13.25 4.85 13.0167 4.85 12.75C4.85 12.6167 4.875 12.4917 4.925 12.375C4.975 12.2583 5.05 12.15 5.15 12.05L9.775 7.425L9.05 6.725L4.45 11.35C4.36667 11.4333 4.26667 11.5 4.15 11.55C4.03333 11.6 3.89167 11.625 3.725 11.625C3.44167 11.625 3.204 11.529 3.012 11.337C2.82 11.145 2.72433 10.9077 2.725 10.625C2.725 10.4917 2.75 10.3667 2.8 10.25C2.85 10.1333 2.925 10.025 3.025 9.925L8.6 4.35L12.35 8.125C12.5333 8.30834 12.75 8.45434 13 8.563C13.25 8.67167 13.5 8.72567 13.75 8.725C14.2833 8.725 14.75 8.53767 15.15 8.163C15.55 7.78834 15.75 7.309 15.75 6.725C15.75 6.49167 15.7083 6.25 15.625 6C15.5417 5.75 15.3917 5.51667 15.175 5.3L10.7 0.825004C10.9833 0.558338 11.3 0.354338 11.65 0.213004C12 0.0716709 12.35 0.000670851 12.7 4.1841e-06C13.1333 4.1841e-06 13.5333 0.0710042 13.9 0.213004C14.2667 0.355004 14.6 0.575671 14.9 0.875004L19.125 5.125C19.425 5.425 19.646 5.75834 19.788 6.125C19.93 6.49167 20.0007 6.91667 20 7.4C20 7.73334 19.925 8.071 19.775 8.413C19.625 8.755 19.4083 9.06734 19.125 9.35L10.8 17.7C10.6667 17.8333 10.55 17.9167 10.45 17.95C10.35 17.9833 10.2333 18 10.1 18ZM1.525 10L0.875 9.35C0.591667 9.08334 0.375 8.76667 0.225 8.4C0.0749999 8.03334 0 7.65 0 7.25C0 6.81667 0.0833333 6.41667 0.25 6.05C0.416667 5.68334 0.625 5.375 0.875 5.125L5.1 0.875004C5.36667 0.608338 5.68333 0.395671 6.05 0.237004C6.41667 0.0783375 6.775 -0.000662483 7.125 4.1841e-06C7.575 4.1841e-06 7.975 0.0626708 8.325 0.188004C8.675 0.313338 9.01667 0.542338 9.35 0.875004L14.475 6C14.575 6.1 14.65 6.20834 14.7 6.325C14.75 6.44167 14.775 6.56667 14.775 6.7C14.775 6.96667 14.675 7.2 14.475 7.4C14.275 7.6 14.0417 7.7 13.775 7.7C13.625 7.7 13.5 7.67934 13.4 7.638C13.3 7.59667 13.1917 7.51734 13.075 7.4L8.575 2.95L1.525 10Z"
+                d="M10.1 18C9.81667 18 9.57933 17.904 9.388 17.712C9.19667 17.52 9.10067 17.2827 9.1 17C9.1 16.8833 9.125 16.7623 9.175 16.637C9.225 16.5117 9.3 16.3993 9.4 16.3L14.025 11.675L13.3 10.95L8.7 15.575C8.6 15.675 8.49167 15.75 8.375 15.8C8.25833 15.85 8.13333 15.875 8 15.875C7.71667 15.875 7.47933 15.7793 7.288 15.588C7.09667 15.3967 7.00067 15.159 7 14.875C7 14.7083 7.025 14.5707 7.075 14.462C7.125 14.3533 7.19167 14.2577 7.275 14.175L11.9 9.55L11.2 8.85L6.575 13.45C6.475 13.55 6.36667 13.625 6.25 13.675C6.13333 13.725 6 13.75 5.85 13.75C5.58333 13.75 5.35 13.65 5.15 13.45C4.95 13.25 4.85 13.0167 4.85 12.75C4.85 12.6167 4.875 12.4917 4.925 12.375C4.975 12.2583 5.05 12.15 5.15 12.05L9.775 7.425L9.05 6.725L4.45 11.35C4.36667 11.4333 4.26667 11.5 4.15 11.55C4.03333 11.6 3.89167 11.625 3.725 11.625C3.44167 11.625 3.204 11.529 3.012 11.337C2.82 11.145 2.72433 10.9077 2.725 10.625C2.725 10.4917 2.75 10.3667 2.8 10.25C2.85 10.1333 2.925 10.025 3.025 9.925L8.6 4.35L12.35 8.125C12.5333 8.30834 12.75 8.45434 13 8.563C13.25 8.67167 13.5 8.72567 13.75 8.725C14.2833 8.725 14.75 8.53767 15.15 8.163C15.55 7.78834 15.75 7.309 15.75 6.725C15.75 6.49167 15.7083 6.25 15.625 6C15.5417 5.75 15.3917 5.51667 15.175 5.3L10.7 0.825004C10.9833 0.558338 11.3 0.354338 11.65 0.213004C12 0.0716709 12.35 0.000670851 12.7 4.1841e-06C13.1333 4.1841e-06 13.5333 0.0710042 13.9 0.213004C14.2667 0.355004 14.6 0.575671 14.9 0.875004L19.125 5.125C19.425 5.425 19.646 5.75834 19.788 6.125C19.93 6.49167 20 6.91667 20 7.4C20 7.73334 19.925 8.071 19.775 8.413C19.625 8.755 19.4083 9.06734 19.125 9.35L10.8 17.7C10.6667 17.8333 10.55 17.9167 10.45 17.95C10.35 17.9833 10.2333 18 10.1 18ZM1.525 10L0.875 9.35C0.591667 9.08334 0.375 8.76667 0.225 8.4C0.0749999 8.03334 0 7.65 0 7.25C0 6.81667 0.0833333 6.41667 0.25 6.05C0.416667 5.68334 0.625 5.375 0.875 5.125L5.1 0.875004C5.36667 0.608338 5.68333 0.395671 6.05 0.237004C6.41667 0.0783375 6.775 -0.000662483 7.125 4.1841e-06C7.575 4.1841e-06 7.975 0.0626708 8.325 0.188004C8.675 0.313338 9.01667 0.542338 9.35 0.875004L14.475 6C14.575 6.1 14.65 6.20834 14.7 6.325C14.75 6.44167 14.775 6.56667 14.775 6.7C14.775 6.96667 14.675 7.2 14.475 7.4C14.275 7.6 14.0417 7.7 13.775 7.7C13.625 7.7 13.5 7.67934 13.4 7.638C13.3 7.59667 13.1917 7.51734 13.075 7.4L8.575 2.95L1.525 10Z"
                 fill="white"
               />
             </svg>
@@ -305,7 +305,7 @@
             <div class="footer-brand">
               <h2>AITOOLS</h2>
               <p>
-                All in one place. Whether you’re a developer, creator, or
+                All in one place. Whether you're a developer, creator, or
                 enthusiast, our platform helps you stay ahead in the AI
                 revolution.
               </p>
@@ -333,7 +333,101 @@
           </div>
         </footer>
       </main>
+
+      <!-- Submit Modal Overlay -->
+      <div id="submitModalOverlay" class="modal-overlay" onclick="closeSubmitModal(event)">
+        <!-- Submit Tool Modal -->
+        <div id="submitToolModal" class="submit-modal-container" onclick="event.stopPropagation()">
+          <h1 class="modal-title">Submit AI Tool</h1>
+          
+          <!-- Form Fields -->
+          <div class="form-group">
+            <label class="field-label">Tool Name</label>
+            <input type="text" class="form-input" placeholder="ex. chatgpt, midjourney etc">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="field-label">Category</label>
+              <select class="form-select">
+                <option>Select category</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="field-label">Pricing Model</label>
+              <select class="form-select">
+                <option>Free</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="field-label">Website URL</label>
+            <input type="text" class="form-input" placeholder="example.com">
+          </div>
+
+          <!-- Image Upload Section -->
+          <div class="form-uploads">
+            <div class="upload-group">
+              <label class="field-label">Upload Featured Image</label>
+              <div class="upload-box">
+                <svg class="upload-icon" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                  <path d="M4.28571 10.625H7.71429C8.18571 10.625 8.57143 10.2453 8.57143 9.78121V5.56242H9.93429C10.6971 5.56242 11.0829 4.65117 10.5429 4.1196L6.60857 0.246752C6.52927 0.168533 6.43508 0.106476 6.33139 0.0641352C6.2277 0.0217942 6.11654 0 6.00429 0C5.89203 0 5.78087 0.0217942 5.67718 0.0641352C5.57349 0.106476 5.4793 0.168533 5.4 0.246752L1.46571 4.1196C0.925714 4.65117 1.30286 5.56242 2.06571 5.56242H3.42857V9.78121C3.42857 10.2453 3.81429 10.625 4.28571 10.625ZM0.857143 12.3125H11.1429C11.6143 12.3125 12 12.6922 12 13.1562C12 13.6203 11.6143 14 11.1429 14H0.857143C0.385714 14 0 13.6203 0 13.1562C0 12.6922 0.385714 12.3125 0.857143 12.3125Z" fill="#868686"/>
+                </svg>
+                <div class="upload-text">Upload</div>
+              </div>
+            </div>
+
+            <div class="upload-group">
+              <label class="field-label">Upload Logo</label>
+              <div class="upload-box">
+                <svg class="upload-icon" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                  <path d="M4.28571 10.625H7.71429C8.18571 10.625 8.57143 10.2453 8.57143 9.78121V5.56242H9.93429C10.6971 5.56242 11.0829 4.65117 10.5429 4.1196L6.60857 0.246752C6.52927 0.168533 6.43508 0.106476 6.33139 0.0641352C6.2277 0.0217942 6.11654 0 6.00429 0C5.89203 0 5.78087 0.0217942 5.67718 0.0641352C5.57349 0.106476 5.4793 0.168533 5.4 0.246752L1.46571 4.1196C0.925714 4.65117 1.30286 5.56242 2.06571 5.56242H3.42857V9.78121C3.42857 10.2453 3.81429 10.625 4.28571 10.625ZM0.857143 12.3125H11.1429C11.6143 12.3125 12 12.6922 12 13.1562C12 13.6203 11.6143 14 11.1429 14H0.857143C0.385714 14 0 13.6203 0 13.1562C0 12.6922 0.385714 12.3125 0.857143 12.3125Z" fill="#868686"/>
+                </svg>
+                <div class="upload-text">Upload</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="form-group">
+            <label class="field-label">Description</label>
+            <textarea class="form-textarea" placeholder="Describe what your AI tool does and its key features"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button class="btn-modal-submit" onclick="submitToolForm()">Submit Tool</button>
+        </div>
+      </div>
     </div>
+
     <script src="app.js"></script>
+    <script>
+      function openSubmitModal(type) {
+        const overlay = document.getElementById('submitModalOverlay');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeSubmitModal(event) {
+        if (event && event.target !== document.getElementById('submitModalOverlay')) {
+          return;
+        }
+        const overlay = document.getElementById('submitModalOverlay');
+        overlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+
+      function submitToolForm() {
+        alert('Form submitted!');
+        closeSubmitModal();
+      }
+
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+          closeSubmitModal();
+        }
+      });
+    </script>
   </body>
 </html>
