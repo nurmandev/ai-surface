@@ -10,42 +10,56 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&family=Righteous:wght@400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="/submit.css" />
+    <script defer src="/include.js"></script>
   </head>
   <body>
     <div class="container">
       <!-- Sidebar -->
+      <div data-include="sidebar.html"></div>
 
       <!-- Vertical separator -->
       <div class="vertical-separator"></div>
 
       <!-- Main content -->
       <main class="main-content">
-        <!-- Back button -->
-        <a href="/index.html" class="back-button">
-          <img src="figmaAssets/frame-223.svg" alt="Back" />
-          <span>Back</span>
-        </a>
+        <!-- Mobile Header Controls -->
+        <div class="mobile-controls">
+          <button class="hamburger-menu" id="hamburgerMenu" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <!-- Back button -->
+          <a href="/index.html" class="back-button">
+            <img src="figmaAssets/frame-223.svg" alt="Back" />
+            <span>Back</span>
+          </a>
+        </div>
 
         <div class="top-separator"></div>
 
-        <!-- Background image -->
-        <img
-          class="background-image"
-          src="figmaAssets/rectangle-6.png"
-          alt="Background"
-        />
-
-        <!-- Header -->
-        <header class="header">
-          <h1>Submit Your AI Tools & Jobs</h1>
-          <p>
-            Welcome to our submission hub — where developers, founders, and
-            recruiters can showcase their latest AI tools or post exciting AI
-            job opportunities to reach a growing community of AI enthusiasts,
-            builders, and professionals.
-          </p>
-        </header>
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <img
+            class="hero-bg"
+            src="figmaAssets/rectangle-6.png"
+            alt="Background"
+          />
+          <div class="hero-content">
+            <h1>Submit Your AI Tools & Jobs</h1>
+            <p>
+              Welcome to our submission hub — where developers, founders, and
+              recruiters can showcase their latest AI tools or post exciting AI
+              job opportunities to reach a growing community of AI enthusiasts,
+              builders, and professionals.
+            </p>
+          </div>
+        </section>
 
         <!-- Stats section -->
         <section class="stats-section">
