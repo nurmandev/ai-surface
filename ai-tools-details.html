@@ -20,121 +20,105 @@
     <script defer src="./include.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div data-include="sidebar.html"></div>
+    <div data-include="header.html"></div>
+    <div data-include="sidebar.html"></div>
+    <div data-include="navbar.html"></div>
+    <div data-include="breaking-news.html"></div>
+    <div class="vertical-divider"></div>
 
-      <main class="main-content">
-        <header class="page-header">
-          <h2>Text Generation</h2>
-          <div class="search-bar">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <circle
-                cx="7"
-                cy="7"
-                r="5"
-                stroke="currentColor"
-                stroke-width="1.5"
-              />
-              <path
-                d="M11 11L14 14"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-            </svg>
-            <input type="text" placeholder="Search" />
+    <main class="main-wrapper">
+      <div class="section-header" style="padding: 2rem 2rem 0">
+        <h2 class="section-title">Text Generation</h2>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="tool-content">
+          <div class="tool-header">
+            <h1 class="tool-title">CodeGenie – AI Code Assistant</h1>
+            <p class="tool-subtitle">
+              CodeGenie is an advanced AI-powered coding assistant that helps
+              developers write, debug, and optimize code in real time. It
+              supports over 20 programming languages and integrates seamlessly
+              with popular IDEs like VS Code, JetBrains, and GitHub Copilot.
+            </p>
+            <div class="tool-tags">
+              <span class="tag">#tools</span>
+              <span class="tag">CodeAssistant</span>
+              <span class="tag">DeveloperTools</span>
+              <span class="tag">Productivity</span>
+            </div>
           </div>
-        </header>
 
-        <div class="content-wrapper">
-          <div class="tool-content">
-            <div class="tool-header">
-              <h1 class="tool-title">CodeGenie – AI Code Assistant</h1>
-              <p class="tool-subtitle">
-                CodeGenie is an advanced AI-powered coding assistant that helps
-                developers write, debug, and optimize code in real time. It
-                supports over 20 programming languages and integrates seamlessly
-                with popular IDEs like VS Code, JetBrains, and GitHub Copilot.
-              </p>
-              <div class="tool-tags">
-                <span class="tag">#tools</span>
-                <span class="tag">CodeAssistant</span>
-                <span class="tag">DeveloperTools</span>
-                <span class="tag">Productivity</span>
+          <div class="tool-preview">
+            <img
+              src="images/tools-details.png"
+              alt="The ultimate thumbnail tool for everyone"
+            />
+          </div>
+
+          <div class="tool-overview">
+            <h3>Tool Overview:</h3>
+            <p>
+              CodeGenie revolutionizes the development workflow by combining the
+              power of large language models with practical programming tools.
+              With intelligent code completions, contextual debugging
+              suggestions, and instant documentation generation, developers can
+              boost productivity and minimize repetitive work. The tool learns
+              your coding style, analyzes your repositories, and tailors
+              recommendations to your projects—making it a must-have companion
+              for both beginners and experienced programmers.
+            </p>
+          </div>
+
+          <div class="tool-details">
+            <h3>Tool Details:</h3>
+            <div class="details-card">
+              <div class="detail-row">
+                <span class="detail-label">Developer</span>
+                <span class="detail-dots">:</span>
+                <span class="detail-value">CodeGenie Technologies</span>
               </div>
-            </div>
-
-            <div class="tool-preview">
-              <img
-                src="images/tools-details.png"
-                alt="The ultimate thumbnail tool for everyone"
-              />
-            </div>
-
-            <div class="tool-overview">
-              <h3>Tool Overview:</h3>
-              <p>
-                CodeGenie revolutionizes the development workflow by combining
-                the power of large language models with practical programming
-                tools. With intelligent code completions, contextual debugging
-                suggestions, and instant documentation generation, developers
-                can boost productivity and minimize repetitive work. The tool
-                learns your coding style, analyzes your repositories, and
-                tailors recommendations to your projects—making it a must-have
-                companion for both beginners and experienced programmers.
-              </p>
-            </div>
-
-            <div class="tool-details">
-              <h3>Tool Details:</h3>
-              <div class="details-card">
-                <div class="detail-row">
-                  <span class="detail-label">Developer</span>
-                  <span class="detail-dots">:</span>
-                  <span class="detail-value">CodeGenie Technologies</span>
-                </div>
-                <div class="detail-row">
-                  <span class="detail-label">Launched</span>
-                  <span class="detail-dots">:</span>
-                  <span class="detail-value">May 2025</span>
-                </div>
-                <div class="detail-row">
-                  <span class="detail-label">Version</span>
-                  <span class="detail-dots">:</span>
-                  <span class="detail-value">2.1.0</span>
-                </div>
-                <div class="detail-row">
-                  <span class="detail-label">License</span>
-                  <span class="detail-dots">:</span>
-                  <span class="detail-value">Freemium</span>
-                </div>
-                <div class="detail-row">
-                  <span class="detail-label">Website</span>
-                  <span class="detail-dots">:</span>
-                  <span class="detail-value">
-                    <a href="https://codegenie.ai" target="_blank">
-                      https://codegenie.ai
-                      <svg
-                        class="external-link-icon"
-                        viewBox="0 0 12 12"
-                        fill="none"
-                      >
-                        <path
-                          d="M3.5 8.5L8.5 3.5M8.5 3.5H4.5M8.5 3.5V7.5"
-                          stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
-                  </span>
-                </div>
+              <div class="detail-row">
+                <span class="detail-label">Launched</span>
+                <span class="detail-dots">:</span>
+                <span class="detail-value">May 2025</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Version</span>
+                <span class="detail-dots">:</span>
+                <span class="detail-value">2.1.0</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">License</span>
+                <span class="detail-dots">:</span>
+                <span class="detail-value">Freemium</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Website</span>
+                <span class="detail-dots">:</span>
+                <span class="detail-value">
+                  <a href="https://codegenie.ai" target="_blank">
+                    https://codegenie.ai
+                    <svg
+                      class="external-link-icon"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.5 8.5L8.5 3.5M8.5 3.5H4.5M8.5 3.5V7.5"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </span>
               </div>
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   </body>
 </html>

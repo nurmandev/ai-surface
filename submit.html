@@ -18,481 +18,439 @@
     <script defer src="/include.js"></script>
   </head>
   <body>
-    <div class="container">
-      <!-- Sidebar -->
-      <div data-include="sidebar.html"></div>
+    <div data-include="header.html"></div>
+    <div data-include="sidebar.html"></div>
+    <div data-include="navbar.html"></div>
+    <div data-include="breaking-news.html"></div>
+    <div class="vertical-divider"></div>
 
-      <!-- Vertical separator -->
-      <div class="vertical-separator"></div>
-
-      <!-- Main content -->
-      <main class="main-content">
-        <!-- Mobile Header Controls -->
-        <div class="mobile-controls">
-          <button class="hamburger-menu" id="hamburgerMenu" aria-label="Menu">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
-          <!-- Back button -->
-          <a href="/index.html" class="back-button">
-            <img src="figmaAssets/frame-223.svg" alt="Back" />
-            <span>Back</span>
-          </a>
-        </div>
-
-        <div class="top-separator"></div>
-
-        <!-- Hero Section -->
-        <section class="hero-section">
-          <img
-            class="hero-bg"
-            src="figmaAssets/rectangle-6.png"
-            alt="Background"
-          />
-          <div class="hero-content">
-            <h1>Submit Your AI Tools & Jobs</h1>
-            <p>
-              Welcome to our submission hub — where developers, founders, and
-              recruiters can showcase their latest AI tools or post exciting AI
-              job opportunities to reach a growing community of AI enthusiasts,
-              builders, and professionals.
-            </p>
-          </div>
-        </section>
-
-        <!-- Stats section -->
-        <section class="stats-section">
-          <div class="stat-card">
-            <div class="stat-value">1,500+</div>
-            <div class="stat-label">AI Tools Listed</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-value">500+</div>
-            <div class="stat-label">AI Jobs Listed</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-value">50K+</div>
-            <div class="stat-label">Monthly Visitors</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-value">2m 08s</div>
-            <div class="stat-label">Avg. time spent</div>
-          </div>
-        </section>
-
-        <!-- Submission cards -->
-        <section class="submission-cards">
-          <div class="submission-card">
-            <h2>Submit Your AI Tool</h2>
-            <p>
-              Got an AI-powered app, website, or SaaS product? Submit your tool
-              and get discovered by thousands of creators, developers, and tech
-              lovers looking for the next breakthrough AI innovation.
-            </p>
-            <button class="cta-button">
-              <img src="figmaAssets/vector-10.svg" alt="Submit" />
-              <span>Submit AI Tool</span>
-            </button>
-          </div>
-          <div class="submission-card">
-            <h2>Submit in Job Listing</h2>
-            <p>
-              Looking to hire AI professionals, engineers, or researchers?
-              Submit your job listing for free and attract top talent passionate
-              about artificial intelligence, machine learning, and automation.
-            </p>
-            <button class="cta-button">
-              <img src="figmaAssets/vector-10.svg" alt="Submit" />
-              <span>Submit AI Tool</span>
-            </button>
-          </div>
-        </section>
-
-        <!-- Why list section -->
-        <section class="why-list-section">
-          <h2>Why List on AI Surface</h2>
-          <div class="benefits-grid">
-            <div class="benefit-card">
-              <img src="figmaAssets/vector-12.svg" alt="Global Exposure" />
-              <h3>Global Exposure</h3>
-              <p>
-                Reach thousands of AI professionals, developers, and creators
-                every month.
-              </p>
-            </div>
-            <div class="benefit-card">
-              <img src="figmaAssets/group-74.png" alt="Boost Visibility" />
-              <h3>Boost Visibility</h3>
-              <p>
-                Reach thousands of AI professionals, developers, and creators
-                every month.
-              </p>
-            </div>
-            <div class="benefit-card">
-              <img src="figmaAssets/vector-16.svg" alt="Optimized Discovery" />
-              <h3>Optimized Discovery</h3>
-              <p>
-                Get featured in curated categories built to attract your target
-                audience.
-              </p>
-            </div>
-            <div class="benefit-card">
-              <img
-                src="figmaAssets/vector-15.svg"
-                alt="Connect & Collaborate"
-              />
-              <h3>Connect & Collaborate</h3>
-              <p>
-                Engage with innovators, investors, and brands shaping the AI
-                industry.
-              </p>
-            </div>
-            <div class="benefit-card">
-              <img src="figmaAssets/vector-14.svg" alt="Promote Effortlessly" />
-              <h3>Promote Effortlessly</h3>
-              <p>
-                Submit your listing for free and let our platform amplify your
-                reach.
-              </p>
-            </div>
-            <div class="benefit-card">
-              <img src="figmaAssets/vector-18.svg" alt="Data-Driven Insights" />
-              <h3>Data-Driven Insights</h3>
-              <p>
-                Gain visibility through organic traffic, analytics, and active
-                AI communities.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Testimonials section -->
-        <section class="testimonials-section">
-          <h2>Meet Our Users & Friends</h2>
-          <p class="testimonials-subtitle">
-            Trusted by AI creators, developers, and tech enthusiasts worldwide.
+    <main class="main-wrapper">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <img
+          class="hero-bg"
+          src="figmaAssets/rectangle-6.png"
+          alt="Background"
+        />
+        <div class="hero-content">
+          <h1>Submit Your AI Tools & Jobs</h1>
+          <p>
+            Welcome to our submission hub — where developers, founders, and
+            recruiters can showcase their latest AI tools or post exciting AI
+            job opportunities to reach a growing community of AI enthusiasts,
+            builders, and professionals.
           </p>
-          <div class="testimonials-grid">
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
-                <div>
-                  <div class="testimonial-name">Priya Mehta</div>
-                  <div class="testimonial-role">AI Product Designer</div>
-                </div>
-              </div>
-              <p class="testimonial-review">
-                AI Surface made it super easy to showcase my AI design tool to
-                the right audience. Within days, I saw a noticeable boost in
-                traffic and sign-ups!
-              </p>
-              <div class="testimonial-stars">
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-              </div>
-            </div>
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
-                <div>
-                  <div class="testimonial-name">Priya Mehta</div>
-                  <div class="testimonial-role">AI Product Designer</div>
-                </div>
-              </div>
-              <p class="testimonial-review">
-                AI Surface made it super easy to showcase my AI design tool to
-                the right audience. Within days, I saw a noticeable boost in
-                traffic and sign-ups!
-              </p>
-              <div class="testimonial-stars">
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-              </div>
-            </div>
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
-                <div>
-                  <div class="testimonial-name">Priya Mehta</div>
-                  <div class="testimonial-role">AI Product Designer</div>
-                </div>
-              </div>
-              <p class="testimonial-review">
-                AI Surface made it super easy to showcase my AI design tool to
-                the right audience. Within days, I saw a noticeable boost in
-                traffic and sign-ups!
-              </p>
-              <div class="testimonial-stars">
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-              </div>
-            </div>
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
-                <div>
-                  <div class="testimonial-name">Priya Mehta</div>
-                  <div class="testimonial-role">AI Product Designer</div>
-                </div>
-              </div>
-              <p class="testimonial-review">
-                AI Surface made it super easy to showcase my AI design tool to
-                the right audience. Within days, I saw a noticeable boost in
-                traffic and sign-ups!
-              </p>
-              <div class="testimonial-stars">
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-              </div>
-            </div>
-            <div class="testimonial-card testimonial-card-wide">
-              <div class="testimonial-header">
-                <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
-                <div>
-                  <div class="testimonial-name">Priya Mehta</div>
-                  <div class="testimonial-role">AI Product Designer</div>
-                </div>
-              </div>
-              <p class="testimonial-review">
-                AI Surface made it super easy to showcase my AI design tool to
-                the right audience. Within days, I saw a noticeable boost in
-                traffic and sign-ups!
-              </p>
-              <div class="testimonial-stars">
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-              </div>
-            </div>
-            <div class="testimonial-card testimonial-card-wide">
-              <div class="testimonial-header">
-                <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
-                <div>
-                  <div class="testimonial-name">Priya Mehta</div>
-                  <div class="testimonial-role">AI Product Designer</div>
-                </div>
-              </div>
-              <p class="testimonial-review">
-                AI Surface made it super easy to showcase my AI design tool to
-                the right audience. Within days, I saw a noticeable boost in
-                traffic and sign-ups!
-              </p>
-              <div class="testimonial-stars">
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-              </div>
-            </div>
-            <div class="testimonial-card testimonial-card-wide">
-              <div class="testimonial-header">
-                <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
-                <div>
-                  <div class="testimonial-name">Priya Mehta</div>
-                  <div class="testimonial-role">AI Product Designer</div>
-                </div>
-              </div>
-              <p class="testimonial-review">
-                AI Surface made it super easy to showcase my AI design tool to
-                the right audience. Within days, I saw a noticeable boost in
-                traffic and sign-ups!
-              </p>
-              <div class="testimonial-stars">
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-              </div>
-            </div>
-            <div class="testimonial-card testimonial-card-wide">
-              <div class="testimonial-header">
-                <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
-                <div>
-                  <div class="testimonial-name">Priya Mehta</div>
-                  <div class="testimonial-role">AI Product Designer</div>
-                </div>
-              </div>
-              <p class="testimonial-review">
-                AI Surface made it super easy to showcase my AI design tool to
-                the right audience. Within days, I saw a noticeable boost in
-                traffic and sign-ups!
-              </p>
-              <div class="testimonial-stars">
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-                <img src="figmaAssets/star-5.svg" alt="Star" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- FAQ section -->
-        <section class="faq-section">
-          <h2>Frequently Asked Questions</h2>
-          <div class="faq-grid">
-            <div class="faq-card faq-card-open">
-              <h3>What does "Thumbnail View" on Mobile Mean?</h3>
-              <p>
-                Thumbnail View on Mobile means that your thumbnail will be
-                visible in your category on phone as well. Non Boosted listings
-                will only display an icon.
-              </p>
-            </div>
-            <div class="faq-card">
-              <button class="faq-question">
-                <span>What does "Thumbnail View" on Mobile Mean?</span>
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 0V15M0 7.5H15"
-                    stroke="white"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="faq-card">
-              <button class="faq-question">
-                <span>What does "Thumbnail View" on Mobile Mean?</span>
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 0V15M0 7.5H15"
-                    stroke="white"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="faq-card">
-              <button class="faq-question">
-                <span>What does "Thumbnail View" on Mobile Mean?</span>
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 0V15M0 7.5H15"
-                    stroke="white"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="faq-card">
-              <button class="faq-question">
-                <span>What does "Thumbnail View" on Mobile Mean?</span>
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 0V15M0 7.5H15"
-                    stroke="white"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="faq-card">
-              <button class="faq-question">
-                <span>What does "Thumbnail View" on Mobile Mean?</span>
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.5 0V15M0 7.5H15"
-                    stroke="white"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <!-- Footer separator -->
-        <div class="footer-separator"></div>
-
-        <!-- Footer -->
-        <footer class="footer">
-          <div class="footer-content">
-            <div class="footer-about">
-              <h2>AITOOLS</h2>
-              <p>
-                All in one place. Whether you're a developer, creator, or
-                enthusiast, our platform helps you stay ahead in the AI
-                revolution.
-              </p>
-            </div>
-            <div class="footer-links">
-              <div class="footer-column">
-                <h3>Categories</h3>
-                <a href="#">AI Prompts</a>
-                <a href="#">AI Jobs</a>
-                <a href="#">AI News</a>
-                <a href="#">Submit</a>
-              </div>
-              <div class="footer-column">
-                <h3>Legal</h3>
-                <a href="#">Contact Us</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Disclaimer</a>
-                <a href="#">Privacy Policy</a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-bottom-separator"></div>
-          <p class="footer-copyright">© 2025 aisurface. All rights reserved.</p>
-        </footer>
-
-        <!-- Social icons -->
-        <div class="social-icons">
-          <img src="figmaAssets/vector-2.svg" alt="Social" />
-          <img src="figmaAssets/vector-9.svg" alt="Social" />
-          <img src="figmaAssets/vector.svg" alt="Social" />
         </div>
-      </main>
-    </div>
+      </section>
+
+      <!-- Stats section -->
+      <section class="stats-section">
+        <div class="stat-card">
+          <div class="stat-value">1,500+</div>
+          <div class="stat-label">AI Tools Listed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">500+</div>
+          <div class="stat-label">AI Jobs Listed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">50K+</div>
+          <div class="stat-label">Monthly Visitors</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2m 08s</div>
+          <div class="stat-label">Avg. time spent</div>
+        </div>
+      </section>
+
+      <!-- Submission cards -->
+      <section class="submission-cards">
+        <div class="submission-card">
+          <h2>Submit Your AI Tool</h2>
+          <p>
+            Got an AI-powered app, website, or SaaS product? Submit your tool
+            and get discovered by thousands of creators, developers, and tech
+            lovers looking for the next breakthrough AI innovation.
+          </p>
+          <button class="cta-button">
+            <img src="figmaAssets/vector-10.svg" alt="Submit" />
+            <span>Submit AI Tool</span>
+          </button>
+        </div>
+        <div class="submission-card">
+          <h2>Submit in Job Listing</h2>
+          <p>
+            Looking to hire AI professionals, engineers, or researchers? Submit
+            your job listing for free and attract top talent passionate about
+            artificial intelligence, machine learning, and automation.
+          </p>
+          <button class="cta-button">
+            <img src="figmaAssets/vector-10.svg" alt="Submit" />
+            <span>Submit AI Tool</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Why list section -->
+      <section class="why-list-section">
+        <h2>Why List on AI Surface</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <img src="figmaAssets/vector-12.svg" alt="Global Exposure" />
+            <h3>Global Exposure</h3>
+            <p>
+              Reach thousands of AI professionals, developers, and creators
+              every month.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img src="figmaAssets/group-74.png" alt="Boost Visibility" />
+            <h3>Boost Visibility</h3>
+            <p>
+              Reach thousands of AI professionals, developers, and creators
+              every month.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img src="figmaAssets/vector-16.svg" alt="Optimized Discovery" />
+            <h3>Optimized Discovery</h3>
+            <p>
+              Get featured in curated categories built to attract your target
+              audience.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img src="figmaAssets/vector-15.svg" alt="Connect & Collaborate" />
+            <h3>Connect & Collaborate</h3>
+            <p>
+              Engage with innovators, investors, and brands shaping the AI
+              industry.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img src="figmaAssets/vector-14.svg" alt="Promote Effortlessly" />
+            <h3>Promote Effortlessly</h3>
+            <p>
+              Submit your listing for free and let our platform amplify your
+              reach.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img src="figmaAssets/vector-18.svg" alt="Data-Driven Insights" />
+            <h3>Data-Driven Insights</h3>
+            <p>
+              Gain visibility through organic traffic, analytics, and active AI
+              communities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+      <section class="testimonials-section">
+        <h2>Meet Our Users & Friends</h2>
+        <p class="testimonials-subtitle">
+          Trusted by AI creators, developers, and tech enthusiasts worldwide.
+        </p>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">AI Product Designer</div>
+              </div>
+            </div>
+            <p class="testimonial-review">
+              AI Surface made it super easy to showcase my AI design tool to the
+              right audience. Within days, I saw a noticeable boost in traffic
+              and sign-ups!
+            </p>
+            <div class="testimonial-stars">
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">AI Product Designer</div>
+              </div>
+            </div>
+            <p class="testimonial-review">
+              AI Surface made it super easy to showcase my AI design tool to the
+              right audience. Within days, I saw a noticeable boost in traffic
+              and sign-ups!
+            </p>
+            <div class="testimonial-stars">
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">AI Product Designer</div>
+              </div>
+            </div>
+            <p class="testimonial-review">
+              AI Surface made it super easy to showcase my AI design tool to the
+              right audience. Within days, I saw a noticeable boost in traffic
+              and sign-ups!
+            </p>
+            <div class="testimonial-stars">
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">AI Product Designer</div>
+              </div>
+            </div>
+            <p class="testimonial-review">
+              AI Surface made it super easy to showcase my AI design tool to the
+              right audience. Within days, I saw a noticeable boost in traffic
+              and sign-ups!
+            </p>
+            <div class="testimonial-stars">
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+            </div>
+          </div>
+          <div class="testimonial-card testimonial-card-wide">
+            <div class="testimonial-header">
+              <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">AI Product Designer</div>
+              </div>
+            </div>
+            <p class="testimonial-review">
+              AI Surface made it super easy to showcase my AI design tool to the
+              right audience. Within days, I saw a noticeable boost in traffic
+              and sign-ups!
+            </p>
+            <div class="testimonial-stars">
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+            </div>
+          </div>
+          <div class="testimonial-card testimonial-card-wide">
+            <div class="testimonial-header">
+              <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">AI Product Designer</div>
+              </div>
+            </div>
+            <p class="testimonial-review">
+              AI Surface made it super easy to showcase my AI design tool to the
+              right audience. Within days, I saw a noticeable boost in traffic
+              and sign-ups!
+            </p>
+            <div class="testimonial-stars">
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+            </div>
+          </div>
+          <div class="testimonial-card testimonial-card-wide">
+            <div class="testimonial-header">
+              <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">AI Product Designer</div>
+              </div>
+            </div>
+            <p class="testimonial-review">
+              AI Surface made it super easy to showcase my AI design tool to the
+              right audience. Within days, I saw a noticeable boost in traffic
+              and sign-ups!
+            </p>
+            <div class="testimonial-stars">
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+            </div>
+          </div>
+          <div class="testimonial-card testimonial-card-wide">
+            <div class="testimonial-header">
+              <img src="figmaAssets/ellipse-2.svg" alt="Priya Mehta" />
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">AI Product Designer</div>
+              </div>
+            </div>
+            <p class="testimonial-review">
+              AI Surface made it super easy to showcase my AI design tool to the
+              right audience. Within days, I saw a noticeable boost in traffic
+              and sign-ups!
+            </p>
+            <div class="testimonial-stars">
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+              <img src="figmaAssets/star-5.svg" alt="Star" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ section -->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-card faq-card-open">
+            <h3>What does "Thumbnail View" on Mobile Mean?</h3>
+            <p>
+              Thumbnail View on Mobile means that your thumbnail will be visible
+              in your category on phone as well. Non Boosted listings will only
+              display an icon.
+            </p>
+          </div>
+          <div class="faq-card">
+            <button class="faq-question">
+              <span>What does "Thumbnail View" on Mobile Mean?</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7.5 0V15M0 7.5H15" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+          <div class="faq-card">
+            <button class="faq-question">
+              <span>What does "Thumbnail View" on Mobile Mean?</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7.5 0V15M0 7.5H15" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+          <div class="faq-card">
+            <button class="faq-question">
+              <span>What does "Thumbnail View" on Mobile Mean?</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7.5 0V15M0 7.5H15" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+          <div class="faq-card">
+            <button class="faq-question">
+              <span>What does "Thumbnail View" on Mobile Mean?</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7.5 0V15M0 7.5H15" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+          <div class="faq-card">
+            <button class="faq-question">
+              <span>What does "Thumbnail View" on Mobile Mean?</span>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7.5 0V15M0 7.5H15" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer separator -->
+      <div class="footer-separator"></div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h2>AITOOLS</h2>
+            <p>
+              All in one place. Whether you're a developer, creator, or
+              enthusiast, our platform helps you stay ahead in the AI
+              revolution.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Categories</h3>
+              <a href="#">AI Prompts</a>
+              <a href="#">AI Jobs</a>
+              <a href="#">AI News</a>
+              <a href="#">Submit</a>
+            </div>
+            <div class="footer-column">
+              <h3>Legal</h3>
+              <a href="#">Contact Us</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Disclaimer</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-separator"></div>
+        <p class="footer-copyright">© 2025 aisurface. All rights reserved.</p>
+      </footer>
+
+      <!-- Social icons -->
+      <div class="social-icons">
+        <img src="figmaAssets/vector-2.svg" alt="Social" />
+        <img src="figmaAssets/vector-9.svg" alt="Social" />
+        <img src="figmaAssets/vector.svg" alt="Social" />
+      </div>
+    </main>
 
     <!-- Submit AI Tool Modal -->
     <div id="submitModal" class="modal">
