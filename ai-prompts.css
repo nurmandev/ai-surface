@@ -303,6 +303,14 @@
 }
 
 @media (max-width: 1200px) {
+  .vertical-divider {
+    display: none;
+  }
+
+  .main-wrapper {
+    padding-left: 0;
+  }
+
   .prompt-cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -364,7 +372,8 @@
   }
 
   .prompt-footer {
-    padding: 2rem 1.5rem;
+    padding: 0;
+    margin-top: 1rem;
   }
 
   .footer-brand-title {
@@ -397,15 +406,15 @@
 
   .section-title {
     font-size: 20px;
-    width: 100%;
+    width: auto;
   }
 
   .section-icon {
-    order: 2;
+    order: 0;
   }
 
   .section-arrow {
-    order: 3;
+    order: 0;
   }
 
   .prompt-cards {
@@ -473,25 +482,20 @@
   }
 
   .section-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
   }
 
   .section-title {
     font-size: 18px;
   }
 
-  .section-icon {
-    order: 0;
-  }
-
   .section-arrow {
-    width: 100%;
-    order: 3;
+    width: auto;
   }
 
   .prompt-card {
-    padding: 0.75rem 1rem;
+    padding: 1rem;
   }
 
   .prompt-card-title {
