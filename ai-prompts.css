@@ -17,6 +17,9 @@
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
+  border: 1px solid rgba(201, 201, 201, 0.25);
+  border-radius: 24px;
+  padding: 2rem;
 }
 
 .section-header {
@@ -51,7 +54,6 @@
   font-size: 30px;
   font-weight: 800;
   line-height: 1;
-  flex: 1;
 }
 
 .section-arrow {
@@ -319,6 +321,7 @@
 
   .prompt-section {
     margin-bottom: 2.5rem;
+    padding: 1.5rem;
   }
 
   .section-header {
@@ -369,6 +372,10 @@
 @media (max-width: 768px) {
   .prompt-sections-container {
     padding: 1.5rem 1rem;
+  }
+
+  .prompt-section {
+    padding: 1rem;
   }
 
   .section-header {
