@@ -14,8 +14,8 @@ body {
 
 .vertical-divider {
   position: fixed;
-  left: 310px;
-  top: 158px;
+  left: 246px;
+  top: 208px;
   bottom: 0;
   width: 1px;
   background: rgba(201, 201, 201, 0.25);
@@ -26,24 +26,26 @@ body {
   max-width: 1570px;
   margin: 0 auto;
   padding: 0 2rem;
-  padding-left: calc(310px + 2rem);
+  padding-left: calc(246px + 2rem);
+  margin-top: 32px;
 }
 
 /* Tools Sections */
 .tools-section {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   border-bottom: 1px solid rgba(201, 201, 201, 0.25);
 }
 
 .tools-section:first-of-type {
   padding-top: 0;
+  margin-top: 0;
 }
 
 .section-header {
   display: flex;
   align-items: center;
   gap: 27px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
   padding: 0;
 }
 
@@ -61,7 +63,7 @@ body {
 /* Grid Layouts */
 .tools-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .tools-grid.five-col {
