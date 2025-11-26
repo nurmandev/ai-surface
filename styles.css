@@ -218,7 +218,7 @@ body {
 .search-input {
   background: transparent;
   border: 1px solid #353535;
-  border-radius: 8px;
+  border-radius: 50px;
   padding: 0.8rem 1rem 0.8rem 2.75rem;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -643,7 +643,7 @@ body {
 }
 
 .title-light {
-  color: #e2e2e2;
+  color: #fff;
 }
 
 .title-white {
@@ -655,7 +655,7 @@ body {
   font-size: 70px;
   font-weight: 800;
   line-height: normal;
-  color: #e2e2e2;
+  color: #fff;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -828,6 +828,17 @@ body {
   object-fit: cover;
   border-radius: 5px 0 0 5px;
   flex-shrink: 0;
+}
+
+.featured-card {
+  background: #141414;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.2s ease;
 }
 
 .featured-card .tool-image {
