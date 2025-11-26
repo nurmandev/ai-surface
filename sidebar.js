@@ -3,9 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.getElementById("hamburgerMenu");
   const sidebar = document.getElementById("sidebar");
   const sidebarOverlay = document.getElementById("sidebarOverlay");
-  const sidebarSectionTitles = document.querySelectorAll(
-    ".sidebar-section-title"
-  );
 
   // Toggle mobile menu
   if (hamburgerMenu) {
@@ -63,20 +60,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Toggle sidebar sections
-  sidebarSectionTitles.forEach(function (title) {
-    title.addEventListener("click", function (e) {
+  // Toggle sidebar dropdowns
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+  dropdownToggles.forEach(function (toggle) {
+    toggle.addEventListener("click", function (e) {
       e.stopPropagation();
       const isExpanded = this.getAttribute("aria-expanded") === "true";
-      const links = this.nextElementSibling;
+      const submenu = this.nextElementSibling;
 
       this.setAttribute("aria-expanded", !isExpanded);
 
-      if (links && links.classList.contains("sidebar-section-links")) {
+      if (submenu && submenu.classList.contains("sidebar-submenu")) {
         if (isExpanded) {
-          links.classList.add("collapsed");
+          submenu.classList.add("collapsed");
         } else {
-          links.classList.remove("collapsed");
+          submenu.classList.remove("collapsed");
         }
       }
     });
