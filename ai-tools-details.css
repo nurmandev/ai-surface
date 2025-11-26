@@ -365,17 +365,27 @@ body {
 
 @media (max-width: 768px) {
   .sidebar {
-    width: 200px;
+    transform: translateX(-100%);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    width: 280px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
   }
 
   .main-content {
-    margin-left: 200px;
+    margin-left: 0;
+    width: 100%;
   }
 
   .page-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    padding: 20px;
   }
 
   .search-bar {
@@ -383,6 +393,15 @@ body {
   }
 
   .content-wrapper {
-    padding: 24px;
+    padding: 20px;
+  }
+
+  .tool-preview img {
+    height: auto;
+  }
+
+  .detail-row {
+    grid-template-columns: 100px 10px 1fr;
+    font-size: 13px;
   }
 }

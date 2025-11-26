@@ -10,164 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="ai-tools-details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script defer src="./app.js"></script>
+    <script defer src="./include.js"></script>
   </head>
   <body>
     <div class="container">
-      <aside class="sidebar">
-        <div class="sidebar-content">
-          <div class="logo">
-            <h1>AI SURFACE</h1>
-          </div>
-
-          <button class="back-btn">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <circle cx="8" cy="8" r="7.5" stroke="currentColor" />
-              <path
-                d="M10 8L6 8M6 8L8 6M6 8L8 10"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            Back
-          </button>
-
-          <nav class="nav-menu">
-            <div class="nav-item">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="currentColor"
-              >
-                <circle cx="7" cy="7" r="2" />
-                <circle
-                  cx="7"
-                  cy="7"
-                  r="5"
-                  stroke="currentColor"
-                  stroke-width="1"
-                  fill="none"
-                />
-              </svg>
-              <span>Explore</span>
-              <svg
-                class="chevron"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="currentColor"
-              >
-                <path d="M3 4L5 6L7 4" />
-              </svg>
-            </div>
-
-            <div class="nav-item">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="currentColor"
-              >
-                <rect x="2" y="2" width="10" height="10" rx="1" />
-              </svg>
-              <span>Articles</span>
-              <svg
-                class="chevron"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="currentColor"
-              >
-                <path d="M3 4L5 6L7 4" />
-              </svg>
-            </div>
-
-            <div class="nav-item">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="currentColor"
-              >
-                <path d="M2 7L7 2L12 7L7 12L2 7Z" />
-              </svg>
-              <span>AI Prompts</span>
-              <svg
-                class="chevron"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="currentColor"
-              >
-                <path d="M3 4L5 6L7 4" />
-              </svg>
-            </div>
-
-            <div class="nav-item">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="currentColor"
-              >
-                <rect x="2" y="2" width="10" height="10" rx="1" />
-              </svg>
-              <span>AI Jobs</span>
-              <svg
-                class="chevron"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="currentColor"
-              >
-                <path d="M3 4L5 6L7 4" />
-              </svg>
-            </div>
-
-            <div class="nav-item expanded">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="currentColor"
-              >
-                <rect x="2" y="2" width="10" height="10" rx="1" />
-              </svg>
-              <span>AI Tools</span>
-              <svg
-                class="chevron"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="currentColor"
-              >
-                <path d="M3 4L5 6L7 4" />
-              </svg>
-            </div>
-
-            <div class="submenu">
-              <div class="submenu-item active">Text Generation</div>
-              <div class="submenu-item">Image Creation</div>
-              <div class="submenu-item">Video Editing</div>
-              <div class="submenu-item">Code Assistants</div>
-            </div>
-          </nav>
-
-          <button class="submit-tool-btn">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-              <path
-                d="M8 3V13M3 8H13"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-            Submit a Tool
-          </button>
-        </div>
-      </aside>
+      <div data-include="sidebar.html"></div>
 
       <main class="main-content">
         <header class="page-header">
