@@ -15,11 +15,11 @@
   margin: 0;
   padding: 0;
   padding-left: 246px;
-  margin-top: 32px;
+  margin-top: 0;
 }
 
 .prompt-sections-container {
-  padding: 2rem 3rem;
+  padding: 3rem 3rem;
   max-width: 100%;
 }
 
