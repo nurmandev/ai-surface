@@ -135,4 +135,24 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.style.overflow = "";
     }
   });
+
+  // Adjust sidebar position on scroll to stick to navbar
+  function adjustSidebarPosition() {
+    if (!sidebar || window.innerWidth <= 1200) return;
+
+    const navbarHeight = 76; // Height of the sticky navbar
+    const initialTop = 208; // Initial top position of the sidebar
+    const scrollY = window.scrollY;
+
+    // Calculate new top position
+    // We want the sidebar to move up as we scroll, but stop at the navbar
+    const newTop = Math.max(navbarHeight, initialTop - scrollY);
+
+    sidebar.style.top = `${newTop}px`;
+    sidebar.style.height = `calc(100vh - ${newTop}px)`;
+  }
+
+  window.addEventListener("scroll", adjustSidebarPosition);
+  // Initial call
+  adjustSidebarPosition();
 });

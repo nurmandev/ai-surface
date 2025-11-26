@@ -577,6 +577,7 @@ body {
 }
 
 .vertical-divider {
+  display: none;
   position: fixed;
   left: 246px;
   top: 208px;
