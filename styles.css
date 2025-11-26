@@ -370,9 +370,9 @@ body {
 .sidebar {
   position: fixed;
   left: 0;
-  top: 0;
+  top: 208px;
   width: 246px;
-  height: 100vh;
+  height: calc(100vh - 208px);
   background: #000;
   border-right: 1px solid rgba(201, 201, 201, 0.25);
   padding: 0;
@@ -579,7 +579,7 @@ body {
 .vertical-divider {
   position: fixed;
   left: 246px;
-  top: 0;
+  top: 208px;
   bottom: 0;
   width: 1px;
   background: rgba(201, 201, 201, 0.25);
