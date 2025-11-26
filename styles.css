@@ -18,7 +18,8 @@ body {
   padding: 0.6rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 2rem;
   border-bottom: 1px solid rgba(201, 201, 201, 0.25);
   min-height: 44px;
 }
@@ -52,6 +53,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 400;
+  color: #999;
 }
 
 .breaking-news {
@@ -81,8 +83,9 @@ body {
 }
 
 .news-content {
-  flex: 1;
+  flex: 0 1 auto;
   overflow: hidden;
+  margin-right: 1rem;
 }
 
 .news-content p {
@@ -146,7 +149,7 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 2rem;
 }
 
@@ -169,6 +172,7 @@ body {
   list-style: none;
   gap: 2rem;
   align-items: center;
+  margin-left: 3rem;
 }
 
 .nav-links a {
@@ -199,6 +203,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: auto;
 }
 
 .search-container {
