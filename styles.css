@@ -11,6 +11,16 @@ body {
   color: #fff;
   overflow-x: hidden;
   line-height: 1.5;
+  padding-top: 164px; /* Height of fixed header */
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1002;
+  background: #000;
 }
 
 .top-bar {
@@ -340,33 +350,6 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  .nav-container {
-    padding: 0;
-  }
-
-  .navbar {
-    padding: 0.8rem 1.5rem;
-    min-height: 60px;
-  }
-
-  .logo img {
-    height: 24px;
-  }
-
-  .top-bar {
-    gap: 1rem;
-  }
-
-  .top-date {
-    font-size: 11px;
-  }
-}
-
-.hamburger-menu.active .hamburger-line:nth-child(1) {
-  transform: rotate(45deg) translate(10px, 10px);
-}
-
 .hamburger-menu.active .hamburger-line:nth-child(2) {
   opacity: 0;
 }
@@ -427,9 +410,9 @@ body {
 .sidebar {
   position: fixed;
   left: 0;
-  top: 208px;
+  top: 164px; /* Adjusted for fixed header */
   width: 246px;
-  height: calc(100vh - 208px);
+  height: calc(100vh - 164px);
   background: #000;
   border-right: 1px solid rgba(201, 201, 201, 0.25);
   padding: 0;
@@ -637,7 +620,7 @@ body {
   display: none;
   position: fixed;
   left: 246px;
-  top: 208px;
+  top: 164px;
   bottom: 0;
   width: 1px;
   background: rgba(201, 201, 201, 0.25);
