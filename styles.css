@@ -199,14 +199,30 @@ body {
   font-weight: 500;
   transition: opacity 0.2s;
   position: relative;
+  padding-bottom: 6px;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  opacity: 0.7;
+  opacity: 1;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-links a.active::after {
-  display: none;
+  width: 100%;
 }
 
 .nav-right {
