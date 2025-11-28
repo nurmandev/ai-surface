@@ -5,7 +5,7 @@
   background: #000;
   border: 1px solid #333;
   border-radius: 20px;
-  margin: 2rem 2.5rem;
+  margin: 2rem 0;
   padding: 4rem 3rem;
   display: flex;
   align-items: center;
@@ -118,7 +118,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0 2.5rem;
+  padding: 0;
   margin: 3rem 0 2rem 0;
   border-bottom: none;
 }
@@ -149,7 +149,7 @@
 
 /* Section Container */
 .section-container {
-  padding: 0 2.5rem;
+  padding: 0;
   margin-bottom: 3rem;
 }
 
@@ -260,6 +260,7 @@
   flex: 1;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
