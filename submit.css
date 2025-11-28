@@ -13,7 +13,6 @@
 /* Mobile Controls */
 .mobile-controls {
   width: 100%;
-  max-width: 1572px;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -89,7 +88,6 @@
 .hero-section {
   position: relative;
   width: 100%;
-  max-width: 1572px;
   min-height: 371px;
   border-radius: 15px;
   overflow: hidden;
@@ -140,7 +138,6 @@
 /* Stats Section */
 .stats-section {
   width: 100%;
-  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
@@ -177,7 +174,6 @@
 /* Submission Cards */
 .submission-cards {
   width: 100%;
-  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -250,7 +246,6 @@
 /* Why List Section */
 .why-list-section {
   width: 100%;
-  max-width: 1200px;
   margin-bottom: 6rem;
 }
 
@@ -303,7 +298,6 @@
 /* Testimonials Section */
 .testimonials-section {
   width: 100%;
-  max-width: 1200px;
   margin-bottom: 6rem;
 }
 
@@ -395,7 +389,6 @@
 /* FAQ Section */
 .faq-section {
   width: 100%;
-  max-width: 1200px;
   margin-bottom: 6rem;
 }
 
@@ -477,7 +470,6 @@
 
 .footer {
   width: 100%;
-  max-width: 1200px;
   padding-bottom: 3rem;
 }
 
