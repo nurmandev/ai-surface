@@ -1,21 +1,27 @@
 /* Reset & Base - Most handled by styles.css */
 
-/* Sidebar Styles Removed - Using Global Sidebar */
+/* Hide sidebar and divider on submit page */
+.sidebar {
+  display: none !important;
+}
 
-/* Vertical Separator Removed - Using Global */
+.vertical-divider {
+  display: none !important;
+}
 
 /* Main Content */
 /* Main Content */
 .main-wrapper {
-  /* margin-left and width handled by styles.css via grid or flex, 
-     but here we want to ensure it takes available space.
-     styles.css likely sets margin-left: 246px for main-wrapper.
-     We just need to ensure padding and layout. */
-  padding: 2rem;
+  /* Override global sidebar spacing for submit page */
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-top: 2rem;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* Mobile Controls */
