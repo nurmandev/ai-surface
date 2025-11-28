@@ -6,7 +6,7 @@
       id="sidebarCloseBtn"
       aria-label="Close navigation menu"
     >
-      <i class="fas fa-arrow-left"></i>
+      <i class="fas fa-times"></i>
     </button>
   </div>
 
@@ -27,7 +27,7 @@
       <li class="sidebar-dropdown">
         <button class="sidebar-link dropdown-toggle" aria-expanded="false">
           <div class="link-content">
-            <i class="fas fa-diamond"></i>
+            <i class="fas fa-lightbulb"></i>
             <span>AI Prompts</span>
           </div>
           <i class="fas fa-chevron-down"></i>
@@ -53,27 +53,25 @@
           <i class="fas fa-chevron-down"></i>
         </button>
         <ul class="sidebar-submenu collapsed">
-          <li><a href="ai-jobs.html" class="sidebar-sublink">All Jobs</a></li>
-          <li><a href="#" class="sidebar-sublink">Machine Learning</a></li>
+          <li>
+            <a href="ai-jobs.html" class="sidebar-sublink">Machine Learning</a>
+          </li>
           <li><a href="#" class="sidebar-sublink">Data Science</a></li>
           <li><a href="#" class="sidebar-sublink">AI Engineering</a></li>
           <li><a href="#" class="sidebar-sublink">Prompt Engineering</a></li>
         </ul>
       </li>
       <li class="sidebar-dropdown">
-        <button class="sidebar-link dropdown-toggle" aria-expanded="true">
+        <button class="sidebar-link dropdown-toggle" aria-expanded="false">
           <div class="link-content">
             <i class="fas fa-screwdriver-wrench"></i>
             <span>AI Tools</span>
           </div>
           <i class="fas fa-chevron-down"></i>
         </button>
-        <ul class="sidebar-submenu">
-          <li><a href="#" class="sidebar-sublink">All Tools</a></li>
+        <ul class="sidebar-submenu collapsed">
           <li>
-            <a href="ai-tools.html" class="sidebar-sublink active"
-              >Text Generation</a
-            >
+            <a href="ai-tools.html" class="sidebar-sublink">Text Generation</a>
           </li>
           <li><a href="#" class="sidebar-sublink">Image Creation</a></li>
           <li><a href="#" class="sidebar-sublink">Video Editing</a></li>
@@ -83,8 +81,13 @@
     </ul>
   </nav>
 
-  <div class="sidebar-search">
-    <i class="fas fa-search"></i>
-    <input type="text" placeholder="Search" />
+  <div class="sidebar-footer">
+    <div class="sidebar-search">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="sidebar-tagline">
+      <p>All the AI Resources in one place.</p>
+    </div>
   </div>
 </aside>
