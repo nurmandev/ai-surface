@@ -31,12 +31,14 @@ body {
 }
 
 .top-bar-container {
-  max-width: 1570px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 1.5rem;
+  padding: 0;
 }
 
 .social-links {
@@ -83,13 +85,13 @@ body {
 }
 
 .breaking-news-container {
-  max-width: 1570px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  width: 100%;
 }
 
 .breaking-label {
@@ -174,7 +176,8 @@ body {
 }
 
 .nav-container {
-  max-width: 1570px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
