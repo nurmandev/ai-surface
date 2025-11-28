@@ -1,27 +1,13 @@
 /* Reset & Base - Most handled by styles.css */
 
-/* Hide sidebar and divider on submit page */
-.sidebar {
-  display: none !important;
-}
-
-.vertical-divider {
-  display: none !important;
-}
-
-/* Main Content */
 /* Main Content */
 .main-wrapper {
-  /* Override global sidebar spacing for submit page */
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  /* Use default sidebar spacing from global styles.css */
   padding-top: 2rem;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 /* Mobile Controls */
