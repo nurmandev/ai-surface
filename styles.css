@@ -1000,6 +1000,16 @@ body {
   line-height: 1.2;
 }
 
+.section-title a {
+  color: #e2e2e2;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.section-title a:hover {
+  opacity: 0.8;
+}
+
 .arrow-icon {
   width: auto;
   height: auto;
