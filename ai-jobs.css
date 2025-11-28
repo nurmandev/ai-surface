@@ -23,10 +23,11 @@ body {
 }
 
 .main-wrapper {
-  max-width: 1570px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0.5rem;
   padding-left: calc(250px + 0.25rem);
+  padding-right: 0.5rem;
 }
 
 /* Jobs Sections */
