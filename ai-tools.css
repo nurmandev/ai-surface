@@ -23,10 +23,11 @@ body {
 }
 
 .main-wrapper {
-  max-width: 1570px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
   padding-left: calc(246px + 2rem);
+  padding-right: 2rem;
   margin-top: 32px;
 }
 
