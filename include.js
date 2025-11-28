@@ -50,7 +50,14 @@ function executeScripts(container) {
 function initializeRouter() {
   document.addEventListener("click", (e) => {
     const link = e.target.closest("a");
-    // Check if it's an internal link and not a special link (download, target blank, hash)
+    // Check if it's a same-page hash link
+    const targetUrl = new URL(link.href);
+    const currentUrl = new URL(window.location.href);
+
+    if (targetUrl.pathname === currentUrl.pathname && targetUrl.hash) {
+      return;
+    }
+
     if (
       link &&
       link.href.startsWith(window.location.origin) &&
@@ -95,6 +102,20 @@ async function navigateTo(url, pushState = true) {
         requestAnimationFrame(() => {
           newMain.style.opacity = "1";
         });
+
+        // Handle scrolling after content swap
+        const targetUrl = new URL(url, window.location.origin);
+        if (targetUrl.hash) {
+          const targetId = targetUrl.hash.substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          } else {
+            window.scrollTo(0, 0);
+          }
+        } else {
+          window.scrollTo(0, 0);
+        }
       }, 200);
     } else {
       // Fallback if structure is different
@@ -123,8 +144,6 @@ async function navigateTo(url, pushState = true) {
     if (overlay) overlay.classList.remove("active");
     if (hamburger) hamburger.classList.remove("active");
     document.body.classList.remove("sidebar-open");
-
-    window.scrollTo(0, 0);
   } catch (error) {
     console.error("Navigation error:", error);
     window.location.href = url;
